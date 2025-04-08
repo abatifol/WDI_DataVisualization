@@ -6,3 +6,4 @@ numpy
 matplotlib
 plotly
 pycirclize
+streamlit-shadcn-ui
