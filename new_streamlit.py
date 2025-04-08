@@ -1,10 +1,32 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from pycirclize import Circos
+import plotly.express as px
+import plotly.graph_objects as go
 import tempfile
 import pandas as pd
 import altair as alt
 import os
+
+st.set_page_config(layout="wide", page_title="ODA & Poverty Dashboard", page_icon="🌍")
+
+# Custom CSS to make it cleaner and wider
+st.markdown("""
+    <style>
+        .main {
+            background-color: #f5f7fa;
+        }
+        h1, h2, h3 {
+            color: #333333;
+        }
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 @st.cache_data
 def load_data():
@@ -17,6 +39,8 @@ def load_data():
     print('correspondance data loaded')
     poverty = pd.read_csv('data/oda_poverty_world.csv')
     return df_2021, countries, correspondance, poverty
+
+
 
 df_2021, countries, correspondance, poverty = load_data()
 correspondance = correspondance.merge(countries[['DE_code','Region']]).drop(columns='DE_code')
@@ -80,6 +104,39 @@ circos = Circos.chord_diagram(
 circos.text("ODA Financial Flows Between Regions", deg=0, r=150, size=14)
 fig = circos.plotfig()
 
+######################################################################################
+
+world_financial_aid_flows = poverty[poverty['Country Name']=='World']
+world_financial_aid_flows = world_financial_aid_flows[['Country Name','Year',
+             'Net official development assistance received (constant 2021 US$)',
+'Net official development assistance and official aid received (constant 2021 US$)',
+'Foreign direct investment, net inflows (BoP, current US$)',
+# 'Foreign direct investment, net outflows (BoP, current US$)',
+'Personal remittances, received (current US$)',
+# 'Personal remittances, paid (current US$)',
+]]
+world_financial_aid_flows = pd.melt(world_financial_aid_flows, id_vars=['Country Name','Year'], var_name='Indicator', value_name='Value')
+world_financial_aid_flows.loc[:,'Value_M'] = world_financial_aid_flows.loc[:,'Value'] / 1000_000_000
+flows_chart = alt.Chart(world_financial_aid_flows).mark_line().encode(
+    x='Year:O',
+    y=alt.Y('Value_M:Q',title='Flow in Billion US$'),
+    color=alt.Color('Indicator:N', legend=alt.Legend(
+        columns=1,
+        orient='bottom',  # Position the legend at the bottom
+        title='Financial Aid Indicators',
+        labelLimit=300,  # Set a limit for label width (in pixels)
+        direction='vertical',
+        # labelAngle=0,  # Rotate labels to 0 degrees (horizontal)
+        symbolSize=150  # Size of the legend symbols
+    )),
+    tooltip=['Year', 'Indicator', 'Value_M']
+).properties(
+    width=500,
+    height=500,
+    title='Global Indicators Over Time'
+).interactive()  # Enable zoom & pan
+
+######################################################################################
 
 poverty =poverty.merge(countries[['DE_code','Region','Income Group']].rename(columns={"DE_code":'Country Code'}), how='left', on='Country Code')
 poverty['Total Population (in million)'] = poverty['Population, total'] / 1_000_000
@@ -93,8 +150,6 @@ poor = alt.Chart(df_world[(df_world.Year >= 1990) & (df_world.Year <= 2022)]).ma
     color=alt.value('red')
 ).properties(
     title='Number of People Living in Extreme Poverty',
-    width=600,
-    height=300
 )
 popTotal = alt.Chart(df_world[(df_world.Year >= 1990) & (df_world.Year <= 2022)]).mark_area(opacity=0.5).encode(
     x='Year:O',
@@ -102,8 +157,6 @@ popTotal = alt.Chart(df_world[(df_world.Year >= 1990) & (df_world.Year <= 2022)]
     color=alt.value('gray')
 ).properties(
     title='Total Population in the World',
-    width=600,
-    height=300
 )
 chart1 = popTotal + poor
 
@@ -126,12 +179,94 @@ chart2 = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_region
 ).properties(
     title='Number of People Living in Extreme Poverty',
     width=400,
-    height=400
+    height=500
+)
+
+### Chart 3
+# Chart 3
+# Filter and pivot the data
+df_country = poverty[poverty['Region'].notna()]
+df_country['poverty ratio'] = df_country['Poverty headcount ratio at $2.15 a day']
+test = df_country.sort_values(by=['Country Name', 'Year'])
+test = test.groupby('Country Name').ffill()
+
+test = test.merge(df_country[['Country Name']], left_index=True, right_index=True)
+
+# Create a selection for the year
+select_year = alt.selection_point(name='select', fields=['Year'], value=1991, bind=alt.binding_range(min=1991, max=2022, step=1))
+select_country = alt.selection_point(name='select_country', fields=['Country Name'],value='China', on='click', empty='all')
+
+# Create the Altair chart with adjusted size scale
+chart3 = alt.Chart(test.dropna(subset='Poverty headcount ratio at $2.15 a day')).mark_point(filled=True, ).encode(
+    x=alt.X('poverty ratio:Q', scale=alt.Scale(type='linear',domain=(0.1, 100))),
+    color=alt.Color('Region', scale=alt.Scale(scheme='tableau10')),
+    size=alt.Size('Number of Poor (in million):Q', scale=alt.Scale(domain=[0,600], range=[100, 2000])),  # Adjust the size scale
+    row= alt.Row('Region',header=alt.Header(labelAngle=0)),
+    tooltip=['Country Name', 'poverty ratio:Q', 'Number of Poor (in million):Q', 'Region']
+).properties(
+    title='Number of Poor People in Different Countries',
+    width=400,
+    height=50
+).interactive(bind_x=True, bind_y=True).add_params(
+    select_year
+).transform_filter(
+    select_year
 )
 
 
+# Create the first chart with adjusted size scale
+chart = alt.Chart(test.dropna(subset='Poverty headcount ratio at $2.15 a day')).mark_point(filled=True).encode(
+    x=alt.X('poverty ratio:Q', scale=alt.Scale(type='linear', domain=(0.1, 100))),
+    color=alt.Color('Region', scale=alt.Scale(scheme='tableau10')),
+    size=alt.Size('Number of Poor (in million):Q', scale=alt.Scale(domain=[0, 400], range=[100, 2000])),  # Adjust the size scale
+    row=alt.Row('Region', header=alt.Header(labelAngle=0)),
+    tooltip=['Country Name', 'poverty ratio:Q', 'Number of Poor (in million):Q', 'Region']
+).properties(
+    title='Number of Poor People in Different Countries',
+    width=400,
+    height=50
+).interactive(bind_x=True, bind_y=True).add_params(
+    select_year, select_country
+).transform_filter(
+    select_year
+)
 
-st.set_page_config(layout="centered")
+# Create the second chart to show the selected country's data
+country = alt.Chart(test.dropna(subset='Poverty headcount ratio at $2.15 a day')).mark_line().encode(
+    x='Year:O',
+    y='poverty ratio:Q',
+    tooltip=['Country Name', 'poverty ratio', 'Number of Poor (in million)', 'Region']
+).properties(
+    title='Poverty Ratio Over Time for Selected Country',
+    width=400,
+    height=200
+).add_params(select_country).transform_filter(
+    select_country
+)
+
+# # Combine the charts vertically
+# combined_chart = alt.hconcat(chart, country).resolve_scale(
+#     color='independent'
+# )
+
+# combined_chart
+
+# Add a text mark to simulate a dynamic title
+title_text = alt.Chart(test).mark_text(
+    align='center',
+    fontSize=16,
+    dy=-10
+).encode(
+    text=alt.Text('Country Name:N', title='Country')
+).transform_filter(
+    select_country
+).properties(
+    width=400,
+    height=50
+)
+
+# Combine the charts horizontally with the title text
+combined_chart = chart | country
 
 # Title
 st.title("Global Poverty & Financial Aid: A Story of Progress and Challenges")
@@ -143,6 +278,7 @@ regional disparities, and the role of financial aid.
 Through data and visualizations, we will uncover how the world has made significant strides 
 — and where challenges remain.
 """)
+st.title("🌍 Official Development Assistance (ODA) & Poverty Dashboard")
 
 # Section 1: Global Overview
 st.header("🌍 Global Overview: Population Growth & Poverty Reduction")
@@ -154,9 +290,13 @@ However, alongside this, the share of people living in **extreme poverty** has d
 
 # Placeholder for population growth vs. poverty rate chart
 # (You will need to load your data here)
-st.subheader("Population Growth vs. Extreme Poverty Rate")
-st.altair_chart(chart1, use_container_width=True)
-
+col1, col2 = st.columns(2)
+with col1:
+    st.subheader("Population Growth vs. Extreme Poverty Rate")
+    st.altair_chart(chart1, use_container_width=True)
+    st.altair_chart(combined_chart, use_container_width=True)
+with col2:
+    st.altair_chart(flows_chart, use_container_width=True)
 
 # Section 2: Regional Focus
 st.header("🗺️ Regional Focus: Progress with Disparities")
@@ -207,6 +347,58 @@ st.subheader("Aid Flows Over Time")
 
 fig = circos.plotfig()
 st.pyplot(fig)
+
+donor_regions = df_2021['Donor_Region'].dropna().unique()
+recipient_regions = df_2021['Recipient_Region'].dropna().unique()
+aid_types = df_2021['Aid type'].unique()
+
+# Create columns for inline selection
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    donor_region_selected = st.selectbox("Select Donor Region", sorted(donor_regions))
+
+with col2:
+    recipient_region_selected = st.selectbox("Select Recipient Region", sorted(recipient_regions))
+
+with col3:
+    aid_type_selected = st.selectbox("Select Aid Type", aid_types)
+
+# Filter the dataframe
+filtered_df = df_2021[
+    (df_2021['Donor_Region'] == donor_region_selected) &
+    (df_2021['Recipient_Region'] == recipient_region_selected) &
+    (df_2021['Aid type'] == aid_type_selected)
+]
+
+
+st.subheader(f"Flows from {donor_region_selected} to {recipient_region_selected} for {aid_type_selected}")
+
+# Group by Donor and Recipient
+donor_group = filtered_df.groupby('Donor')['Value'].sum().reset_index().sort_values(by='Value', ascending=False)
+recipient_group = filtered_df.groupby('Recipient')['Value'].sum().reset_index().sort_values(by='Value', ascending=False)
+
+col1, col2 = st.columns(2)
+with col1:
+    fig_donor = px.bar(
+        donor_group.head(10),
+        x='Value',
+        y='Donor',
+        orientation='h',
+        title=f'Top Donors from {donor_region_selected}',
+        labels={'Value': 'Total Aid Value', 'Donor': 'Donor'}
+    )
+    st.plotly_chart(fig_donor, use_container_width=True)
+with col2:
+    fig_recipient = px.bar(
+        recipient_group.head(10),
+        x='Value',
+        y='Recipient',
+        orientation='h',
+        title=f'Top Recipients from {recipient_region_selected}',
+        labels={'Value': 'Total Aid Value', 'Recipient': 'Recipient'}
+    )
+    st.plotly_chart(fig_recipient, use_container_width=True)
 # fig, ax = plt.subplots()
 # ax.plot(...)
 # st.pyplot(fig)
