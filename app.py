@@ -32,7 +32,7 @@ def load_data():
     print("countries data loaded")
     correspondance = pd.read_csv('./data/Correspondences_DAC2a.csv')
     print('correspondance data loaded')
-    poverty = pd.read_csv('data/oda_poverty_world.csv')
+    poverty = pd.read_parquet('data/oda_poverty_world.parquet')
     return oda, countries, correspondance, poverty
 
 oda, countries, correspondance, poverty = load_data()
@@ -208,6 +208,130 @@ world_aid_type = alt.Chart(oda_agg).mark_line().encode(
     recipient_dropdown
 )
 
+# -- Chart 5: ODA Top Donors and Recipients --
+
+# Prepare Donor Data
+donor_data = poverty[
+    (poverty['Year'] >= 1990) & 
+    (poverty['Year'] <= 2022) &
+    (poverty['Region'].notna())
+].groupby(['Year', 'Country Name'], as_index=False)['Net ODA provided, total (constant 2021 US$)'].sum()
+
+# Select top donors overall
+top_donors = donor_data.groupby('Country Name')['Net ODA provided, total (constant 2021 US$)'].sum().nlargest(5).index.tolist()
+donor_data = donor_data[donor_data['Country Name'].isin(top_donors)]
+donor_data['Value_B'] = donor_data['Net ODA provided, total (constant 2021 US$)'] / 1_000_000_000
+
+# Prepare Recipient Data
+recipient_data = poverty[
+    (poverty['Year'] >= 1990) & 
+    (poverty['Year'] <= 2022) &
+    (poverty['Region'].notna())
+].groupby(['Year', 'Country Name'], as_index=False)['Net official development assistance received (constant 2021 US$)'].sum()
+
+# Select top recipients overall
+top_recipients = recipient_data.groupby('Country Name')['Net official development assistance received (constant 2021 US$)'].sum().nlargest(5).index.tolist()
+recipient_data = recipient_data[recipient_data['Country Name'].isin(top_recipients)]
+recipient_data['Value_B'] = recipient_data['Net official development assistance received (constant 2021 US$)'] / 1_000_000_000
+
+# Donor Chart
+donor_chart = alt.Chart(donor_data).mark_line().encode(
+    x='Year:O',
+    y=alt.Y('Value_B:Q', title='ODA Provided (Billion US$)'),
+    color=alt.Color('Country Name:N', title='Donor Country'),
+    tooltip=['Year:O', 'Country Name:N', alt.Tooltip('Value_B:Q', format='.2f', title='Value (Billion US$)')]
+).properties(
+    width=300,
+    height=300,
+    title='Top Donors of ODA Over Time'
+).interactive()
+
+# Recipient Chart
+recipient_chart = alt.Chart(recipient_data).mark_line().encode(
+    x='Year:O',
+    y=alt.Y('Value_B:Q', title='ODA Received (Billion US$)'),
+    color=alt.Color('Country Name:N', title='Recipient Country'),
+    tooltip=['Year:O', 'Country Name:N', alt.Tooltip('Value_B:Q', format='.2f', title='Value (Billion US$)')]
+).properties(
+    width=300,
+    height=300,
+    title='Top Recipients of ODA Over Time'
+).interactive()
+
+# Combine Charts Side by Side
+(donor_chart | recipient_chart)
+
+# -- Chart 6: top donors and recipients over year
+color_scale = alt.Scale(
+    domain=['Low income', 'Lower middle income', 'Upper middle income', 'High income'],
+    range=['#d62728', '#f7b6d2', '#76c7f0', '#1f77b4']
+)
+
+# Prepare the data
+year_selection = alt.selection_point(
+    name='Select',
+    fields=['Year'],
+    bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
+    value=[{'Year': 2022}]
+)
+
+# Top Donors
+top_donors = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)["Net ODA provided, total (constant 2021 US$)"].sum()
+
+top_donor_chart = alt.Chart(top_donors).transform_filter(
+    year_selection
+).transform_window(
+    rank='rank(datum["Net ODA provided, total (constant 2021 US$)"])',
+    sort=[alt.SortField("Net ODA provided, total (constant 2021 US$)", order='descending')]
+).transform_filter(
+    (alt.datum.rank <= 10)
+).mark_bar().encode(
+    x=alt.X('Net ODA provided, total (constant 2021 US$):Q', title='ODA Provided (2021 US$)', axis=alt.Axis(format=".2~s", labelExpr="replace(datum.label, 'G', 'B')")
+),
+    y=alt.Y('Country Name:N', sort='-x', title=None),
+    tooltip=['Country Name:N', 'Net ODA provided, total (constant 2021 US$):Q'],
+    color=alt.Color('Income Group:N', scale=color_scale, legend=alt.Legend(title="Income Group"))
+).properties(
+    title='Top 10 Donor Countries',
+    width=300,
+    height=300
+)
+
+# Top Recipients
+top_recipients = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)["Net official development assistance received (constant 2021 US$)"].sum()
+
+top_recipient_chart = alt.Chart(top_recipients).transform_filter(
+    year_selection
+).transform_window(
+    rank='rank(datum["Net official development assistance received (constant 2021 US$)"])',
+    sort=[alt.SortField("Net official development assistance received (constant 2021 US$)", order='descending')]
+).transform_filter(
+    (alt.datum.rank <= 10)
+).mark_bar().encode(
+    x=alt.X('Net official development assistance received (constant 2021 US$):Q', title='ODA Received (2021 US$)', axis=alt.Axis(format=".2~s", labelExpr="replace(datum.label, 'G', 'B')")
+),
+    y=alt.Y('Country Name:N', sort='-x', title=None),
+    tooltip=['Country Name:N', 'Net official development assistance received (constant 2021 US$):Q'],
+    color=alt.Color('Income Group:N',  scale=color_scale, legend=alt.Legend(title="Income Group"))
+).properties(
+    title='Top 10 Recipient Countries',
+    width=300,
+    height=300
+)
+
+# Combine the charts and add the slider
+top_donor_recipient_chart = (top_donor_chart | top_recipient_chart).add_params(
+    year_selection
+).resolve_scale(
+    color='shared'
+).configure_title(
+    fontSize=16,
+).configure_axis(
+    labelFontSize=12,
+    titleFontSize=14
+).properties(title='Top 10 Donors and Recipients of Official Development Assistance (ODA) over years')
+
+
 #################################################
 ## ------------ Streamlit Display ------------ ##
 #################################################
@@ -318,3 +442,5 @@ End **reflection**
    - "How might future aid and private flows evolve as global challenges like climate change and pandemics shape development priorities?"
 '''
 )
+
+st.altair_chart(top_donor_recipient_chart, use_container_width=True)
