@@ -297,6 +297,8 @@ top_donor_chart = alt.Chart(top_donors).transform_filter(
     height=300
 )
 
+recipient_selection = alt.selection_point(fields=['Country Name'], value=[{"Country Name":'Iraq'}])
+
 # Top Recipients
 top_recipients = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)["Net official development assistance received (constant 2021 US$)"].sum()
 
@@ -331,6 +333,114 @@ top_donor_recipient_chart = (top_donor_chart | top_recipient_chart).add_params(
     titleFontSize=14
 ).properties(title='Top 10 Donors and Recipients of Official Development Assistance (ODA) over years')
 
+poverty["Net ODA provided, total (% of GNI)"] = poverty["Net ODA provided, total (% of GNI)"].fillna(poverty["Net ODA provided, total (current US$)"] / poverty["GNI (current US$)"] * 100)
+
+top_donors_bis = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)["Net ODA provided, total (% of GNI)"].sum()
+
+st.table(top_donors_bis.sort_values(by='Net ODA provided, total (% of GNI)', ascending=False).head(5))
+
+top_donor_chart_bis = alt.Chart(top_donors_bis).transform_filter(
+    year_selection
+).transform_window(
+    rank='rank(datum["Net ODA provided, total (% of GNI)"])',
+    sort=[alt.SortField("Net ODA provided, total (% of GNI)", order='descending')]
+).transform_filter(
+    (alt.datum.rank <= 10)
+).mark_bar().encode(
+    x=alt.X('Net ODA provided, total (% of GNI):Q', title='ODA Provided (2021 US$)'),
+    y=alt.Y('Country Name:N', sort='-x', title=None),
+    tooltip=['Country Name:N', 'Net ODA provided, total (% of GNI):Q'],
+    color=alt.Color('Income Group:N', scale=color_scale, legend=alt.Legend(title="Income Group"))
+).properties(
+    title='Top 10 Donor Countries',
+    width=300,
+    height=300
+)
+
+# recipient_selection = alt.selection_point(fields=['Country Name'], value=[{"Country Name":'Iraq'}])
+
+# Top Recipients
+top_recipients_bis = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)['Net ODA received per capita (current US$)'].sum()
+
+top_recipient_chart_bis = alt.Chart(top_recipients_bis).transform_filter(
+    year_selection
+).transform_window(
+    rank='rank(datum["Net ODA received per capita (current US$)"])',
+    sort=[alt.SortField("Net ODA received per capita (current US$)", order='descending')]
+).transform_filter(
+    (alt.datum.rank <= 10)
+).mark_bar().encode(
+    x=alt.X('Net ODA received per capita (current US$)', title='ODA Received (2021 US$)', axis=alt.Axis(format=".2~s", labelExpr="replace(datum.label, 'G', 'B')")
+),
+    y=alt.Y('Country Name:N', sort='-x', title=None),
+    tooltip=['Country Name:N', 'Net ODA received per capita (current US$)'],
+    color=alt.Color('Income Group:N',  scale=color_scale, legend=alt.Legend(title="Income Group"))
+).properties(
+    title='Top 10 Recipient Countries',
+    width=300,
+    height=300
+)
+
+# Combine the charts and add the slider
+top_donor_recipient_chart_bis = (top_donor_chart_bis | top_recipient_chart_bis).add_params(
+    year_selection
+).resolve_scale(
+    color='shared'
+).configure_title(
+    fontSize=16,
+).configure_axis(
+    labelFontSize=12,
+    titleFontSize=14
+).properties(title='Top 10 Donors and Recipients of Official Development Assistance (ODA) over years')
+
+# year_selection = alt.selection_point(
+#     name='Select',
+#     fields=['Year'],
+#     bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
+#     value=[{'Year': 2022}]
+# )
+
+
+# poverty_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_circle(size=60).encode(
+#     x=alt.X('Net ODA received per capita (current US$):Q', title='ODA per capita (current US$)'),
+#     y=alt.Y('Poverty headcount ratio at $2.15 a day:Q', title='Poverty Headcount Ratio at $2.15 a day'),
+#     color='Income Group:N',  # Color by Income Group
+#     tooltip=['Country Name:N', 'Year:O', 'Net ODA received per capita (current US$):Q', 'Poverty headcount ratio at $2.15 a day:Q']
+# ).add_params(year_selection).transform_filter(
+#     year_selection  # Apply the year selection filter
+# ).properties(
+#     title="Poverty Headcount Ratio vs ODA per Capita"
+# ).interactive()
+
+
+# # Melt the data for the selected indicators
+# indicators = [
+#     # "GDP per capita (current US$)",
+#     # "Adjusted net national income per capita (constant 2015 US$)",
+#     # "Net ODA received per capita (current US$)",
+#     "Net ODA received (% of central government expense)",
+#     'Poverty headcount ratio at $2.15 a day'
+# ]
+
+# poverty_melted = poverty[poverty.Year >= 1990].melt(
+#     id_vars=['Country Name', 'Year'],
+#     value_vars=indicators,
+#     var_name='Indicator',
+#     value_name='Value'
+# )
+
+# line_chart = alt.Chart(poverty_melted).add_params(recipient_selection).transform_filter(
+#     recipient_selection
+# ).mark_line(point=True).encode(
+#     x=alt.X('Year:O', title='Year'),
+#     y=alt.Y('Value:Q', title='Value', scale=alt.Scale(zero=False)),
+#     color=alt.Color('Indicator:N', title='Indicator'),
+#     tooltip=['Country Name:N', 'Year:O', 'Indicator:N', 'Value:Q']
+# ).properties(
+#     width=500,
+#     height=300,
+#     title='Evolution of Indicators for Selected Country'
+# )
 
 #################################################
 ## ------------ Streamlit Display ------------ ##
@@ -442,5 +552,14 @@ End **reflection**
    - "How might future aid and private flows evolve as global challenges like climate change and pandemics shape development priorities?"
 '''
 )
+view_option = st.radio(
+    "",
+    ('Absolute', 'Relative'),
+    index=0,
+    horizontal=True
+)
 
-st.altair_chart(top_donor_recipient_chart, use_container_width=True)
+if view_option == 'Absolute':
+    st.altair_chart(top_donor_recipient_chart, use_container_width=True)
+elif view_option == 'Relative':
+    st.altair_chart(top_donor_recipient_chart_bis, use_container_width=True)
