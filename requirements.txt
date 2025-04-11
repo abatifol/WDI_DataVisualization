@@ -1,7 +1,5 @@
-streamlit
 altair
 pandas
-seaborn
 numpy
 matplotlib
 plotly
