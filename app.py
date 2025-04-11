@@ -96,7 +96,7 @@ chart1 = (popTotal + poor + legend_points + legend_text).properties(
         fontWeight='bold'  
     ),
     width=500,
-    height=400
+    height=500
 )
 
 
@@ -115,7 +115,7 @@ df_pov_regions = temp.merge(df_pov_regions[['Region']], left_index=True, right_i
 
 chart2 = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_regions.Year <= 2022)]).mark_area(opacity=0.7).encode(
     x='Year:O',
-    y=alt.Y('Number of Poor (in million):Q', axis=alt.Axis(title='Millions of People')),
+    y=alt.Y('Number of Poor (in million):Q', axis=alt.Axis(title='Millions of extreme poor')),
     color=alt.Color(
         'Region:N',
         scale=alt.Scale(scheme='turbo'),
@@ -210,56 +210,6 @@ world_aid_type = alt.Chart(oda_agg).mark_line().encode(
 
 # -- Chart 5: ODA Top Donors and Recipients --
 
-# Prepare Donor Data
-donor_data = poverty[
-    (poverty['Year'] >= 1990) & 
-    (poverty['Year'] <= 2022) &
-    (poverty['Region'].notna())
-].groupby(['Year', 'Country Name'], as_index=False)['Net ODA provided, total (constant 2021 US$)'].sum()
-
-# Select top donors overall
-top_donors = donor_data.groupby('Country Name')['Net ODA provided, total (constant 2021 US$)'].sum().nlargest(5).index.tolist()
-donor_data = donor_data[donor_data['Country Name'].isin(top_donors)]
-donor_data['Value_B'] = donor_data['Net ODA provided, total (constant 2021 US$)'] / 1_000_000_000
-
-# Prepare Recipient Data
-recipient_data = poverty[
-    (poverty['Year'] >= 1990) & 
-    (poverty['Year'] <= 2022) &
-    (poverty['Region'].notna())
-].groupby(['Year', 'Country Name'], as_index=False)['Net official development assistance received (constant 2021 US$)'].sum()
-
-# Select top recipients overall
-top_recipients = recipient_data.groupby('Country Name')['Net official development assistance received (constant 2021 US$)'].sum().nlargest(5).index.tolist()
-recipient_data = recipient_data[recipient_data['Country Name'].isin(top_recipients)]
-recipient_data['Value_B'] = recipient_data['Net official development assistance received (constant 2021 US$)'] / 1_000_000_000
-
-# Donor Chart
-donor_chart = alt.Chart(donor_data).mark_line().encode(
-    x='Year:O',
-    y=alt.Y('Value_B:Q', title='ODA Provided (Billion US$)'),
-    color=alt.Color('Country Name:N', title='Donor Country'),
-    tooltip=['Year:O', 'Country Name:N', alt.Tooltip('Value_B:Q', format='.2f', title='Value (Billion US$)')]
-).properties(
-    width=300,
-    height=300,
-    title='Top Donors of ODA Over Time'
-).interactive()
-
-# Recipient Chart
-recipient_chart = alt.Chart(recipient_data).mark_line().encode(
-    x='Year:O',
-    y=alt.Y('Value_B:Q', title='ODA Received (Billion US$)'),
-    color=alt.Color('Country Name:N', title='Recipient Country'),
-    tooltip=['Year:O', 'Country Name:N', alt.Tooltip('Value_B:Q', format='.2f', title='Value (Billion US$)')]
-).properties(
-    width=300,
-    height=300,
-    title='Top Recipients of ODA Over Time'
-).interactive()
-
-# Combine Charts Side by Side
-(donor_chart | recipient_chart)
 
 # -- Chart 6: top donors and recipients over year
 color_scale = alt.Scale(
@@ -337,8 +287,6 @@ poverty["Net ODA provided, total (% of GNI)"] = poverty["Net ODA provided, total
 
 top_donors_bis = poverty[poverty['Region'].notna()].groupby(['Country Name', 'Year', 'Income Group'], as_index=False)["Net ODA provided, total (% of GNI)"].sum()
 
-st.table(top_donors_bis.sort_values(by='Net ODA provided, total (% of GNI)', ascending=False).head(5))
-
 top_donor_chart_bis = alt.Chart(top_donors_bis).transform_filter(
     year_selection
 ).transform_window(
@@ -347,16 +295,34 @@ top_donor_chart_bis = alt.Chart(top_donors_bis).transform_filter(
 ).transform_filter(
     (alt.datum.rank <= 10)
 ).mark_bar().encode(
-    x=alt.X('Net ODA provided, total (% of GNI):Q', title='ODA Provided (2021 US$)'),
+    x=alt.X('Net ODA provided, total (% of GNI):Q', title='ODA Provided (% of GNI)'),
     y=alt.Y('Country Name:N', sort='-x', title=None),
     tooltip=['Country Name:N', 'Net ODA provided, total (% of GNI):Q'],
     color=alt.Color('Income Group:N', scale=color_scale, legend=alt.Legend(title="Income Group"))
 ).properties(
-    title='Top 10 Donor Countries',
+    title='Top 10 Donor Countries (for ODA as % of GNI)',
     width=300,
     height=300
 )
+# Create vertical rule chart at x = 0.7
+target_line = alt.Chart(pd.DataFrame({'x': [0.7]})).mark_rule(color='red', strokeWidth=2).encode(
+    x=alt.X('x:Q')
+)
 
+# Create text label chart positioned near the vertical line
+target_text = alt.Chart(pd.DataFrame({'x': [0.7], 'label': ['target 0.7% GNI']})).mark_text(
+    fontSize=14,
+    align='left',
+    dx=5,  # horizontal offset
+    dy=-5,  # vertical offset; adjust as needed
+    color='red'
+).encode(
+    x=alt.X('x:Q'),
+    text='label:N'
+)
+
+# Combine the original chart with the target vertical rule and the label
+final_donor_chart_bis= top_donor_chart_bis + target_line + target_text
 # recipient_selection = alt.selection_point(fields=['Country Name'], value=[{"Country Name":'Iraq'}])
 
 # Top Recipients
@@ -370,7 +336,7 @@ top_recipient_chart_bis = alt.Chart(top_recipients_bis).transform_filter(
 ).transform_filter(
     (alt.datum.rank <= 10)
 ).mark_bar().encode(
-    x=alt.X('Net ODA received per capita (current US$)', title='ODA Received (2021 US$)', axis=alt.Axis(format=".2~s", labelExpr="replace(datum.label, 'G', 'B')")
+    x=alt.X('Net ODA received per capita (current US$)', title='ODA Received per capita', axis=alt.Axis(format=".2~s", labelExpr="replace(datum.label, 'G', 'B')")
 ),
     y=alt.Y('Country Name:N', sort='-x', title=None),
     tooltip=['Country Name:N', 'Net ODA received per capita (current US$)'],
@@ -382,7 +348,7 @@ top_recipient_chart_bis = alt.Chart(top_recipients_bis).transform_filter(
 )
 
 # Combine the charts and add the slider
-top_donor_recipient_chart_bis = (top_donor_chart_bis | top_recipient_chart_bis).add_params(
+top_donor_recipient_chart_bis = (final_donor_chart_bis | top_recipient_chart_bis).add_params(
     year_selection
 ).resolve_scale(
     color='shared'
@@ -393,54 +359,89 @@ top_donor_recipient_chart_bis = (top_donor_chart_bis | top_recipient_chart_bis).
     titleFontSize=14
 ).properties(title='Top 10 Donors and Recipients of Official Development Assistance (ODA) over years')
 
-# year_selection = alt.selection_point(
-#     name='Select',
-#     fields=['Year'],
-#     bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
-#     value=[{'Year': 2022}]
-# )
 
+# --- Chart 7: ODA Financial Flows Between Regions ---
 
-# poverty_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_circle(size=60).encode(
-#     x=alt.X('Net ODA received per capita (current US$):Q', title='ODA per capita (current US$)'),
-#     y=alt.Y('Poverty headcount ratio at $2.15 a day:Q', title='Poverty Headcount Ratio at $2.15 a day'),
-#     color='Income Group:N',  # Color by Income Group
-#     tooltip=['Country Name:N', 'Year:O', 'Net ODA received per capita (current US$):Q', 'Poverty headcount ratio at $2.15 a day:Q']
-# ).add_params(year_selection).transform_filter(
-#     year_selection  # Apply the year selection filter
-# ).properties(
-#     title="Poverty Headcount Ratio vs ODA per Capita"
-# ).interactive()
+regions = ['Europe & Central Asia', 'Middle East & North Africa', 'Sub-Saharan Africa',
+ 'Latin America & Caribbean', 'South Asia','North America', 'East Asia & Pacific']
 
+# Sample code for processing the data (you already have this part in your script)
+df_regions = oda[
+    (oda['Recipient_Region'].isin(regions)) &
+    (oda['Donor_Region'].isin(regions)) &
+    (oda['Aid type'] == 'Memo: ODA Total, Gross disbursements')
+]
 
-# # Melt the data for the selected indicators
-# indicators = [
-#     # "GDP per capita (current US$)",
-#     # "Adjusted net national income per capita (constant 2015 US$)",
-#     # "Net ODA received per capita (current US$)",
-#     "Net ODA received (% of central government expense)",
-#     'Poverty headcount ratio at $2.15 a day'
-# ]
+df_regions['Value_k'] = df_regions['Value'] / 1000  # Dividing by 1000 for easier plotting
+df_regions_1990 = df_regions[df_regions['Year'] == 1990]
+df_regions_2021 = df_regions[df_regions['Year'] == 2021]
 
-# poverty_melted = poverty[poverty.Year >= 1990].melt(
-#     id_vars=['Country Name', 'Year'],
-#     value_vars=indicators,
-#     var_name='Indicator',
-#     value_name='Value'
-# )
+grouped_1990 = df_regions_1990.groupby(['Donor_Region', 'Recipient_Region'], as_index=False)['Value_k'].sum()
+flow_matrix_1990 = grouped_1990.pivot(index='Donor_Region', columns='Recipient_Region', values='Value_k').fillna(0)
+grouped_2021 = df_regions_2021.groupby(['Donor_Region', 'Recipient_Region'], as_index=False)['Value_k'].sum()
+flow_matrix_2021 = grouped_2021.pivot(index='Donor_Region', columns='Recipient_Region', values='Value_k').fillna(0)
+# Define colors
+colors = {
+    'Europe & Central Asia': '#5778a4',
+    'Middle East & North Africa': '#ff7f00',
+    'Sub-Saharan Africa': '#ffd60a',
+    'Latin America & Caribbean': '#e78ac3',
+    'South Asia': '#f94144',
+    'East Asia & Pacific': '#7400b8',
+    'North America': '#06d6a0',
+}
 
-# line_chart = alt.Chart(poverty_melted).add_params(recipient_selection).transform_filter(
-#     recipient_selection
-# ).mark_line(point=True).encode(
-#     x=alt.X('Year:O', title='Year'),
-#     y=alt.Y('Value:Q', title='Value', scale=alt.Scale(zero=False)),
-#     color=alt.Color('Indicator:N', title='Indicator'),
-#     tooltip=['Country Name:N', 'Year:O', 'Indicator:N', 'Value:Q']
-# ).properties(
-#     width=500,
-#     height=300,
-#     title='Evolution of Indicators for Selected Country'
-# )
+# Create the Circos plot
+circos_1990 = Circos.chord_diagram(
+    flow_matrix_1990,
+    # cmap="viridis",  # Use a colormap suitable for financial flows
+    cmap=colors,
+    space=2,
+    ticks_interval=10,
+    label_kws=dict(
+        size=12,
+        r=110,
+        ),
+    link_kws=dict(
+        ec="black",
+        lw=0.3,
+        direction=1,
+        alpha=0.7,
+        # ribbon=True
+    ),
+    ticks_kws=dict(
+        label_orientation="horizontal"
+    )
+)
+
+circos_2021 = Circos.chord_diagram(
+    flow_matrix_2021,
+    # cmap="viridis",  # Use a colormap suitable for financial flows
+    cmap=colors,
+    space=2,
+    ticks_interval=10,
+    label_kws=dict(
+        size=12,
+        r=110,
+        ),
+    link_kws=dict(
+        ec="black",
+        lw=0.3,
+        direction=1,
+        alpha=0.7,
+        # ribbon=True
+    ),
+    ticks_kws=dict(
+        label_orientation="horizontal"
+    )
+)
+
+# Add title to the Circos plot
+circos_1990.text(f"ODA Financial Flows Between Regions in 1990", deg=0, r=150, size=14)
+fig_1990 = circos_1990.plotfig()
+circos_2021.text(f"ODA Financial Flows Between Regions in 2021", deg=0, r=150, size=14)
+fig_2021 = circos_2021.plotfig()
+
 
 #################################################
 ## ------------ Streamlit Display ------------ ##
@@ -476,12 +477,16 @@ while Sub-Saharan Africa still faces significant challenges.
 """)
 col1, col2 = st.columns(2)
 with col1:
-    st.altair_chart(chart1, use_container_width=True)
+    st.altair_chart(chart1)
     st.markdown("**Source:** World Bank,World Development indicator Database (WDI)")
 with col2:
-    st.altair_chart(chart2, use_container_width=True)
+    st.altair_chart(chart2)
 
 st.markdown("**Note:** The number of extreme poor is calculated using the poverty headcount ratio at $2.15 a day (2017 PPP) and the total population.")
+
+
+# --- Chart x: ODA fLows
+
 
 #############################################
 # --- Part 2: GDP and Poverty Reduction --- #
@@ -497,39 +502,29 @@ st.markdown("**Note:** The number of extreme poor is calculated using the povert
 
 st.markdown(""" Economic growth alone doesn't explain everything. Let's dig deeper into the role of international financial flows,
 such as aid, investments, and remittances, in shaping poverty outcomes worldwide.""")
-st.header("Part 2: Understanding financial flows and their impact on poverty reduction")
+st.header("Part 2: Global Partnership and cooperations to end poverty")
 
 st.subheader("Section 1: Global Financial Flows — The Big Picture")
-st.markdown("""To understand how countries combat poverty, it is interesting to look at the financial
-             lifelines flowing across borders like:
-            - **Net Official Development Assistance (ODA):** Grants or concessional loans from government to support development.
-            - **Foreign Direct Investment (FDI):** Cross-border investments, indicating private sector engagement.
-            - **Personal Remittances:** Funds sent by individuals (often migrant workers) to their home countries.
+st.markdown(
+"""
+To understand how countries combat poverty, it is interesting to look at the financiallifelines flowing across borders like:           
+- **Net Official Development Assistance (ODA):** Grants or concessional loans from government to support development.
+- **Foreign Direct Investment (FDI):** Cross-border investments, indicating private sector engagement.
+- **Personal Remittances:** Funds sent by individuals (often migrant workers) to their home countries.
 .""")
 
-# How have different financial flows evolved over time?
-# Are we seeing a growing reliance on private flows (remittances, FDI) versus official aid?
-# Does global aid increase in times of crisis?
-
-st.altair_chart(world_financial_aid, use_container_width=True)
+st.altair_chart(world_financial_aid)
 st.markdown(
 '''
 ### Key Observations:
 - **Foreign Direct Investment (FDI)** has become the **dominant source of external finance** over the years. Unlike aid, FDI often targets infrastructure, industries, and services that stimulate long-term economic growth and employment creation.
-- **Remittances** have experienced a **remarkable surge**, outpacing the growth of traditional aid flows.  
-  This growth reflects both the increase in migration and the resilience of remittance flows during crises.  
-  For example, during economic downturns or disasters, remittances tend to remain stable or even increase, as migrants support their families back home.
+- **Remittances** have experienced a **remarkable surge**, outpacing the growth of traditional aid flows.  This growth reflects both the increase in migration and the resilience of remittance flows during crises.
 - **Official Development Assistance (ODA)** remains vital, especially for countries with limited access to private finance, but its relative share has decreased compared to private flows.
 
-*Overall, this shift highlights how global development financing has diversified beyond aid, with private sector flows and diaspora remittances playing increasingly important roles.*
 
----
-
-# Aid Types Evolution by Region (1990–2022)
+### Aid Types Evolution by Region (1990–2022)
 ''')
-
-
-st.altair_chart(world_aid_type, use_container_width=True)
+st.altair_chart(world_aid_type)
 
 st.markdown('''
 
@@ -537,29 +532,82 @@ A notable trend emerges when observing the evolution of aid types: **Imputed Mul
 
 This growth reflects the **increasing importance of multilateral institutions** in the global development landscape. Countries have progressively channeled more resources through organizations like the **United Nations**, **World Bank**, and **regional development banks**, recognizing the need for coordinated, impartial, and large-scale responses to complex global challenges.
 
-### Regional Disparities & Notable Events:
-
+#### Regional Disparities & Notable Events:
 - **Caribbean & Central America (2010):**  
   A dramatic spike in **Humanitarian Aid** corresponds with the devastating earthquake in **Haiti** in January 2010.  
-  The international community responded with unprecedented humanitarian assistance to support emergency relief and reconstruction efforts.
-            
-- **Middle East:**  
-  Periodic increases in **Humanitarian Aid** can be linked to conflicts and refugee crises in the region, such as the Syrian conflict starting in 2011.
+  The international community responded with unprecedented humanitarian assistance to support emergency relief and reconstruction efforts.    
+- **Middle East:** Periodic increases in **Humanitarian Aid** can be linked to conflicts and refugee crises in the region, such as the Syrian conflict starting in 2011.
+- **Europe**: Surge in aid flows in 2022 to support Ukraine in the conflict.
 
 *This chart emphasizes how aid flows respond dynamically to regional crises, geopolitical events, and development priorities.*
-
-End **reflection**
-   - "How might future aid and private flows evolve as global challenges like climate change and pandemics shape development priorities?"
 '''
 )
-view_option = st.radio(
-    "",
-    ('Absolute', 'Relative'),
-    index=0,
-    horizontal=True
+
+st.markdown("In this section, we dive deeper into the distribution of Official Development Assistance (ODA).")
+tab1, tab2 = st.tabs(["Absolute ODA", "Relative ODA"])
+tab1.altair_chart(top_donor_recipient_chart, use_container_width=True)
+tab2.altair_chart(top_donor_recipient_chart_bis, use_container_width=True)
+
+st.markdown("Even though official aid has grown over the years, it still falls significantly short of the 0.7% of GNI benchmark expected from developed nations to support less wealthy countries, as outlined in SDG target 17.2. Only 4 countries achieved this goal in 2022 ")
+
+st.subheader("Section 2: Bilateral ODA Flows Between Regions")
+
+col1, col2 = st.columns(2)
+with col1:
+    st.pyplot(fig_1990)
+with col2:
+    st.pyplot(fig_2021)
+
+
+year_selection2 = alt.selection_point(
+    name='Select year',
+    fields=['Year'],
+    bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
+    value=[{'Year': 2022}]
 )
 
-if view_option == 'Absolute':
-    st.altair_chart(top_donor_recipient_chart, use_container_width=True)
-elif view_option == 'Relative':
-    st.altair_chart(top_donor_recipient_chart_bis, use_container_width=True)
+brush = alt.selection_interval()
+
+poverty['poverty headcount ratio']= poverty['Poverty headcount ratio at $2.15 a day']
+x_domain = [1, 1000]  # Adjust these values as needed
+y_domain = [0, 100]   # Adjust these values as needed
+
+scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().encode(
+    x=alt.X('Net ODA received per capita (current US$):Q',
+            scale=alt.Scale(domain=x_domain, type='log'),
+            axis=alt.Axis(title='Net ODA per Capita (US$)')),
+    y=alt.Y('poverty headcount ratio:Q',
+            scale=alt.Scale(domain=y_domain),
+            axis=alt.Axis(title='Poverty Headcount Ratio (%)')),
+    color=alt.Color('Income Group:N',
+                    scale=color_scale,
+                    legend=alt.Legend(title="Income Group")),
+    tooltip=['Country Name:N', 'Year:O',
+             'Net ODA received per capita (current US$):Q',
+             'poverty headcount ratio:Q']
+).add_params(
+    year_selection2,
+    brush
+).transform_filter(
+    year_selection2  # Apply the year selection filter
+).properties(
+    height=400,
+    width=400,
+    title="Poverty Headcount Ratio at $2.15/day vs ODA per Capita"
+)
+
+bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().encode(
+    y='Country Name:N',
+    x="Net official development assistance received (constant 2021 US$):Q",
+    color=alt.Color('Income Group:N',
+                    scale=color_scale,
+                    legend=alt.Legend(title="Income Group")),
+    tooltip=['Country Name:N', 'Year:O','Net official development assistance received (constant 2021 US$):Q']
+).add_params(year_selection2).transform_filter(brush, year_selection2).properties(
+    height=500,
+    width=300,
+)
+
+col1, col2 = st.columns(2)
+st.altair_chart(scatter_poverty_oda | bar_oda_plot)
+

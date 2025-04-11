@@ -6,4 +6,7 @@ numpy
 matplotlib
 plotly
 pycirclize
-streamlit-shadcn-ui
+streamlit-shadcn-
+mplcursors
+holoviews
+bokeh
