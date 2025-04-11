@@ -1,0 +1,2401 @@
+Year,Aid type,Recipient,Value,Value_k
+1990,Development Food Aid,"Africa, Total",14302.658965,14.302658965000001
+1990,Development Food Aid,"All Recipients, Total",39127.640926,39.127640926
+1990,Development Food Aid,"Asia, Total",7055.177002,7.055177002000001
+1990,Development Food Aid,"Caribbean & Central America, Total",2636.813797,2.636813797
+1990,Development Food Aid,"Developing Countries, Total",29792.647757,29.792647756999997
+1990,Development Food Aid,"Eastern Africa, Total",5783.340566,5.783340566
+1990,Development Food Aid,"Europe, Total",37.588746,0.037588746
+1990,Development Food Aid,"Fragile states, Total",12600.57866,12.60057866
+1990,Development Food Aid,"LDCs, Total",10173.896036,10.173896036
+1990,Development Food Aid,"LMICs, Total",11380.464663,11.380464663000001
+1990,Development Food Aid,"Middle East, Total",834.506968,0.834506968
+1990,Development Food Aid,"North of Sahara, Total",5587.812564,5.587812564
+1990,Development Food Aid,"Oceania, Total",0.826839,0.000826839
+1990,Development Food Aid,"South & Central Asia, Total",4801.952968,4.801952967999999
+1990,Development Food Aid,"South America, Total",1990.673334,1.990673334
+1990,Development Food Aid,"South of Sahara, Total",8626.155762,8.626155762
+1990,Development Food Aid,"Southern Africa, Total",31.331679,0.031331679
+1990,Development Food Aid,"Western Africa, Total",1903.890945,1.9038909450000001
+1990,Humanitarian Aid,"Africa, Total",2219.26432,2.21926432
+1990,Humanitarian Aid,"All Recipients, Total",3546.806439,3.546806439
+1990,Humanitarian Aid,"Asia, Total",1561.0914360000002,1.561091436
+1990,Humanitarian Aid,"Caribbean & Central America, Total",352.799348,0.352799348
+1990,Humanitarian Aid,"Developing Countries, Total",4729.075252,4.7290752519999995
+1990,Humanitarian Aid,"Eastern Africa, Total",1761.559456,1.7615594559999999
+1990,Humanitarian Aid,"Europe, Total",193.86700000000002,0.193867
+1990,Humanitarian Aid,"Fragile states, Total",2590.8512,2.5908512
+1990,Humanitarian Aid,"LDCs, Total",2006.2035720000001,2.006203572
+1990,Humanitarian Aid,"LMICs, Total",1402.666852,1.402666852
+1990,Humanitarian Aid,"Middle East, Total",169.189332,0.169189332
+1990,Humanitarian Aid,"North of Sahara, Total",65.50246800000001,0.06550246800000001
+1990,Humanitarian Aid,"Oceania, Total",13.100496,0.013100496
+1990,Humanitarian Aid,"South & Central Asia, Total",598.763668,0.598763668
+1990,Humanitarian Aid,"South America, Total",16.248672,0.016248672
+1990,Humanitarian Aid,"South of Sahara, Total",2150.715224,2.150715224
+1990,Humanitarian Aid,"Southern Africa, Total",36.965732,0.036965732
+1990,Humanitarian Aid,"Western Africa, Total",262.82232,0.26282232
+1990,Imputed Multilateral ODA,"Africa, Total",64144.831074,64.144831074
+1990,Imputed Multilateral ODA,"All Recipients, Total",106285.773447,106.285773447
+1990,Imputed Multilateral ODA,"Asia, Total",49492.751145999995,49.492751145999996
+1990,Imputed Multilateral ODA,"Caribbean & Central America, Total",3887.80868,3.88780868
+1990,Imputed Multilateral ODA,"Developing Countries, Total",135817.843979,135.817843979
+1990,Imputed Multilateral ODA,"Eastern Africa, Total",31785.398046,31.785398045999997
+1990,Imputed Multilateral ODA,"Europe, Total",548.455741,0.5484557409999999
+1990,Imputed Multilateral ODA,"Fragile states, Total",69599.660497,69.599660497
+1990,Imputed Multilateral ODA,"LDCs, Total",63309.236012,63.309236012
+1990,Imputed Multilateral ODA,"LMICs, Total",36986.710198,36.986710198
+1990,Imputed Multilateral ODA,"Middle East, Total",5031.502716,5.031502716
+1990,Imputed Multilateral ODA,"North of Sahara, Total",2386.290432,2.3862904319999996
+1990,Imputed Multilateral ODA,"Northern America, Total",0.53214,0.00053214
+1990,Imputed Multilateral ODA,"Oceania, Total",1184.344172,1.184344172
+1990,Imputed Multilateral ODA,"South & Central Asia, Total",29728.615037,29.728615037
+1990,Imputed Multilateral ODA,"South America, Total",4482.854504,4.482854504
+1990,Imputed Multilateral ODA,"South of Sahara, Total",59672.773519,59.672773519
+1990,Imputed Multilateral ODA,"Southern Africa, Total",1738.577311,1.738577311
+1990,Imputed Multilateral ODA,"Western Africa, Total",18389.03504,18.38903504
+1990,Technical Cooperation,"Africa, Total",64168.116357,64.168116357
+1990,Technical Cooperation,"All Recipients, Total",129654.390808,129.654390808
+1990,Technical Cooperation,"Asia, Total",41690.517976,41.690517976
+1990,Technical Cooperation,"Caribbean & Central America, Total",8785.591628,8.785591628
+1990,Technical Cooperation,"Developing Countries, Total",165167.426528,165.16742652800002
+1990,Technical Cooperation,"Eastern Africa, Total",20799.072149,20.799072149
+1990,Technical Cooperation,"Europe, Total",4450.863646,4.450863646
+1990,Technical Cooperation,"Fragile states, Total",51003.430899,51.003430899
+1990,Technical Cooperation,"LDCs, Total",38441.057499,38.441057499
+1990,Technical Cooperation,"LMICs, Total",48389.380977,48.389380977
+1990,Technical Cooperation,"Middle East, Total",8404.951223,8.404951223
+1990,Technical Cooperation,"North of Sahara, Total",15038.42629,15.03842629
+1990,Technical Cooperation,"Northern America, Total",0.097836,9.7836e-05
+1990,Technical Cooperation,"Oceania, Total",5656.129235,5.656129235000001
+1990,Technical Cooperation,"South & Central Asia, Total",13538.661297,13.538661297
+1990,Technical Cooperation,"South America, Total",9479.760906,9.479760906
+1990,Technical Cooperation,"South of Sahara, Total",46720.110317,46.720110317
+1990,Technical Cooperation,"Southern Africa, Total",1845.282133,1.845282133
+1990,Technical Cooperation,"Western Africa, Total",13423.855902,13.423855902
+1991,Development Food Aid,"Africa, Total",15824.570176000001,15.824570176000002
+1991,Development Food Aid,"All Recipients, Total",44293.484805,44.293484805
+1991,Development Food Aid,"Asia, Total",5093.289544,5.093289544
+1991,Development Food Aid,"Caribbean & Central America, Total",6080.123427,6.080123427
+1991,Development Food Aid,"Developing Countries, Total",33616.68374,33.61668374
+1991,Development Food Aid,"Eastern Africa, Total",8135.402894,8.135402894
+1991,Development Food Aid,"Europe, Total",64.20232899999999,0.06420232899999999
+1991,Development Food Aid,"Fragile states, Total",14139.193477,14.139193477000001
+1991,Development Food Aid,"LDCs, Total",12916.236716,12.916236716
+1991,Development Food Aid,"LMICs, Total",8641.474173,8.641474173
+1991,Development Food Aid,"Middle East, Total",709.248364,0.709248364
+1991,Development Food Aid,"North of Sahara, Total",4207.115249,4.207115249
+1991,Development Food Aid,"Northern America, Total",0.0,0.0
+1991,Development Food Aid,"Oceania, Total",6.686886,0.006686886
+1991,Development Food Aid,"South & Central Asia, Total",3295.726455,3.295726455
+1991,Development Food Aid,"South America, Total",2460.587828,2.460587828
+1991,Development Food Aid,"South of Sahara, Total",11612.879342,11.612879342
+1991,Development Food Aid,"Southern Africa, Total",61.698079,0.061698079
+1991,Development Food Aid,"Western Africa, Total",2444.6419,2.4446419
+1991,Humanitarian Aid,"Africa, Total",2882.990004,2.8829900040000003
+1991,Humanitarian Aid,"All Recipients, Total",5839.28013,5.83928013
+1991,Humanitarian Aid,"Asia, Total",4025.7888080000002,4.025788808000001
+1991,Humanitarian Aid,"Caribbean & Central America, Total",351.12768800000003,0.35112768800000005
+1991,Humanitarian Aid,"Developing Countries, Total",7785.70684,7.78570684
+1991,Humanitarian Aid,"Eastern Africa, Total",2115.479932,2.1154799320000004
+1991,Humanitarian Aid,"Europe, Total",255.86969599999998,0.255869696
+1991,Humanitarian Aid,"Fragile states, Total",4056.584288,4.056584288
+1991,Humanitarian Aid,"LDCs, Total",2529.7828799999997,2.52978288
+1991,Humanitarian Aid,"LMICs, Total",1851.9856399999999,1.8519856399999999
+1991,Humanitarian Aid,"Middle East, Total",2181.328752,2.1813287519999998
+1991,Humanitarian Aid,"North of Sahara, Total",98.228612,0.09822861199999999
+1991,Humanitarian Aid,"Oceania, Total",13.169764,0.013169764
+1991,Humanitarian Aid,"South & Central Asia, Total",473.41834800000004,0.47341834800000004
+1991,Humanitarian Aid,"South America, Total",21.982612000000003,0.021982612000000002
+1991,Humanitarian Aid,"South of Sahara, Total",2740.20204,2.7402020400000002
+1991,Humanitarian Aid,"Southern Africa, Total",25.943444,0.025943444
+1991,Humanitarian Aid,"Western Africa, Total",344.493296,0.344493296
+1991,Imputed Multilateral ODA,"Africa, Total",55024.267785000004,55.024267785000006
+1991,Imputed Multilateral ODA,"All Recipients, Total",98982.348323,98.982348323
+1991,Imputed Multilateral ODA,"Asia, Total",48770.448989,48.770448988999995
+1991,Imputed Multilateral ODA,"Caribbean & Central America, Total",3824.561976,3.824561976
+1991,Imputed Multilateral ODA,"Developing Countries, Total",126584.0075,126.58400750000001
+1991,Imputed Multilateral ODA,"Eastern Africa, Total",28371.862233,28.371862232999998
+1991,Imputed Multilateral ODA,"Europe, Total",1647.082602,1.647082602
+1991,Imputed Multilateral ODA,"Fragile states, Total",57425.364115,57.425364114999994
+1991,Imputed Multilateral ODA,"LDCs, Total",48397.502134,48.397502134
+1991,Imputed Multilateral ODA,"LMICs, Total",38201.724098,38.201724098
+1991,Imputed Multilateral ODA,"Middle East, Total",8052.105574,8.052105574
+1991,Imputed Multilateral ODA,"North of Sahara, Total",3407.800205,3.407800205
+1991,Imputed Multilateral ODA,"Northern America, Total",0.952489,0.000952489
+1991,Imputed Multilateral ODA,"Oceania, Total",704.254574,0.704254574
+1991,Imputed Multilateral ODA,"South & Central Asia, Total",26249.837806,26.249837806
+1991,Imputed Multilateral ODA,"South America, Total",3379.700356,3.379700356
+1991,Imputed Multilateral ODA,"South of Sahara, Total",49509.384602,49.509384602
+1991,Imputed Multilateral ODA,"Southern Africa, Total",1155.00203,1.1550020300000001
+1991,Imputed Multilateral ODA,"Western Africa, Total",14989.103826,14.989103826000001
+1991,Technical Cooperation,"Africa, Total",65692.284857,65.692284857
+1991,Technical Cooperation,"All Recipients, Total",136945.294607,136.945294607
+1991,Technical Cooperation,"Asia, Total",46622.124696,46.622124696
+1991,Technical Cooperation,"Caribbean & Central America, Total",9680.851375,9.680851375
+1991,Technical Cooperation,"Developing Countries, Total",174539.43040399998,174.53943040399997
+1991,Technical Cooperation,"Eastern Africa, Total",20681.287113,20.681287113
+1991,Technical Cooperation,"Europe, Total",3766.157082,3.7661570820000003
+1991,Technical Cooperation,"Fragile states, Total",52826.106644,52.826106644
+1991,Technical Cooperation,"LDCs, Total",38922.719311,38.922719311
+1991,Technical Cooperation,"LMICs, Total",50800.698909,50.800698909
+1991,Technical Cooperation,"Middle East, Total",10651.30357,10.65130357
+1991,Technical Cooperation,"North of Sahara, Total",14087.72149,14.08772149
+1991,Technical Cooperation,"Northern America, Total",0.97684,0.00097684
+1991,Technical Cooperation,"Oceania, Total",7113.249381,7.113249380999999
+1991,Technical Cooperation,"South & Central Asia, Total",14336.75352,14.33675352
+1991,Technical Cooperation,"South America, Total",11456.382189,11.456382189
+1991,Technical Cooperation,"South of Sahara, Total",48897.751307,48.897751307
+1991,Technical Cooperation,"Southern Africa, Total",1850.343736,1.8503437360000001
+1991,Technical Cooperation,"Western Africa, Total",14117.103475,14.117103475
+1992,Development Food Aid,"Africa, Total",13827.545575,13.827545575
+1992,Development Food Aid,"All Recipients, Total",33584.354084,33.584354084
+1992,Development Food Aid,"Asia, Total",6476.115394,6.476115394000001
+1992,Development Food Aid,"Caribbean & Central America, Total",2171.457208,2.1714572079999996
+1992,Development Food Aid,"Developing Countries, Total",29860.23023,29.860230230000003
+1992,Development Food Aid,"Eastern Africa, Total",9548.352881,9.548352881000001
+1992,Development Food Aid,"Europe, Total",2080.021119,2.080021119
+1992,Development Food Aid,"Fragile states, Total",14325.646901,14.325646901
+1992,Development Food Aid,"LDCs, Total",12099.562295,12.099562295
+1992,Development Food Aid,"LMICs, Total",8103.582716,8.103582716
+1992,Development Food Aid,"Middle East, Total",1118.612635,1.1186126349999999
+1992,Development Food Aid,"North of Sahara, Total",1973.928609,1.9739286090000001
+1992,Development Food Aid,"Oceania, Total",7.340139,0.007340139
+1992,Development Food Aid,"South & Central Asia, Total",4248.881165,4.248881164999999
+1992,Development Food Aid,"South America, Total",1782.453828,1.782453828
+1992,Development Food Aid,"South of Sahara, Total",11811.421594,11.811421593999999
+1992,Development Food Aid,"Southern Africa, Total",143.179542,0.143179542
+1992,Development Food Aid,"Western Africa, Total",1620.9471700000001,1.6209471700000002
+1992,Humanitarian Aid,"Africa, Total",2860.968584,2.860968584
+1992,Humanitarian Aid,"All Recipients, Total",7655.358604999999,7.655358604999999
+1992,Humanitarian Aid,"Asia, Total",3239.085716,3.239085716
+1992,Humanitarian Aid,"Caribbean & Central America, Total",375.894996,0.375894996
+1992,Humanitarian Aid,"Developing Countries, Total",10243.775589,10.243775589
+1992,Humanitarian Aid,"Eastern Africa, Total",1881.68446,1.88168446
+1992,Humanitarian Aid,"Europe, Total",3219.305861,3.2193058609999996
+1992,Humanitarian Aid,"Fragile states, Total",4128.474758,4.128474758
+1992,Humanitarian Aid,"LDCs, Total",2560.528605,2.560528605
+1992,Humanitarian Aid,"LMICs, Total",2328.0871859999997,2.328087186
+1992,Humanitarian Aid,"Middle East, Total",643.911112,0.643911112
+1992,Humanitarian Aid,"North of Sahara, Total",72.674311,0.072674311
+1992,Humanitarian Aid,"Oceania, Total",11.239384,0.011239384
+1992,Humanitarian Aid,"South & Central Asia, Total",1199.253182,1.1992531819999999
+1992,Humanitarian Aid,"South America, Total",44.381164,0.044381164
+1992,Humanitarian Aid,"South of Sahara, Total",2784.836001,2.784836001
+1992,Humanitarian Aid,"Southern Africa, Total",31.31658,0.03131658
+1992,Humanitarian Aid,"Western Africa, Total",421.717108,0.421717108
+1992,Imputed Multilateral ODA,"Africa, Total",72911.840046,72.911840046
+1992,Imputed Multilateral ODA,"All Recipients, Total",130052.777308,130.052777308
+1992,Imputed Multilateral ODA,"Asia, Total",64142.846644,64.142846644
+1992,Imputed Multilateral ODA,"Caribbean & Central America, Total",5082.983537,5.0829835370000005
+1992,Imputed Multilateral ODA,"Developing Countries, Total",166334.133973,166.33413397299998
+1992,Imputed Multilateral ODA,"Eastern Africa, Total",39485.805846999996,39.485805846999995
+1992,Imputed Multilateral ODA,"Europe, Total",4517.511338,4.517511338
+1992,Imputed Multilateral ODA,"Fragile states, Total",80275.368742,80.27536874200001
+1992,Imputed Multilateral ODA,"LDCs, Total",68390.88604,68.39088604
+1992,Imputed Multilateral ODA,"LMICs, Total",52898.929237,52.898929237
+1992,Imputed Multilateral ODA,"Middle East, Total",5750.778386,5.750778386
+1992,Imputed Multilateral ODA,"North of Sahara, Total",2423.082228,2.423082228
+1992,Imputed Multilateral ODA,"Northern America, Total",0.504862,0.000504862
+1992,Imputed Multilateral ODA,"Oceania, Total",1285.06367,1.28506367
+1992,Imputed Multilateral ODA,"South & Central Asia, Total",38611.258754,38.611258754000005
+1992,Imputed Multilateral ODA,"South America, Total",3433.717286,3.4337172860000003
+1992,Imputed Multilateral ODA,"South of Sahara, Total",68098.97388,68.09897388
+1992,Imputed Multilateral ODA,"Southern Africa, Total",1400.552567,1.4005525669999999
+1992,Imputed Multilateral ODA,"Western Africa, Total",21038.938727,21.038938727
+1992,Technical Cooperation,"Africa, Total",68754.534899,68.754534899
+1992,Technical Cooperation,"All Recipients, Total",146348.300716,146.348300716
+1992,Technical Cooperation,"Asia, Total",49482.778172,49.482778171999996
+1992,Technical Cooperation,"Caribbean & Central America, Total",10479.753321,10.479753321
+1992,Technical Cooperation,"Developing Countries, Total",186860.64586,186.86064585999998
+1992,Technical Cooperation,"Eastern Africa, Total",21589.558052,21.589558052
+1992,Technical Cooperation,"Europe, Total",7631.952734,7.631952734
+1992,Technical Cooperation,"Fragile states, Total",55414.914876,55.414914876000005
+1992,Technical Cooperation,"LDCs, Total",40536.364673000004,40.536364673
+1992,Technical Cooperation,"LMICs, Total",56012.085688,56.012085688
+1992,Technical Cooperation,"Middle East, Total",9196.208204,9.196208204000001
+1992,Technical Cooperation,"North of Sahara, Total",14741.608733,14.741608733
+1992,Technical Cooperation,"Northern America, Total",0.18618,0.00018618
+1992,Technical Cooperation,"Oceania, Total",6831.839916,6.831839916
+1992,Technical Cooperation,"South & Central Asia, Total",15813.758004000001,15.813758004
+1992,Technical Cooperation,"South America, Total",11956.009602,11.956009602
+1992,Technical Cooperation,"South of Sahara, Total",51171.378599,51.171378599
+1992,Technical Cooperation,"Southern Africa, Total",2109.317285,2.109317285
+1992,Technical Cooperation,"Western Africa, Total",15517.41122,15.51741122
+1993,Development Food Aid,"Africa, Total",6958.046789,6.958046789
+1993,Development Food Aid,"All Recipients, Total",24774.179646,24.774179646
+1993,Development Food Aid,"Asia, Total",7925.247126,7.925247126
+1993,Development Food Aid,"Caribbean & Central America, Total",2485.175035,2.485175035
+1993,Development Food Aid,"Developing Countries, Total",22670.158074,22.670158074
+1993,Development Food Aid,"Eastern Africa, Total",4569.255745,4.569255745
+1993,Development Food Aid,"Europe, Total",3067.286952,3.067286952
+1993,Development Food Aid,"Fragile states, Total",8620.990572,8.620990572
+1993,Development Food Aid,"LDCs, Total",6829.259111,6.829259111000001
+1993,Development Food Aid,"LMICs, Total",6696.944222,6.696944222
+1993,Development Food Aid,"Middle East, Total",837.7805520000001,0.837780552
+1993,Development Food Aid,"North of Sahara, Total",725.7754239999999,0.725775424
+1993,Development Food Aid,"Northern America, Total",0.0,0.0
+1993,Development Food Aid,"Oceania, Total",0.0,0.0
+1993,Development Food Aid,"South & Central Asia, Total",6255.979475,6.255979475
+1993,Development Food Aid,"South America, Total",1553.985161,1.5539851610000002
+1993,Development Food Aid,"South of Sahara, Total",6192.290281,6.192290281
+1993,Development Food Aid,"Southern Africa, Total",28.828742,0.028828741999999997
+1993,Development Food Aid,"Western Africa, Total",1292.252825,1.292252825
+1993,Humanitarian Aid,"Africa, Total",3309.5290440000003,3.3095290440000005
+1993,Humanitarian Aid,"All Recipients, Total",9277.252391,9.277252391
+1993,Humanitarian Aid,"Asia, Total",2582.31587,2.58231587
+1993,Humanitarian Aid,"Caribbean & Central America, Total",276.278072,0.276278072
+1993,Humanitarian Aid,"Developing Countries, Total",12384.423884,12.384423884
+1993,Humanitarian Aid,"Eastern Africa, Total",2267.01254,2.26701254
+1993,Humanitarian Aid,"Europe, Total",5535.509694,5.535509694
+1993,Humanitarian Aid,"Fragile states, Total",3847.35124,3.84735124
+1993,Humanitarian Aid,"LDCs, Total",2883.990392,2.8839903920000003
+1993,Humanitarian Aid,"LMICs, Total",1795.930243,1.795930243
+1993,Humanitarian Aid,"Middle East, Total",349.492944,0.349492944
+1993,Humanitarian Aid,"North of Sahara, Total",85.180868,0.085180868
+1993,Humanitarian Aid,"Oceania, Total",9.345559999999999,0.00934556
+1993,Humanitarian Aid,"South & Central Asia, Total",1121.77233,1.12177233
+1993,Humanitarian Aid,"South America, Total",46.435744,0.046435744
+1993,Humanitarian Aid,"South of Sahara, Total",3222.0117880000003,3.222011788
+1993,Humanitarian Aid,"Southern Africa, Total",58.215044,0.058215044
+1993,Humanitarian Aid,"Western Africa, Total",575.043884,0.5750438840000001
+1993,Imputed Multilateral ODA,"Africa, Total",65476.514393,65.476514393
+1993,Imputed Multilateral ODA,"All Recipients, Total",110709.431947,110.709431947
+1993,Imputed Multilateral ODA,"Asia, Total",46955.792304,46.955792304
+1993,Imputed Multilateral ODA,"Caribbean & Central America, Total",3848.387949,3.848387949
+1993,Imputed Multilateral ODA,"Developing Countries, Total",141275.240663,141.275240663
+1993,Imputed Multilateral ODA,"Eastern Africa, Total",35719.535988,35.719535988000004
+1993,Imputed Multilateral ODA,"Europe, Total",8077.267316,8.077267316
+1993,Imputed Multilateral ODA,"Fragile states, Total",67421.463244,67.421463244
+1993,Imputed Multilateral ODA,"LDCs, Total",57120.334103,57.120334103
+1993,Imputed Multilateral ODA,"LMICs, Total",38917.658498,38.917658497999994
+1993,Imputed Multilateral ODA,"Middle East, Total",5217.879834,5.2178798340000005
+1993,Imputed Multilateral ODA,"North of Sahara, Total",3627.665613,3.627665613
+1993,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1993,Imputed Multilateral ODA,"Oceania, Total",778.315489,0.7783154889999999
+1993,Imputed Multilateral ODA,"South & Central Asia, Total",25521.642285,25.521642285000002
+1993,Imputed Multilateral ODA,"South America, Total",3557.469451,3.557469451
+1993,Imputed Multilateral ODA,"South of Sahara, Total",59785.827734,59.785827734
+1993,Imputed Multilateral ODA,"Southern Africa, Total",1887.531804,1.887531804
+1993,Imputed Multilateral ODA,"Western Africa, Total",18275.527304,18.275527304
+1993,Technical Cooperation,"Africa, Total",69069.330973,69.069330973
+1993,Technical Cooperation,"All Recipients, Total",147484.937016,147.484937016
+1993,Technical Cooperation,"Asia, Total",48871.071921,48.871071921
+1993,Technical Cooperation,"Caribbean & Central America, Total",10691.739518,10.691739518
+1993,Technical Cooperation,"Developing Countries, Total",189051.674268,189.051674268
+1993,Technical Cooperation,"Eastern Africa, Total",22077.726111,22.077726111
+1993,Technical Cooperation,"Europe, Total",11001.073804,11.001073803999999
+1993,Technical Cooperation,"Fragile states, Total",55535.58254,55.53558254
+1993,Technical Cooperation,"LDCs, Total",40752.334341,40.752334341
+1993,Technical Cooperation,"LMICs, Total",56777.881029,56.777881029
+1993,Technical Cooperation,"Middle East, Total",9291.200137,9.291200137
+1993,Technical Cooperation,"North of Sahara, Total",16670.875585,16.670875585
+1993,Technical Cooperation,"Northern America, Total",0.20050400000000002,0.000200504
+1993,Technical Cooperation,"Oceania, Total",7631.665542,7.6316655419999995
+1993,Technical Cooperation,"South & Central Asia, Total",15016.850021,15.016850021
+1993,Technical Cooperation,"South America, Total",11626.749921,11.626749921
+1993,Technical Cooperation,"South of Sahara, Total",49866.742763,49.866742763000005
+1993,Technical Cooperation,"Southern Africa, Total",3723.252251,3.723252251
+1993,Technical Cooperation,"Western Africa, Total",15039.183146,15.039183146
+1994,Development Food Aid,"Africa, Total",3658.03838,3.65803838
+1994,Development Food Aid,"All Recipients, Total",12073.633653,12.073633653
+1994,Development Food Aid,"Asia, Total",1426.5797440000001,1.426579744
+1994,Development Food Aid,"Caribbean & Central America, Total",293.716971,0.293716971
+1994,Development Food Aid,"Developing Countries, Total",6118.802724,6.118802724
+1994,Development Food Aid,"Eastern Africa, Total",2446.110593,2.4461105929999998
+1994,Development Food Aid,"Europe, Total",982.700879,0.982700879
+1994,Development Food Aid,"Fragile states, Total",3751.768615,3.751768615
+1994,Development Food Aid,"LDCs, Total",3741.039945,3.741039945
+1994,Development Food Aid,"LMICs, Total",1199.313329,1.199313329
+1994,Development Food Aid,"Middle East, Total",189.917475,0.189917475
+1994,Development Food Aid,"North of Sahara, Total",429.510551,0.429510551
+1994,Development Food Aid,"Oceania, Total",1.3466879999999999,0.001346688
+1994,Development Food Aid,"South & Central Asia, Total",908.607818,0.9086078179999999
+1994,Development Food Aid,"South America, Total",144.173,0.144173
+1994,Development Food Aid,"South of Sahara, Total",3228.527829,3.228527829
+1994,Development Food Aid,"Southern Africa, Total",23.656107000000002,0.023656107000000003
+1994,Development Food Aid,"Western Africa, Total",337.68242,0.33768242
+1994,Humanitarian Aid,"Africa, Total",5021.941569,5.021941569
+1994,Humanitarian Aid,"All Recipients, Total",7433.799476,7.433799476
+1994,Humanitarian Aid,"Asia, Total",1924.772465,1.924772465
+1994,Humanitarian Aid,"Caribbean & Central America, Total",254.21317200000001,0.254213172
+1994,Humanitarian Aid,"Developing Countries, Total",9912.534334,9.912534334
+1994,Humanitarian Aid,"Eastern Africa, Total",3587.936975,3.587936975
+1994,Humanitarian Aid,"Europe, Total",2445.0588660000003,2.445058866
+1994,Humanitarian Aid,"Fragile states, Total",4792.693558,4.792693558
+1994,Humanitarian Aid,"LDCs, Total",4692.462407,4.692462407
+1994,Humanitarian Aid,"LMICs, Total",1418.503512,1.418503512
+1994,Humanitarian Aid,"Middle East, Total",265.574652,0.265574652
+1994,Humanitarian Aid,"North of Sahara, Total",107.646218,0.107646218
+1994,Humanitarian Aid,"Oceania, Total",8.994508,0.008994508
+1994,Humanitarian Aid,"South & Central Asia, Total",1053.157409,1.053157409
+1994,Humanitarian Aid,"South America, Total",76.974044,0.076974044
+1994,Humanitarian Aid,"South of Sahara, Total",4907.762499,4.907762499
+1994,Humanitarian Aid,"Southern Africa, Total",81.707992,0.08170799200000001
+1994,Humanitarian Aid,"Western Africa, Total",473.01637600000004,0.473016376
+1994,Imputed Multilateral ODA,"Africa, Total",60852.893729,60.852893729
+1994,Imputed Multilateral ODA,"All Recipients, Total",104176.697256,104.176697256
+1994,Imputed Multilateral ODA,"Asia, Total",47530.758132,47.530758132
+1994,Imputed Multilateral ODA,"Caribbean & Central America, Total",3894.7813499999997,3.8947813499999997
+1994,Imputed Multilateral ODA,"Developing Countries, Total",133085.755403,133.08575540299998
+1994,Imputed Multilateral ODA,"Eastern Africa, Total",27904.707115,27.904707115
+1994,Imputed Multilateral ODA,"Europe, Total",6172.464178,6.172464178
+1994,Imputed Multilateral ODA,"Fragile states, Total",67976.05846,67.97605846
+1994,Imputed Multilateral ODA,"LDCs, Total",50300.644044,50.300644044
+1994,Imputed Multilateral ODA,"LMICs, Total",44692.122011,44.692122011
+1994,Imputed Multilateral ODA,"Middle East, Total",5177.283428,5.177283428
+1994,Imputed Multilateral ODA,"North of Sahara, Total",3573.8941999999997,3.5738942
+1994,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1994,Imputed Multilateral ODA,"Oceania, Total",779.616394,0.779616394
+1994,Imputed Multilateral ODA,"South & Central Asia, Total",28710.609664,28.710609664
+1994,Imputed Multilateral ODA,"South America, Total",2913.397591,2.913397591
+1994,Imputed Multilateral ODA,"South of Sahara, Total",55361.052054,55.361052054
+1994,Imputed Multilateral ODA,"Southern Africa, Total",1534.324679,1.534324679
+1994,Imputed Multilateral ODA,"Western Africa, Total",17249.52802,17.249528020000003
+1994,Technical Cooperation,"Africa, Total",59258.082008,59.258082007999995
+1994,Technical Cooperation,"All Recipients, Total",131164.09004,131.16409004000002
+1994,Technical Cooperation,"Asia, Total",46397.608733,46.397608733
+1994,Technical Cooperation,"Caribbean & Central America, Total",9794.476497,9.794476497
+1994,Technical Cooperation,"Developing Countries, Total",167418.15011,167.41815011
+1994,Technical Cooperation,"Eastern Africa, Total",19157.310019,19.157310019
+1994,Technical Cooperation,"Europe, Total",5218.270701,5.218270701000001
+1994,Technical Cooperation,"Fragile states, Total",48260.761061,48.260761061
+1994,Technical Cooperation,"LDCs, Total",35525.179392,35.525179392
+1994,Technical Cooperation,"LMICs, Total",48744.69427,48.74469427
+1994,Technical Cooperation,"Middle East, Total",9729.22247,9.72922247
+1994,Technical Cooperation,"North of Sahara, Total",11739.236251,11.739236251
+1994,Technical Cooperation,"Northern America, Total",0.19606400000000002,0.00019606400000000003
+1994,Technical Cooperation,"Oceania, Total",7742.159794,7.742159794
+1994,Technical Cooperation,"South & Central Asia, Total",13189.454069,13.189454069
+1994,Technical Cooperation,"South America, Total",11352.64522,11.352645220000001
+1994,Technical Cooperation,"South of Sahara, Total",43284.098839,43.284098838999995
+1994,Technical Cooperation,"Southern Africa, Total",3579.322852,3.5793228519999998
+1994,Technical Cooperation,"Western Africa, Total",12657.675371,12.657675371
+1995,Development Food Aid,"Africa, Total",7669.674517,7.669674517000001
+1995,Development Food Aid,"All Recipients, Total",24601.887052,24.601887052
+1995,Development Food Aid,"Asia, Total",5092.806592,5.092806592
+1995,Development Food Aid,"Caribbean & Central America, Total",921.0939000000001,0.9210939
+1995,Development Food Aid,"Developing Countries, Total",16137.193567,16.137193567
+1995,Development Food Aid,"Eastern Africa, Total",4869.962425,4.869962425
+1995,Development Food Aid,"Europe, Total",859.939744,0.8599397440000001
+1995,Development Food Aid,"Fragile states, Total",7944.5968299999995,7.944596829999999
+1995,Development Food Aid,"LDCs, Total",8284.304359,8.284304359
+1995,Development Food Aid,"LMICs, Total",3674.126274,3.6741262740000002
+1995,Development Food Aid,"Middle East, Total",278.504914,0.278504914
+1995,Development Food Aid,"North of Sahara, Total",824.4666970000001,0.8244666970000001
+1995,Development Food Aid,"South & Central Asia, Total",4187.221366,4.187221366
+1995,Development Food Aid,"South America, Total",1075.357669,1.075357669
+1995,Development Food Aid,"South of Sahara, Total",6845.2078200000005,6.845207820000001
+1995,Development Food Aid,"Southern Africa, Total",168.641257,0.168641257
+1995,Development Food Aid,"Western Africa, Total",839.53155,0.83953155
+1995,Humanitarian Aid,"Africa, Total",11008.806654,11.008806654
+1995,Humanitarian Aid,"All Recipients, Total",37450.636362000005,37.450636362000004
+1995,Humanitarian Aid,"Asia, Total",8220.449286,8.220449286
+1995,Humanitarian Aid,"Caribbean & Central America, Total",3629.9842240000003,3.629984224
+1995,Humanitarian Aid,"Developing Countries, Total",45536.717615,45.536717615
+1995,Humanitarian Aid,"Eastern Africa, Total",7711.9535080000005,7.711953508000001
+1995,Humanitarian Aid,"Europe, Total",8718.440477,8.718440477
+1995,Humanitarian Aid,"Fragile states, Total",15181.267155,15.181267154999999
+1995,Humanitarian Aid,"LDCs, Total",13854.847249,13.854847249
+1995,Humanitarian Aid,"LMICs, Total",2081.955623,2.081955623
+1995,Humanitarian Aid,"Middle East, Total",3721.967045,3.721967045
+1995,Humanitarian Aid,"North of Sahara, Total",227.55688700000002,0.227556887
+1995,Humanitarian Aid,"Oceania, Total",11.402965,0.011402965
+1995,Humanitarian Aid,"South & Central Asia, Total",3223.450694,3.2234506940000003
+1995,Humanitarian Aid,"South America, Total",290.810146,0.290810146
+1995,Humanitarian Aid,"South of Sahara, Total",10436.781813,10.436781813
+1995,Humanitarian Aid,"Southern Africa, Total",48.89698,0.04889698
+1995,Humanitarian Aid,"Western Africa, Total",990.7674049999999,0.9907674049999999
+1995,Imputed Multilateral ODA,"Africa, Total",51593.103193,51.593103193000005
+1995,Imputed Multilateral ODA,"All Recipients, Total",88547.62892,88.54762892000001
+1995,Imputed Multilateral ODA,"Asia, Total",44834.337307,44.834337307
+1995,Imputed Multilateral ODA,"Caribbean & Central America, Total",5540.558677999999,5.540558677999999
+1995,Imputed Multilateral ODA,"Developing Countries, Total",113254.064698,113.25406469800001
+1995,Imputed Multilateral ODA,"Eastern Africa, Total",24626.786809,24.626786809000002
+1995,Imputed Multilateral ODA,"Europe, Total",6761.360648,6.761360648
+1995,Imputed Multilateral ODA,"Fragile states, Total",54522.014614,54.522014614
+1995,Imputed Multilateral ODA,"LDCs, Total",45290.544883,45.290544883
+1995,Imputed Multilateral ODA,"LMICs, Total",36568.251349,36.568251349
+1995,Imputed Multilateral ODA,"Middle East, Total",5264.05579,5.2640557900000005
+1995,Imputed Multilateral ODA,"North of Sahara, Total",3033.9749540000003,3.033974954
+1995,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1995,Imputed Multilateral ODA,"Oceania, Total",708.323649,0.708323649
+1995,Imputed Multilateral ODA,"South & Central Asia, Total",24333.570689,24.333570689000002
+1995,Imputed Multilateral ODA,"South America, Total",3650.998697,3.650998697
+1995,Imputed Multilateral ODA,"South of Sahara, Total",47015.374505,47.015374505
+1995,Imputed Multilateral ODA,"Southern Africa, Total",1188.945444,1.188945444
+1995,Imputed Multilateral ODA,"Western Africa, Total",16900.65148,16.90065148
+1995,Technical Cooperation,"Africa, Total",63732.189607,63.732189607
+1995,Technical Cooperation,"All Recipients, Total",139495.042273,139.495042273
+1995,Technical Cooperation,"Asia, Total",50745.546089,50.745546089
+1995,Technical Cooperation,"Caribbean & Central America, Total",10669.984556,10.669984556
+1995,Technical Cooperation,"Developing Countries, Total",177645.091319,177.645091319
+1995,Technical Cooperation,"Eastern Africa, Total",20194.163264,20.194163264
+1995,Technical Cooperation,"Europe, Total",6918.886504,6.9188865040000005
+1995,Technical Cooperation,"Fragile states, Total",51727.418358,51.727418358
+1995,Technical Cooperation,"LDCs, Total",37912.859389,37.912859389
+1995,Technical Cooperation,"LMICs, Total",52973.817735000004,52.973817735000004
+1995,Technical Cooperation,"Middle East, Total",10026.592489999999,10.026592489999999
+1995,Technical Cooperation,"North of Sahara, Total",14311.422936,14.311422936000001
+1995,Technical Cooperation,"Northern America, Total",1.087844,0.0010878440000000001
+1995,Technical Cooperation,"Oceania, Total",8367.009334,8.367009334
+1995,Technical Cooperation,"South & Central Asia, Total",15109.952736,15.109952735999999
+1995,Technical Cooperation,"South America, Total",13598.848489,13.598848489
+1995,Technical Cooperation,"South of Sahara, Total",45324.288293,45.324288292999995
+1995,Technical Cooperation,"Southern Africa, Total",4290.690606,4.290690606
+1995,Technical Cooperation,"Western Africa, Total",13434.10456,13.43410456
+1996,Development Food Aid,"Africa, Total",4752.577529,4.752577529
+1996,Development Food Aid,"All Recipients, Total",12411.620226000001,12.411620226
+1996,Development Food Aid,"Asia, Total",4465.583522,4.465583522
+1996,Development Food Aid,"Caribbean & Central America, Total",1078.7354970000001,1.078735497
+1996,Development Food Aid,"Developing Countries, Total",11487.665137,11.487665137
+1996,Development Food Aid,"Eastern Africa, Total",2450.251093,2.450251093
+1996,Development Food Aid,"Europe, Total",258.17289800000003,0.25817289800000004
+1996,Development Food Aid,"Fragile states, Total",5744.095066,5.744095066
+1996,Development Food Aid,"LDCs, Total",5348.938649,5.348938649
+1996,Development Food Aid,"LMICs, Total",3324.310416,3.324310416
+1996,Development Food Aid,"Middle East, Total",264.91204,0.26491204
+1996,Development Food Aid,"North of Sahara, Total",489.93122999999997,0.48993123
+1996,Development Food Aid,"South & Central Asia, Total",3763.624678,3.7636246780000002
+1996,Development Food Aid,"South America, Total",797.693694,0.797693694
+1996,Development Food Aid,"South of Sahara, Total",4152.765407,4.1527654069999995
+1996,Development Food Aid,"Southern Africa, Total",76.81764,0.07681763999999999
+1996,Development Food Aid,"Western Africa, Total",904.486528,0.9044865280000001
+1996,Humanitarian Aid,"Africa, Total",10435.392356,10.435392356
+1996,Humanitarian Aid,"All Recipients, Total",31275.268008,31.275268007999998
+1996,Humanitarian Aid,"Asia, Total",10066.744736999999,10.066744736999999
+1996,Humanitarian Aid,"Caribbean & Central America, Total",889.365497,0.889365497
+1996,Humanitarian Aid,"Developing Countries, Total",38024.96302,38.02496302
+1996,Humanitarian Aid,"Eastern Africa, Total",4511.152848,4.511152848
+1996,Humanitarian Aid,"Europe, Total",8328.111948,8.328111948
+1996,Humanitarian Aid,"Fragile states, Total",12339.411685,12.339411685
+1996,Humanitarian Aid,"LDCs, Total",8345.977294,8.345977294
+1996,Humanitarian Aid,"LMICs, Total",2780.561215,2.780561215
+1996,Humanitarian Aid,"Middle East, Total",6147.840094,6.147840094
+1996,Humanitarian Aid,"North of Sahara, Total",304.80744400000003,0.30480744400000004
+1996,Humanitarian Aid,"Oceania, Total",55.210659,0.055210659
+1996,Humanitarian Aid,"South & Central Asia, Total",3019.64278,3.0196427800000003
+1996,Humanitarian Aid,"South America, Total",255.14387,0.25514387
+1996,Humanitarian Aid,"South of Sahara, Total",9502.775775,9.502775775
+1996,Humanitarian Aid,"Southern Africa, Total",124.522277,0.124522277
+1996,Humanitarian Aid,"Western Africa, Total",1310.110286,1.310110286
+1996,Imputed Multilateral ODA,"Africa, Total",46013.014596,46.013014596
+1996,Imputed Multilateral ODA,"All Recipients, Total",90270.04446800001,90.27004446800001
+1996,Imputed Multilateral ODA,"Asia, Total",45383.059808,45.383059808
+1996,Imputed Multilateral ODA,"Caribbean & Central America, Total",5134.96491,5.13496491
+1996,Imputed Multilateral ODA,"Developing Countries, Total",114302.20006,114.30220006
+1996,Imputed Multilateral ODA,"Eastern Africa, Total",20341.437676,20.341437676
+1996,Imputed Multilateral ODA,"Europe, Total",5190.181453,5.190181453
+1996,Imputed Multilateral ODA,"Fragile states, Total",52686.732708999996,52.686732709
+1996,Imputed Multilateral ODA,"LDCs, Total",41984.608213,41.984608213
+1996,Imputed Multilateral ODA,"LMICs, Total",36907.983682,36.907983682
+1996,Imputed Multilateral ODA,"Middle East, Total",5996.621992,5.996621992000001
+1996,Imputed Multilateral ODA,"North of Sahara, Total",3185.783233,3.185783233
+1996,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1996,Imputed Multilateral ODA,"Oceania, Total",388.896142,0.388896142
+1996,Imputed Multilateral ODA,"South & Central Asia, Total",24153.899734,24.153899734
+1996,Imputed Multilateral ODA,"South America, Total",4269.609074,4.269609074
+1996,Imputed Multilateral ODA,"South of Sahara, Total",42061.911472,42.061911472
+1996,Imputed Multilateral ODA,"Southern Africa, Total",977.387518,0.977387518
+1996,Imputed Multilateral ODA,"Western Africa, Total",15438.705152,15.438705152
+1996,Technical Cooperation,"Africa, Total",61237.076012,61.237076011999996
+1996,Technical Cooperation,"All Recipients, Total",136496.50971,136.49650971000003
+1996,Technical Cooperation,"Asia, Total",48000.27931,48.000279309999996
+1996,Technical Cooperation,"Caribbean & Central America, Total",8946.835201,8.946835201
+1996,Technical Cooperation,"Developing Countries, Total",174037.476366,174.037476366
+1996,Technical Cooperation,"Eastern Africa, Total",19333.015326,19.333015326
+1996,Technical Cooperation,"Europe, Total",7740.741633,7.740741633
+1996,Technical Cooperation,"Fragile states, Total",48946.19214,48.94619214
+1996,Technical Cooperation,"LDCs, Total",36575.707936,36.575707936
+1996,Technical Cooperation,"LMICs, Total",48223.160457,48.223160457
+1996,Technical Cooperation,"Middle East, Total",9596.014543,9.596014542999999
+1996,Technical Cooperation,"North of Sahara, Total",12739.305608,12.739305608
+1996,Technical Cooperation,"Northern America, Total",0.652876,0.000652876
+1996,Technical Cooperation,"Oceania, Total",9205.716596,9.205716596
+1996,Technical Cooperation,"South & Central Asia, Total",14893.24492,14.893244919999999
+1996,Technical Cooperation,"South America, Total",11647.399537000001,11.647399537000002
+1996,Technical Cooperation,"South of Sahara, Total",44316.677004,44.316677004
+1996,Technical Cooperation,"Southern Africa, Total",3922.055986,3.9220559859999997
+1996,Technical Cooperation,"Western Africa, Total",12588.051664999999,12.588051664999998
+1997,Development Food Aid,"Africa, Total",6696.0098769999995,6.696009877
+1997,Development Food Aid,"All Recipients, Total",17976.863947,17.976863947000002
+1997,Development Food Aid,"Asia, Total",6227.2251750000005,6.227225175
+1997,Development Food Aid,"Caribbean & Central America, Total",1265.643971,1.265643971
+1997,Development Food Aid,"Developing Countries, Total",17095.110931,17.095110931
+1997,Development Food Aid,"Eastern Africa, Total",2593.668338,2.593668338
+1997,Development Food Aid,"Europe, Total",578.023353,0.5780233530000001
+1997,Development Food Aid,"Fragile states, Total",7730.740186,7.730740186
+1997,Development Food Aid,"LDCs, Total",6335.129844,6.335129844
+1997,Development Food Aid,"LMICs, Total",6242.5904789999995,6.2425904789999995
+1997,Development Food Aid,"Middle East, Total",607.0699979999999,0.6070699979999999
+1997,Development Food Aid,"North of Sahara, Total",1858.04702,1.8580470199999999
+1997,Development Food Aid,"South & Central Asia, Total",4761.4289420000005,4.761428942
+1997,Development Food Aid,"South America, Total",1416.672132,1.416672132
+1997,Development Food Aid,"South of Sahara, Total",4837.962857,4.837962857000001
+1997,Development Food Aid,"Southern Africa, Total",3.0060089999999997,0.0030060089999999996
+1997,Development Food Aid,"Western Africa, Total",1607.639208,1.6076392080000002
+1997,Humanitarian Aid,"Africa, Total",9806.725136000001,9.806725136
+1997,Humanitarian Aid,"All Recipients, Total",29810.196899,29.810196898999997
+1997,Humanitarian Aid,"Asia, Total",9166.736616,9.166736616
+1997,Humanitarian Aid,"Caribbean & Central America, Total",1305.716142,1.305716142
+1997,Humanitarian Aid,"Developing Countries, Total",33771.843479,33.771843479000005
+1997,Humanitarian Aid,"Eastern Africa, Total",4071.8277080000003,4.071827708
+1997,Humanitarian Aid,"Europe, Total",6738.978905,6.738978905
+1997,Humanitarian Aid,"Fragile states, Total",13042.828651,13.042828651
+1997,Humanitarian Aid,"LDCs, Total",8463.167367,8.463167367
+1997,Humanitarian Aid,"LMICs, Total",3415.445432,3.415445432
+1997,Humanitarian Aid,"Middle East, Total",4920.95619,4.92095619
+1997,Humanitarian Aid,"North of Sahara, Total",302.030158,0.302030158
+1997,Humanitarian Aid,"Oceania, Total",169.066789,0.169066789
+1997,Humanitarian Aid,"South & Central Asia, Total",3050.015684,3.050015684
+1997,Humanitarian Aid,"South America, Total",417.386014,0.41738601399999997
+1997,Humanitarian Aid,"South of Sahara, Total",8809.044905,8.809044905
+1997,Humanitarian Aid,"Southern Africa, Total",54.021752,0.054021752
+1997,Humanitarian Aid,"Western Africa, Total",1240.864865,1.240864865
+1997,Imputed Multilateral ODA,"Africa, Total",46622.154374,46.622154374
+1997,Imputed Multilateral ODA,"All Recipients, Total",87919.514428,87.919514428
+1997,Imputed Multilateral ODA,"Asia, Total",44977.506596,44.977506596
+1997,Imputed Multilateral ODA,"Caribbean & Central America, Total",5297.388192,5.2973881920000006
+1997,Imputed Multilateral ODA,"Developing Countries, Total",113006.793533,113.006793533
+1997,Imputed Multilateral ODA,"Eastern Africa, Total",19486.211347,19.486211347
+1997,Imputed Multilateral ODA,"Europe, Total",2518.090748,2.518090748
+1997,Imputed Multilateral ODA,"Fragile states, Total",54884.357543,54.884357543
+1997,Imputed Multilateral ODA,"LDCs, Total",40677.677661,40.677677661000004
+1997,Imputed Multilateral ODA,"LMICs, Total",38834.118448,38.834118448
+1997,Imputed Multilateral ODA,"Middle East, Total",8342.298083,8.342298083
+1997,Imputed Multilateral ODA,"North of Sahara, Total",5271.404012,5.271404012
+1997,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1997,Imputed Multilateral ODA,"Oceania, Total",609.689017,0.609689017
+1997,Imputed Multilateral ODA,"South & Central Asia, Total",22866.504871,22.866504871
+1997,Imputed Multilateral ODA,"South America, Total",8771.280326,8.771280326
+1997,Imputed Multilateral ODA,"South of Sahara, Total",41304.282100000004,41.3042821
+1997,Imputed Multilateral ODA,"Southern Africa, Total",1395.867074,1.395867074
+1997,Imputed Multilateral ODA,"Western Africa, Total",15292.021882,15.292021881999998
+1997,Technical Cooperation,"Africa, Total",58332.728405,58.332728405000005
+1997,Technical Cooperation,"All Recipients, Total",126346.92810599999,126.346928106
+1997,Technical Cooperation,"Asia, Total",40635.446229,40.635446229
+1997,Technical Cooperation,"Caribbean & Central America, Total",9687.067659,9.687067659
+1997,Technical Cooperation,"Developing Countries, Total",161365.832433,161.365832433
+1997,Technical Cooperation,"Eastern Africa, Total",17831.236114,17.831236114
+1997,Technical Cooperation,"Europe, Total",7331.466457,7.331466457
+1997,Technical Cooperation,"Fragile states, Total",44896.157856,44.896157855999995
+1997,Technical Cooperation,"LDCs, Total",33649.776354,33.649776354000004
+1997,Technical Cooperation,"LMICs, Total",45031.841042,45.031841042
+1997,Technical Cooperation,"Middle East, Total",6539.855862,6.5398558620000005
+1997,Technical Cooperation,"North of Sahara, Total",11808.852877,11.808852877
+1997,Technical Cooperation,"Northern America, Total",0.660548,0.0006605480000000001
+1997,Technical Cooperation,"Oceania, Total",9205.135552,9.205135552
+1997,Technical Cooperation,"South & Central Asia, Total",12466.597501,12.466597501
+1997,Technical Cooperation,"South America, Total",11446.644941,11.446644941
+1997,Technical Cooperation,"South of Sahara, Total",42297.594365,42.297594364999995
+1997,Technical Cooperation,"Southern Africa, Total",4449.468072,4.449468071999999
+1997,Technical Cooperation,"Western Africa, Total",12464.744196,12.464744196
+1998,Development Food Aid,"Africa, Total",5737.66792,5.73766792
+1998,Development Food Aid,"All Recipients, Total",18485.280878,18.485280878
+1998,Development Food Aid,"Asia, Total",5809.517339,5.809517339
+1998,Development Food Aid,"Caribbean & Central America, Total",1323.587672,1.3235876720000002
+1998,Development Food Aid,"Developing Countries, Total",15695.101168000001,15.695101168
+1998,Development Food Aid,"Eastern Africa, Total",3478.636707,3.478636707
+1998,Development Food Aid,"Europe, Total",662.455438,0.662455438
+1998,Development Food Aid,"Fragile states, Total",7418.060396,7.418060396
+1998,Development Food Aid,"LDCs, Total",6279.684258,6.2796842580000005
+1998,Development Food Aid,"LMICs, Total",4556.653619,4.5566536189999995
+1998,Development Food Aid,"Middle East, Total",480.836484,0.480836484
+1998,Development Food Aid,"North of Sahara, Total",205.366553,0.205366553
+1998,Development Food Aid,"Oceania, Total",-7.185047000000001,-0.007185047000000001
+1998,Development Food Aid,"South & Central Asia, Total",3919.751464,3.919751464
+1998,Development Food Aid,"South America, Total",1387.847048,1.387847048
+1998,Development Food Aid,"South of Sahara, Total",5532.301367,5.532301367
+1998,Development Food Aid,"Southern Africa, Total",160.703248,0.160703248
+1998,Development Food Aid,"Western Africa, Total",1289.937465,1.289937465
+1998,Humanitarian Aid,"Africa, Total",8723.490761000001,8.723490761
+1998,Humanitarian Aid,"All Recipients, Total",34141.981977,34.141981977
+1998,Humanitarian Aid,"Asia, Total",8112.667925,8.112667925
+1998,Humanitarian Aid,"Caribbean & Central America, Total",2080.59737,2.08059737
+1998,Humanitarian Aid,"Developing Countries, Total",38127.427353,38.127427353
+1998,Humanitarian Aid,"Eastern Africa, Total",4131.500204,4.131500204
+1998,Humanitarian Aid,"Europe, Total",4726.605494,4.726605494
+1998,Humanitarian Aid,"Fragile states, Total",11727.30838,11.72730838
+1998,Humanitarian Aid,"LDCs, Total",7966.163241,7.966163241
+1998,Humanitarian Aid,"LMICs, Total",4753.924204,4.753924204
+1998,Humanitarian Aid,"Middle East, Total",3343.059006,3.343059006
+1998,Humanitarian Aid,"North of Sahara, Total",399.826397,0.399826397
+1998,Humanitarian Aid,"Oceania, Total",242.631794,0.242631794
+1998,Humanitarian Aid,"South & Central Asia, Total",2731.71058,2.73171058
+1998,Humanitarian Aid,"South America, Total",451.151617,0.451151617
+1998,Humanitarian Aid,"South of Sahara, Total",7616.691589,7.616691589
+1998,Humanitarian Aid,"Southern Africa, Total",61.95602,0.06195602
+1998,Humanitarian Aid,"Western Africa, Total",1191.9780700000001,1.1919780700000002
+1998,Imputed Multilateral ODA,"Africa, Total",46912.391108,46.912391108
+1998,Imputed Multilateral ODA,"All Recipients, Total",84000.024139,84.000024139
+1998,Imputed Multilateral ODA,"Asia, Total",41661.082595,41.661082594999996
+1998,Imputed Multilateral ODA,"Caribbean & Central America, Total",5542.939787,5.542939787
+1998,Imputed Multilateral ODA,"Developing Countries, Total",107073.925712,107.07392571199999
+1998,Imputed Multilateral ODA,"Eastern Africa, Total",20008.788319,20.008788319
+1998,Imputed Multilateral ODA,"Europe, Total",4644.014965,4.644014965
+1998,Imputed Multilateral ODA,"Fragile states, Total",52537.972194,52.537972194000005
+1998,Imputed Multilateral ODA,"LDCs, Total",40289.491196999996,40.289491197
+1998,Imputed Multilateral ODA,"LMICs, Total",40176.530389,40.176530389
+1998,Imputed Multilateral ODA,"Middle East, Total",5665.141813,5.665141813
+1998,Imputed Multilateral ODA,"North of Sahara, Total",4121.06723,4.1210672299999995
+1998,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1998,Imputed Multilateral ODA,"Oceania, Total",552.941178,0.5529411780000001
+1998,Imputed Multilateral ODA,"South & Central Asia, Total",23475.732818,23.475732818
+1998,Imputed Multilateral ODA,"South America, Total",3215.296037,3.215296037
+1998,Imputed Multilateral ODA,"South of Sahara, Total",42580.140595,42.580140594999996
+1998,Imputed Multilateral ODA,"Southern Africa, Total",1303.112334,1.303112334
+1998,Imputed Multilateral ODA,"Western Africa, Total",17129.348809,17.129348809
+1998,Technical Cooperation,"Africa, Total",53064.377383,53.064377383
+1998,Technical Cooperation,"All Recipients, Total",127198.45808,127.19845808
+1998,Technical Cooperation,"Asia, Total",41591.627693,41.591627693
+1998,Technical Cooperation,"Caribbean & Central America, Total",9082.899913,9.082899912999999
+1998,Technical Cooperation,"Developing Countries, Total",162639.336953,162.639336953
+1998,Technical Cooperation,"Eastern Africa, Total",15462.187201,15.462187201
+1998,Technical Cooperation,"Europe, Total",11103.829824,11.103829824
+1998,Technical Cooperation,"Fragile states, Total",41138.141912,41.138141912
+1998,Technical Cooperation,"LDCs, Total",30356.20229,30.356202290000002
+1998,Technical Cooperation,"LMICs, Total",42296.381397,42.296381397
+1998,Technical Cooperation,"Middle East, Total",6729.716179,6.729716179
+1998,Technical Cooperation,"North of Sahara, Total",10940.272641,10.940272641
+1998,Technical Cooperation,"Northern America, Total",5.809102,0.005809102
+1998,Technical Cooperation,"Oceania, Total",9892.125313,9.892125313000001
+1998,Technical Cooperation,"South & Central Asia, Total",12739.732442,12.739732442000001
+1998,Technical Cooperation,"South America, Total",12244.146396,12.244146396
+1998,Technical Cooperation,"South of Sahara, Total",37756.599633,37.756599633
+1998,Technical Cooperation,"Southern Africa, Total",3760.236126,3.7602361259999997
+1998,Technical Cooperation,"Western Africa, Total",11347.873465,11.347873465000001
+1999,Development Food Aid,"Africa, Total",3077.308837,3.077308837
+1999,Development Food Aid,"All Recipients, Total",13123.426985,13.123426985
+1999,Development Food Aid,"Asia, Total",7314.339579,7.314339579
+1999,Development Food Aid,"Caribbean & Central America, Total",1346.23406,1.34623406
+1999,Development Food Aid,"Developing Countries, Total",15254.034007,15.254034007
+1999,Development Food Aid,"Eastern Africa, Total",2632.270241,2.632270241
+1999,Development Food Aid,"Europe, Total",755.544525,0.755544525
+1999,Development Food Aid,"Fragile states, Total",7502.564308999999,7.502564308999999
+1999,Development Food Aid,"LDCs, Total",5819.820509,5.819820509
+1999,Development Food Aid,"LMICs, Total",4725.49661,4.72549661
+1999,Development Food Aid,"Middle East, Total",771.76984,0.77176984
+1999,Development Food Aid,"North of Sahara, Total",-878.49595,-0.87849595
+1999,Development Food Aid,"South & Central Asia, Total",4527.641357,4.527641357
+1999,Development Food Aid,"South America, Total",799.4378859999999,0.799437886
+1999,Development Food Aid,"South of Sahara, Total",3955.804787,3.955804787
+1999,Development Food Aid,"Southern Africa, Total",43.467310000000005,0.04346731
+1999,Development Food Aid,"Western Africa, Total",992.590294,0.992590294
+1999,Humanitarian Aid,"Africa, Total",11533.561159,11.533561159000001
+1999,Humanitarian Aid,"All Recipients, Total",46425.877902,46.425877902
+1999,Humanitarian Aid,"Asia, Total",11150.983777,11.150983776999999
+1999,Humanitarian Aid,"Caribbean & Central America, Total",2604.838872,2.6048388719999997
+1999,Humanitarian Aid,"Developing Countries, Total",57537.946855,57.537946855
+1999,Humanitarian Aid,"Eastern Africa, Total",5351.383194,5.351383194
+1999,Humanitarian Aid,"Europe, Total",17922.345696,17.922345696
+1999,Humanitarian Aid,"Fragile states, Total",15123.315838,15.123315838
+1999,Humanitarian Aid,"LDCs, Total",9949.267262,9.949267262
+1999,Humanitarian Aid,"LMICs, Total",5170.60122,5.17060122
+1999,Humanitarian Aid,"Middle East, Total",3452.276858,3.4522768580000003
+1999,Humanitarian Aid,"North of Sahara, Total",232.822658,0.232822658
+1999,Humanitarian Aid,"Oceania, Total",39.384749,0.039384749
+1999,Humanitarian Aid,"South & Central Asia, Total",2882.056301,2.882056301
+1999,Humanitarian Aid,"South America, Total",441.02162799999996,0.44102162799999994
+1999,Humanitarian Aid,"South of Sahara, Total",9272.162758,9.272162758
+1999,Humanitarian Aid,"Southern Africa, Total",80.332218,0.080332218
+1999,Humanitarian Aid,"Western Africa, Total",1612.257982,1.612257982
+1999,Imputed Multilateral ODA,"Africa, Total",70812.894458,70.81289445799999
+1999,Imputed Multilateral ODA,"All Recipients, Total",135653.782176,135.65378217600002
+1999,Imputed Multilateral ODA,"Asia, Total",50392.541592,50.392541592
+1999,Imputed Multilateral ODA,"Caribbean & Central America, Total",13274.364598,13.274364598
+1999,Imputed Multilateral ODA,"Developing Countries, Total",171119.915801,171.119915801
+1999,Imputed Multilateral ODA,"Eastern Africa, Total",30203.772829,30.203772829000002
+1999,Imputed Multilateral ODA,"Europe, Total",13476.272922,13.476272922
+1999,Imputed Multilateral ODA,"Fragile states, Total",71464.912234,71.464912234
+1999,Imputed Multilateral ODA,"LDCs, Total",58456.727851999996,58.45672785199999
+1999,Imputed Multilateral ODA,"LMICs, Total",50911.313936,50.911313936
+1999,Imputed Multilateral ODA,"Middle East, Total",6399.305603,6.399305603
+1999,Imputed Multilateral ODA,"North of Sahara, Total",10645.689261,10.645689261
+1999,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+1999,Imputed Multilateral ODA,"Oceania, Total",1032.22266,1.03222266
+1999,Imputed Multilateral ODA,"South & Central Asia, Total",28268.036562,28.268036562000002
+1999,Imputed Multilateral ODA,"South America, Total",7725.571378000001,7.725571378000001
+1999,Imputed Multilateral ODA,"South of Sahara, Total",58342.955762,58.342955761999995
+1999,Imputed Multilateral ODA,"Southern Africa, Total",3573.93821,3.5739382099999997
+1999,Imputed Multilateral ODA,"Western Africa, Total",16431.337716000002,16.431337716
+1999,Technical Cooperation,"Africa, Total",51898.72846,51.89872846
+1999,Technical Cooperation,"All Recipients, Total",125494.61837699999,125.494618377
+1999,Technical Cooperation,"Asia, Total",44446.913795,44.446913795
+1999,Technical Cooperation,"Caribbean & Central America, Total",8524.113537,8.524113537
+1999,Technical Cooperation,"Developing Countries, Total",160570.908011,160.570908011
+1999,Technical Cooperation,"Eastern Africa, Total",14434.058028,14.434058027999999
+1999,Technical Cooperation,"Europe, Total",13480.06746,13.48006746
+1999,Technical Cooperation,"Fragile states, Total",38607.911453,38.607911453
+1999,Technical Cooperation,"LDCs, Total",28883.449467,28.883449467
+1999,Technical Cooperation,"LMICs, Total",44701.10437,44.70110437
+1999,Technical Cooperation,"Middle East, Total",8720.712453,8.720712453
+1999,Technical Cooperation,"North of Sahara, Total",14018.794319,14.018794319000001
+1999,Technical Cooperation,"Northern America, Total",1.005396,0.001005396
+1999,Technical Cooperation,"Oceania, Total",9880.578986,9.880578986
+1999,Technical Cooperation,"South & Central Asia, Total",13836.657131,13.836657130999999
+1999,Technical Cooperation,"South America, Total",12830.327899,12.830327899
+1999,Technical Cooperation,"South of Sahara, Total",33908.96143,33.908961430000005
+1999,Technical Cooperation,"Southern Africa, Total",3559.77326,3.55977326
+1999,Technical Cooperation,"Western Africa, Total",10512.271745,10.512271745
+2000,Development Food Aid,"Africa, Total",5125.598894,5.1255988939999995
+2000,Development Food Aid,"All Recipients, Total",17018.402901,17.018402901
+2000,Development Food Aid,"Asia, Total",6736.254942,6.7362549419999995
+2000,Development Food Aid,"Caribbean & Central America, Total",1273.612696,1.2736126959999998
+2000,Development Food Aid,"Developing Countries, Total",16335.576033,16.335576033
+2000,Development Food Aid,"Eastern Africa, Total",2854.682235,2.8546822350000003
+2000,Development Food Aid,"Europe, Total",562.773072,0.5627730719999999
+2000,Development Food Aid,"Fragile states, Total",7082.570012,7.082570012
+2000,Development Food Aid,"LDCs, Total",5842.728807,5.842728807
+2000,Development Food Aid,"LMICs, Total",5361.437552,5.361437552
+2000,Development Food Aid,"Middle East, Total",1701.849102,1.701849102
+2000,Development Food Aid,"North of Sahara, Total",588.450728,0.588450728
+2000,Development Food Aid,"South & Central Asia, Total",3270.116947,3.270116947
+2000,Development Food Aid,"South America, Total",1197.223961,1.197223961
+2000,Development Food Aid,"South of Sahara, Total",4537.148166,4.537148166
+2000,Development Food Aid,"Southern Africa, Total",2.7834000000000003,0.0027834
+2000,Development Food Aid,"Western Africa, Total",1067.235897,1.067235897
+2000,Humanitarian Aid,"Africa, Total",12127.259155,12.127259154999999
+2000,Humanitarian Aid,"All Recipients, Total",44396.751624000004,44.396751624000004
+2000,Humanitarian Aid,"Asia, Total",8668.400096,8.668400096
+2000,Humanitarian Aid,"Caribbean & Central America, Total",1277.895742,1.277895742
+2000,Humanitarian Aid,"Developing Countries, Total",49177.912325,49.177912324999994
+2000,Humanitarian Aid,"Eastern Africa, Total",6308.563878,6.308563878
+2000,Humanitarian Aid,"Europe, Total",11040.203207,11.040203207000001
+2000,Humanitarian Aid,"Fragile states, Total",14672.755884999999,14.672755884999999
+2000,Humanitarian Aid,"LDCs, Total",11054.80832,11.05480832
+2000,Humanitarian Aid,"LMICs, Total",3981.873289,3.981873289
+2000,Humanitarian Aid,"Middle East, Total",2668.087599,2.668087599
+2000,Humanitarian Aid,"North of Sahara, Total",445.218871,0.44521887099999996
+2000,Humanitarian Aid,"Oceania, Total",16.922872,0.016922872000000002
+2000,Humanitarian Aid,"South & Central Asia, Total",3246.044487,3.2460444870000003
+2000,Humanitarian Aid,"South America, Total",530.81887,0.5308188699999999
+2000,Humanitarian Aid,"South of Sahara, Total",9332.977415,9.332977415
+2000,Humanitarian Aid,"Southern Africa, Total",94.937972,0.094937972
+2000,Humanitarian Aid,"Western Africa, Total",1046.423974,1.046423974
+2000,Imputed Multilateral ODA,"Africa, Total",81843.192461,81.843192461
+2000,Imputed Multilateral ODA,"All Recipients, Total",156910.588014,156.910588014
+2000,Imputed Multilateral ODA,"Asia, Total",61599.825453,61.599825453
+2000,Imputed Multilateral ODA,"Caribbean & Central America, Total",10113.992077,10.113992077
+2000,Imputed Multilateral ODA,"Developing Countries, Total",199195.646906,199.195646906
+2000,Imputed Multilateral ODA,"Eastern Africa, Total",35861.732108,35.861732108
+2000,Imputed Multilateral ODA,"Europe, Total",22349.03919,22.34903919
+2000,Imputed Multilateral ODA,"Fragile states, Total",83150.387963,83.150387963
+2000,Imputed Multilateral ODA,"LDCs, Total",68414.434094,68.414434094
+2000,Imputed Multilateral ODA,"LMICs, Total",56932.8823,56.932882299999996
+2000,Imputed Multilateral ODA,"Middle East, Total",10354.186134,10.354186133999999
+2000,Imputed Multilateral ODA,"North of Sahara, Total",8107.578116,8.107578116
+2000,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2000,Imputed Multilateral ODA,"Oceania, Total",1875.416054,1.875416054
+2000,Imputed Multilateral ODA,"South & Central Asia, Total",31962.293781,31.962293781
+2000,Imputed Multilateral ODA,"South America, Total",5993.863712,5.9938637120000005
+2000,Imputed Multilateral ODA,"South of Sahara, Total",70707.396555,70.707396555
+2000,Imputed Multilateral ODA,"Southern Africa, Total",3907.385707,3.907385707
+2000,Imputed Multilateral ODA,"Western Africa, Total",21892.219487,21.892219487
+2000,Technical Cooperation,"Africa, Total",50007.871829,50.007871829
+2000,Technical Cooperation,"All Recipients, Total",118838.380343,118.838380343
+2000,Technical Cooperation,"Asia, Total",43726.451743,43.726451743
+2000,Technical Cooperation,"Caribbean & Central America, Total",10962.165581,10.962165580999999
+2000,Technical Cooperation,"Developing Countries, Total",152937.269676,152.937269676
+2000,Technical Cooperation,"Eastern Africa, Total",15332.844395,15.332844395
+2000,Technical Cooperation,"Europe, Total",10402.936528,10.402936528
+2000,Technical Cooperation,"Fragile states, Total",39833.917688,39.833917688
+2000,Technical Cooperation,"LDCs, Total",29834.272516,29.834272516000002
+2000,Technical Cooperation,"LMICs, Total",42342.219568,42.342219568
+2000,Technical Cooperation,"Middle East, Total",6782.88957,6.78288957
+2000,Technical Cooperation,"North of Sahara, Total",10435.826477,10.435826477
+2000,Technical Cooperation,"Northern America, Total",0.344138,0.000344138
+2000,Technical Cooperation,"Oceania, Total",10341.87865,10.34187865
+2000,Technical Cooperation,"South & Central Asia, Total",13682.605483,13.682605483
+2000,Technical Cooperation,"South America, Total",14671.210307,14.671210306999999
+2000,Technical Cooperation,"South of Sahara, Total",36547.722507,36.547722506999996
+2000,Technical Cooperation,"Southern Africa, Total",3548.395422,3.548395422
+2000,Technical Cooperation,"Western Africa, Total",11039.623512,11.039623512
+2001,Development Food Aid,"Africa, Total",4990.066228,4.990066228
+2001,Development Food Aid,"All Recipients, Total",17456.679892,17.456679892
+2001,Development Food Aid,"Asia, Total",6738.46984,6.73846984
+2001,Development Food Aid,"Caribbean & Central America, Total",1185.371822,1.185371822
+2001,Development Food Aid,"Developing Countries, Total",16183.023822,16.183023822
+2001,Development Food Aid,"Eastern Africa, Total",2933.366467,2.933366467
+2001,Development Food Aid,"Europe, Total",597.571958,0.597571958
+2001,Development Food Aid,"Fragile states, Total",8080.43828,8.080438280000001
+2001,Development Food Aid,"LDCs, Total",5961.964637,5.961964637
+2001,Development Food Aid,"LMICs, Total",5173.173602,5.173173601999999
+2001,Development Food Aid,"Middle East, Total",1079.621511,1.079621511
+2001,Development Food Aid,"North of Sahara, Total",84.811752,0.084811752
+2001,Development Food Aid,"Oceania, Total",71.983014,0.071983014
+2001,Development Food Aid,"South & Central Asia, Total",4259.263969,4.259263969
+2001,Development Food Aid,"South America, Total",1157.892548,1.157892548
+2001,Development Food Aid,"South of Sahara, Total",4901.585836,4.901585836000001
+2001,Development Food Aid,"Southern Africa, Total",1.824764,0.001824764
+2001,Development Food Aid,"Western Africa, Total",1098.250015,1.098250015
+2001,Humanitarian Aid,"Africa, Total",12831.453749,12.831453749
+2001,Humanitarian Aid,"All Recipients, Total",46870.351733,46.870351733
+2001,Humanitarian Aid,"Asia, Total",12962.721622000001,12.962721622
+2001,Humanitarian Aid,"Caribbean & Central America, Total",1577.655486,1.577655486
+2001,Humanitarian Aid,"Developing Countries, Total",50190.874917,50.190874917
+2001,Humanitarian Aid,"Eastern Africa, Total",6799.085684,6.799085684
+2001,Humanitarian Aid,"Europe, Total",6163.262039,6.163262039
+2001,Humanitarian Aid,"Fragile states, Total",19930.402113,19.930402113
+2001,Humanitarian Aid,"LDCs, Total",15126.443759,15.126443758999999
+2001,Humanitarian Aid,"LMICs, Total",5953.772854,5.9537728539999994
+2001,Humanitarian Aid,"Middle East, Total",3331.1935320000002,3.3311935320000003
+2001,Humanitarian Aid,"North of Sahara, Total",360.007595,0.36000759499999996
+2001,Humanitarian Aid,"Oceania, Total",18.776109,0.018776109000000003
+2001,Humanitarian Aid,"South & Central Asia, Total",7219.0392679999995,7.2190392679999995
+2001,Humanitarian Aid,"South America, Total",765.609446,0.765609446
+2001,Humanitarian Aid,"South of Sahara, Total",12285.996933999999,12.285996933999998
+2001,Humanitarian Aid,"Southern Africa, Total",98.577597,0.098577597
+2001,Humanitarian Aid,"Western Africa, Total",2051.2842769999997,2.0512842769999997
+2001,Imputed Multilateral ODA,"Africa, Total",85603.09490499999,85.60309490499999
+2001,Imputed Multilateral ODA,"All Recipients, Total",164130.202595,164.13020259500001
+2001,Imputed Multilateral ODA,"Asia, Total",64891.609511,64.891609511
+2001,Imputed Multilateral ODA,"Caribbean & Central America, Total",8169.790076,8.169790076
+2001,Imputed Multilateral ODA,"Developing Countries, Total",207985.288914,207.985288914
+2001,Imputed Multilateral ODA,"Eastern Africa, Total",39308.990086,39.308990086
+2001,Imputed Multilateral ODA,"Europe, Total",19458.46655,19.45846655
+2001,Imputed Multilateral ODA,"Fragile states, Total",92762.354962,92.762354962
+2001,Imputed Multilateral ODA,"LDCs, Total",74307.997005,74.307997005
+2001,Imputed Multilateral ODA,"LMICs, Total",61555.794044,61.555794044
+2001,Imputed Multilateral ODA,"Middle East, Total",9104.850264,9.104850264000001
+2001,Imputed Multilateral ODA,"North of Sahara, Total",8742.529004,8.742529004
+2001,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2001,Imputed Multilateral ODA,"Oceania, Total",1415.819619,1.415819619
+2001,Imputed Multilateral ODA,"South & Central Asia, Total",36151.787516000004,36.151787516000006
+2001,Imputed Multilateral ODA,"South America, Total",7993.684034,7.993684034
+2001,Imputed Multilateral ODA,"South of Sahara, Total",74633.85597,74.63385597
+2001,Imputed Multilateral ODA,"Southern Africa, Total",2951.533425,2.951533425
+2001,Imputed Multilateral ODA,"Western Africa, Total",23707.249425,23.707249425
+2001,Technical Cooperation,"Africa, Total",54117.409345,54.117409345
+2001,Technical Cooperation,"All Recipients, Total",129478.91127699999,129.47891127699998
+2001,Technical Cooperation,"Asia, Total",45195.914094,45.195914094
+2001,Technical Cooperation,"Caribbean & Central America, Total",12619.699064,12.619699064
+2001,Technical Cooperation,"Developing Countries, Total",166768.832165,166.768832165
+2001,Technical Cooperation,"Eastern Africa, Total",15696.67858,15.69667858
+2001,Technical Cooperation,"Europe, Total",13129.095615,13.129095615
+2001,Technical Cooperation,"Fragile states, Total",44163.245616,44.163245616
+2001,Technical Cooperation,"LDCs, Total",31723.218736,31.723218736
+2001,Technical Cooperation,"LMICs, Total",48487.477566,48.487477566
+2001,Technical Cooperation,"Middle East, Total",6721.201397,6.721201397
+2001,Technical Cooperation,"North of Sahara, Total",13395.886264,13.395886264000001
+2001,Technical Cooperation,"Oceania, Total",10102.355716,10.102355716
+2001,Technical Cooperation,"South & Central Asia, Total",14543.002419,14.543002419
+2001,Technical Cooperation,"South America, Total",14707.071349,14.707071349
+2001,Technical Cooperation,"South of Sahara, Total",39403.396881,39.403396881
+2001,Technical Cooperation,"Southern Africa, Total",3587.173378,3.587173378
+2001,Technical Cooperation,"Western Africa, Total",11195.359327,11.195359327
+2002,Development Food Aid,"Africa, Total",5100.494801,5.100494801
+2002,Development Food Aid,"All Recipients, Total",13772.844717,13.772844717
+2002,Development Food Aid,"Asia, Total",6360.621877,6.360621877
+2002,Development Food Aid,"Caribbean & Central America, Total",1222.275028,1.222275028
+2002,Development Food Aid,"Developing Countries, Total",15967.158181,15.967158181
+2002,Development Food Aid,"Eastern Africa, Total",2737.403875,2.737403875
+2002,Development Food Aid,"Europe, Total",324.525564,0.324525564
+2002,Development Food Aid,"Fragile states, Total",7713.302403,7.713302402999999
+2002,Development Food Aid,"LDCs, Total",6235.0108,6.2350108
+2002,Development Food Aid,"LMICs, Total",4768.616647,4.768616647
+2002,Development Food Aid,"Middle East, Total",1084.635211,1.084635211
+2002,Development Food Aid,"North of Sahara, Total",114.150791,0.114150791
+2002,Development Food Aid,"South & Central Asia, Total",3679.520233,3.6795202330000003
+2002,Development Food Aid,"South America, Total",916.368931,0.9163689309999999
+2002,Development Food Aid,"South of Sahara, Total",4986.34401,4.98634401
+2002,Development Food Aid,"Southern Africa, Total",84.944649,0.084944649
+2002,Development Food Aid,"Western Africa, Total",1420.3815299999999,1.4203815299999998
+2002,Humanitarian Aid,"Africa, Total",19579.84116,19.57984116
+2002,Humanitarian Aid,"All Recipients, Total",47454.136631,47.454136631000004
+2002,Humanitarian Aid,"Asia, Total",16267.333735,16.267333735
+2002,Humanitarian Aid,"Caribbean & Central America, Total",1065.717493,1.0657174930000002
+2002,Humanitarian Aid,"Developing Countries, Total",55290.727754,55.290727754
+2002,Humanitarian Aid,"Eastern Africa, Total",9098.805958,9.098805958000002
+2002,Humanitarian Aid,"Europe, Total",4281.55067,4.28155067
+2002,Humanitarian Aid,"Fragile states, Total",27590.687076,27.590687076
+2002,Humanitarian Aid,"LDCs, Total",21450.685276,21.450685276
+2002,Humanitarian Aid,"LMICs, Total",5902.887119,5.902887119
+2002,Humanitarian Aid,"Middle East, Total",3269.024611,3.269024611
+2002,Humanitarian Aid,"North of Sahara, Total",447.886909,0.447886909
+2002,Humanitarian Aid,"Oceania, Total",50.146224000000004,0.050146224
+2002,Humanitarian Aid,"South & Central Asia, Total",10207.816905,10.207816905
+2002,Humanitarian Aid,"South America, Total",918.715684,0.918715684
+2002,Humanitarian Aid,"South of Sahara, Total",18579.396027,18.579396026999998
+2002,Humanitarian Aid,"Southern Africa, Total",154.475529,0.154475529
+2002,Humanitarian Aid,"Western Africa, Total",2467.594532,2.467594532
+2002,Imputed Multilateral ODA,"Africa, Total",85922.225242,85.922225242
+2002,Imputed Multilateral ODA,"All Recipients, Total",158706.218443,158.70621844299998
+2002,Imputed Multilateral ODA,"Asia, Total",64485.208065,64.485208065
+2002,Imputed Multilateral ODA,"Caribbean & Central America, Total",6947.264955000001,6.9472649550000005
+2002,Imputed Multilateral ODA,"Developing Countries, Total",200666.171259,200.666171259
+2002,Imputed Multilateral ODA,"Eastern Africa, Total",35628.783801,35.628783801
+2002,Imputed Multilateral ODA,"Europe, Total",19591.741438,19.591741438
+2002,Imputed Multilateral ODA,"Fragile states, Total",96818.311042,96.818311042
+2002,Imputed Multilateral ODA,"LDCs, Total",75202.406665,75.202406665
+2002,Imputed Multilateral ODA,"LMICs, Total",57426.069998,57.426069997999996
+2002,Imputed Multilateral ODA,"Middle East, Total",11379.934826,11.379934826000001
+2002,Imputed Multilateral ODA,"North of Sahara, Total",6494.30036,6.49430036
+2002,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2002,Imputed Multilateral ODA,"Oceania, Total",1173.727907,1.173727907
+2002,Imputed Multilateral ODA,"South & Central Asia, Total",36038.909931,36.038909931
+2002,Imputed Multilateral ODA,"South America, Total",4385.241655,4.385241655
+2002,Imputed Multilateral ODA,"South of Sahara, Total",76537.121918,76.53712191800001
+2002,Imputed Multilateral ODA,"Southern Africa, Total",3742.161913,3.742161913
+2002,Imputed Multilateral ODA,"Western Africa, Total",23295.307992000002,23.295307992
+2002,Technical Cooperation,"Africa, Total",59850.309699,59.850309699
+2002,Technical Cooperation,"All Recipients, Total",144711.95989600001,144.71195989600002
+2002,Technical Cooperation,"Asia, Total",55235.457942,55.235457942000004
+2002,Technical Cooperation,"Caribbean & Central America, Total",11021.66594,11.02166594
+2002,Technical Cooperation,"Developing Countries, Total",186765.582588,186.765582588
+2002,Technical Cooperation,"Eastern Africa, Total",17352.823701,17.352823701000002
+2002,Technical Cooperation,"Europe, Total",15841.000049,15.841000049
+2002,Technical Cooperation,"Fragile states, Total",50856.144484,50.856144484
+2002,Technical Cooperation,"LDCs, Total",36524.345972999996,36.524345972999996
+2002,Technical Cooperation,"LMICs, Total",52777.920843,52.777920843
+2002,Technical Cooperation,"Middle East, Total",8691.862631,8.691862631
+2002,Technical Cooperation,"North of Sahara, Total",15088.71412,15.08871412
+2002,Technical Cooperation,"Northern America, Total",0.18309599999999998,0.00018309599999999997
+2002,Technical Cooperation,"Oceania, Total",11013.337617,11.013337617
+2002,Technical Cooperation,"South & Central Asia, Total",20411.37888,20.41137888
+2002,Technical Cooperation,"South America, Total",15167.268390000001,15.16726839
+2002,Technical Cooperation,"South of Sahara, Total",43218.791278,43.218791278
+2002,Technical Cooperation,"Southern Africa, Total",3677.644066,3.677644066
+2002,Technical Cooperation,"Western Africa, Total",12452.558495,12.452558495
+2003,Development Food Aid,"Africa, Total",5684.429736,5.684429736
+2003,Development Food Aid,"All Recipients, Total",13128.179132000001,13.128179132000001
+2003,Development Food Aid,"Asia, Total",5282.24171,5.28224171
+2003,Development Food Aid,"Caribbean & Central America, Total",1352.489897,1.3524898969999999
+2003,Development Food Aid,"Developing Countries, Total",15975.031153,15.975031153
+2003,Development Food Aid,"Eastern Africa, Total",3405.8054340000003,3.4058054340000004
+2003,Development Food Aid,"Europe, Total",391.071327,0.391071327
+2003,Development Food Aid,"Fragile states, Total",7783.413795,7.783413795
+2003,Development Food Aid,"LDCs, Total",6175.902988,6.175902988
+2003,Development Food Aid,"LMICs, Total",4689.460876,4.689460876
+2003,Development Food Aid,"Middle East, Total",823.891985,0.8238919849999999
+2003,Development Food Aid,"North of Sahara, Total",175.678019,0.17567801900000002
+2003,Development Food Aid,"South & Central Asia, Total",3105.9969260000003,3.1059969260000004
+2003,Development Food Aid,"South America, Total",1279.446442,1.279446442
+2003,Development Food Aid,"South of Sahara, Total",5493.5042969999995,5.493504296999999
+2003,Development Food Aid,"Southern Africa, Total",144.463367,0.144463367
+2003,Development Food Aid,"Western Africa, Total",1287.437176,1.2874371759999998
+2003,Humanitarian Aid,"Africa, Total",31714.56225,31.71456225
+2003,Humanitarian Aid,"All Recipients, Total",63767.236328,63.767236327999996
+2003,Humanitarian Aid,"Asia, Total",22121.537665,22.121537664999998
+2003,Humanitarian Aid,"Caribbean & Central America, Total",697.748974,0.697748974
+2003,Humanitarian Aid,"Developing Countries, Total",76132.037325,76.132037325
+2003,Humanitarian Aid,"Eastern Africa, Total",16660.08092,16.66008092
+2003,Humanitarian Aid,"Europe, Total",4174.193747,4.174193747
+2003,Humanitarian Aid,"Fragile states, Total",40504.309046,40.504309046
+2003,Humanitarian Aid,"LDCs, Total",26837.128011,26.837128011
+2003,Humanitarian Aid,"LMICs, Total",5843.72196,5.84372196
+2003,Humanitarian Aid,"Middle East, Total",11945.636035,11.945636035
+2003,Humanitarian Aid,"North of Sahara, Total",698.995204,0.6989952039999999
+2003,Humanitarian Aid,"Oceania, Total",52.755818,0.052755817999999996
+2003,Humanitarian Aid,"South & Central Asia, Total",7609.854732,7.609854732
+2003,Humanitarian Aid,"South America, Total",1008.241908,1.008241908
+2003,Humanitarian Aid,"South of Sahara, Total",30648.082339,30.648082339000002
+2003,Humanitarian Aid,"Southern Africa, Total",128.510265,0.128510265
+2003,Humanitarian Aid,"Western Africa, Total",3122.282255,3.122282255
+2003,Imputed Multilateral ODA,"Africa, Total",94827.755157,94.82775515700001
+2003,Imputed Multilateral ODA,"All Recipients, Total",165219.628214,165.219628214
+2003,Imputed Multilateral ODA,"Asia, Total",63447.625968,63.447625968
+2003,Imputed Multilateral ODA,"Caribbean & Central America, Total",8415.776786,8.415776786
+2003,Imputed Multilateral ODA,"Developing Countries, Total",209061.155088,209.061155088
+2003,Imputed Multilateral ODA,"Eastern Africa, Total",42032.906758,42.032906757999996
+2003,Imputed Multilateral ODA,"Europe, Total",14314.597603,14.314597603
+2003,Imputed Multilateral ODA,"Fragile states, Total",98878.194818,98.878194818
+2003,Imputed Multilateral ODA,"LDCs, Total",82426.659256,82.426659256
+2003,Imputed Multilateral ODA,"LMICs, Total",54047.375393,54.047375393
+2003,Imputed Multilateral ODA,"Middle East, Total",13772.077163,13.772077163
+2003,Imputed Multilateral ODA,"North of Sahara, Total",7250.8353050000005,7.250835305000001
+2003,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2003,Imputed Multilateral ODA,"Oceania, Total",1286.810544,1.286810544
+2003,Imputed Multilateral ODA,"South & Central Asia, Total",30368.79754,30.36879754
+2003,Imputed Multilateral ODA,"South America, Total",6908.679728,6.908679728
+2003,Imputed Multilateral ODA,"South of Sahara, Total",84668.39021,84.66839021
+2003,Imputed Multilateral ODA,"Southern Africa, Total",4601.595628,4.601595628
+2003,Imputed Multilateral ODA,"Western Africa, Total",25344.625609,25.344625608999998
+2003,Technical Cooperation,"Africa, Total",62324.650247,62.324650247
+2003,Technical Cooperation,"All Recipients, Total",162266.265717,162.266265717
+2003,Technical Cooperation,"Asia, Total",63850.785534,63.850785534
+2003,Technical Cooperation,"Caribbean & Central America, Total",10654.758979999999,10.654758979999999
+2003,Technical Cooperation,"Developing Countries, Total",209204.841341,209.204841341
+2003,Technical Cooperation,"Eastern Africa, Total",18021.370482,18.021370482
+2003,Technical Cooperation,"Europe, Total",15485.352419,15.485352419000002
+2003,Technical Cooperation,"Fragile states, Total",58505.044971,58.505044971000004
+2003,Technical Cooperation,"LDCs, Total",41266.213118,41.266213118
+2003,Technical Cooperation,"LMICs, Total",53320.483802,53.320483802000005
+2003,Technical Cooperation,"Middle East, Total",13846.147393,13.846147392999999
+2003,Technical Cooperation,"North of Sahara, Total",13956.573953,13.956573953
+2003,Technical Cooperation,"Northern America, Total",0.244754,0.000244754
+2003,Technical Cooperation,"Oceania, Total",11707.542373,11.707542373
+2003,Technical Cooperation,"South & Central Asia, Total",22469.513092,22.469513092
+2003,Technical Cooperation,"South America, Total",20495.481529,20.495481529
+2003,Technical Cooperation,"South of Sahara, Total",46616.062074,46.616062074
+2003,Technical Cooperation,"Southern Africa, Total",3994.059281,3.9940592809999997
+2003,Technical Cooperation,"Western Africa, Total",14300.939215,14.300939215
+2004,Development Food Aid,"Africa, Total",5098.918327,5.098918327000001
+2004,Development Food Aid,"All Recipients, Total",12462.294656,12.462294656
+2004,Development Food Aid,"Asia, Total",5409.512409,5.4095124089999995
+2004,Development Food Aid,"Caribbean & Central America, Total",1162.144915,1.162144915
+2004,Development Food Aid,"Developing Countries, Total",14491.331892,14.491331892
+2004,Development Food Aid,"Eastern Africa, Total",2746.8181640000003,2.7468181640000005
+2004,Development Food Aid,"Europe, Total",210.393698,0.210393698
+2004,Development Food Aid,"Fragile states, Total",7627.983443,7.627983443
+2004,Development Food Aid,"LDCs, Total",6328.0787470000005,6.328078747
+2004,Development Food Aid,"LMICs, Total",3948.014869,3.948014869
+2004,Development Food Aid,"Middle East, Total",873.012619,0.8730126189999999
+2004,Development Food Aid,"North of Sahara, Total",129.313953,0.129313953
+2004,Development Food Aid,"South & Central Asia, Total",3200.853492,3.2008534920000002
+2004,Development Food Aid,"South America, Total",845.543231,0.845543231
+2004,Development Food Aid,"South of Sahara, Total",4969.604374,4.969604373999999
+2004,Development Food Aid,"Southern Africa, Total",13.879266000000001,0.013879266000000001
+2004,Development Food Aid,"Western Africa, Total",1382.442937,1.382442937
+2004,Humanitarian Aid,"Africa, Total",34405.797171,34.405797170999996
+2004,Humanitarian Aid,"All Recipients, Total",65827.70561,65.82770561000001
+2004,Humanitarian Aid,"Asia, Total",22627.940393,22.627940393
+2004,Humanitarian Aid,"Caribbean & Central America, Total",2051.046308,2.051046308
+2004,Humanitarian Aid,"Developing Countries, Total",83336.205517,83.336205517
+2004,Humanitarian Aid,"Eastern Africa, Total",18325.325077,18.325325077000002
+2004,Humanitarian Aid,"Europe, Total",5001.901986,5.001901986
+2004,Humanitarian Aid,"Fragile states, Total",43971.525794,43.971525794
+2004,Humanitarian Aid,"LDCs, Total",29771.526713,29.771526713
+2004,Humanitarian Aid,"LMICs, Total",7743.739162,7.743739162
+2004,Humanitarian Aid,"Middle East, Total",11443.871468,11.443871468
+2004,Humanitarian Aid,"North of Sahara, Total",1004.826978,1.004826978
+2004,Humanitarian Aid,"Oceania, Total",154.528682,0.154528682
+2004,Humanitarian Aid,"South & Central Asia, Total",8354.649217,8.354649217
+2004,Humanitarian Aid,"South America, Total",608.6594230000001,0.6086594230000001
+2004,Humanitarian Aid,"South of Sahara, Total",33037.850486,33.037850486
+2004,Humanitarian Aid,"Southern Africa, Total",122.388724,0.12238872399999999
+2004,Humanitarian Aid,"Western Africa, Total",3341.0438750000003,3.3410438750000004
+2004,Imputed Multilateral ODA,"Africa, Total",119660.618845,119.660618845
+2004,Imputed Multilateral ODA,"All Recipients, Total",209103.106852,209.103106852
+2004,Imputed Multilateral ODA,"Asia, Total",85364.951835,85.364951835
+2004,Imputed Multilateral ODA,"Caribbean & Central America, Total",10996.576785,10.996576784999998
+2004,Imputed Multilateral ODA,"Developing Countries, Total",263997.465755,263.997465755
+2004,Imputed Multilateral ODA,"Eastern Africa, Total",52048.125491,52.048125491
+2004,Imputed Multilateral ODA,"Europe, Total",18335.838783,18.335838783
+2004,Imputed Multilateral ODA,"Fragile states, Total",130987.325724,130.987325724
+2004,Imputed Multilateral ODA,"LDCs, Total",105662.913471,105.66291347100001
+2004,Imputed Multilateral ODA,"LMICs, Total",76700.225106,76.700225106
+2004,Imputed Multilateral ODA,"Middle East, Total",14939.927361,14.939927361
+2004,Imputed Multilateral ODA,"North of Sahara, Total",11378.215875,11.378215875
+2004,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2004,Imputed Multilateral ODA,"Oceania, Total",1940.245898,1.940245898
+2004,Imputed Multilateral ODA,"South & Central Asia, Total",47561.502521,47.561502521
+2004,Imputed Multilateral ODA,"South America, Total",6009.481083,6.009481083
+2004,Imputed Multilateral ODA,"South of Sahara, Total",105832.670341,105.83267034100001
+2004,Imputed Multilateral ODA,"Southern Africa, Total",4260.204807,4.260204807
+2004,Imputed Multilateral ODA,"Western Africa, Total",30882.956663999998,30.882956663999998
+2004,Technical Cooperation,"Africa, Total",59463.319316,59.463319316
+2004,Technical Cooperation,"All Recipients, Total",156993.062221,156.993062221
+2004,Technical Cooperation,"Asia, Total",60521.68426,60.52168426
+2004,Technical Cooperation,"Caribbean & Central America, Total",10238.243129,10.238243129
+2004,Technical Cooperation,"Developing Countries, Total",201899.26385,201.89926384999998
+2004,Technical Cooperation,"Eastern Africa, Total",18630.2904,18.630290400000003
+2004,Technical Cooperation,"Europe, Total",14309.781606999999,14.309781607
+2004,Technical Cooperation,"Fragile states, Total",56698.910238,56.698910237999996
+2004,Technical Cooperation,"LDCs, Total",39911.947356000004,39.911947356000006
+2004,Technical Cooperation,"LMICs, Total",48931.888846,48.931888846
+2004,Technical Cooperation,"Middle East, Total",11439.506650000001,11.439506650000002
+2004,Technical Cooperation,"North of Sahara, Total",10863.927295,10.863927295
+2004,Technical Cooperation,"Northern America, Total",1.114936,0.001114936
+2004,Technical Cooperation,"Oceania, Total",13184.860621,13.184860621
+2004,Technical Cooperation,"South & Central Asia, Total",22276.216119,22.276216119
+2004,Technical Cooperation,"South America, Total",20259.951218,20.259951217999998
+2004,Technical Cooperation,"South of Sahara, Total",46599.83768,46.59983768
+2004,Technical Cooperation,"Southern Africa, Total",3680.049176,3.680049176
+2004,Technical Cooperation,"Western Africa, Total",14139.146975,14.139146975
+2005,Development Food Aid,"Africa, Total",5198.553526,5.1985535259999995
+2005,Development Food Aid,"All Recipients, Total",9813.684299,9.813684299
+2005,Development Food Aid,"Asia, Total",4293.25289,4.29325289
+2005,Development Food Aid,"Caribbean & Central America, Total",1303.690686,1.303690686
+2005,Development Food Aid,"Developing Countries, Total",12182.381321,12.182381321000001
+2005,Development Food Aid,"Eastern Africa, Total",3032.743698,3.0327436980000004
+2005,Development Food Aid,"Europe, Total",253.106056,0.25310605599999997
+2005,Development Food Aid,"Fragile states, Total",7490.358441,7.490358441000001
+2005,Development Food Aid,"LDCs, Total",6082.190053,6.082190053000001
+2005,Development Food Aid,"LMICs, Total",3619.773315,3.6197733149999998
+2005,Development Food Aid,"Middle East, Total",481.960597,0.481960597
+2005,Development Food Aid,"North of Sahara, Total",36.916546,0.036916545999999995
+2005,Development Food Aid,"South & Central Asia, Total",3037.016544,3.037016544
+2005,Development Food Aid,"South America, Total",466.827187,0.466827187
+2005,Development Food Aid,"South of Sahara, Total",5161.63698,5.16163698
+2005,Development Food Aid,"Southern Africa, Total",0.09786,9.786e-05
+2005,Development Food Aid,"Western Africa, Total",1384.4708580000001,1.384470858
+2005,Humanitarian Aid,"Africa, Total",41487.264407,41.487264407000005
+2005,Humanitarian Aid,"All Recipients, Total",77264.042297,77.264042297
+2005,Humanitarian Aid,"Asia, Total",34933.809092,34.933809092000004
+2005,Humanitarian Aid,"Caribbean & Central America, Total",3112.2310860000002,3.1122310860000004
+2005,Humanitarian Aid,"Developing Countries, Total",96170.20344699999,96.17020344699999
+2005,Humanitarian Aid,"Eastern Africa, Total",26013.928143,26.013928143
+2005,Humanitarian Aid,"Europe, Total",4035.8722190000003,4.035872219000001
+2005,Humanitarian Aid,"Fragile states, Total",48536.703316,48.536703316
+2005,Humanitarian Aid,"LDCs, Total",36000.421161,36.000421161
+2005,Humanitarian Aid,"LMICs, Total",18048.955507,18.048955507
+2005,Humanitarian Aid,"Middle East, Total",8378.136832,8.378136832000001
+2005,Humanitarian Aid,"North of Sahara, Total",697.080052,0.697080052
+2005,Humanitarian Aid,"Oceania, Total",117.30514099999999,0.11730514099999999
+2005,Humanitarian Aid,"South & Central Asia, Total",14262.750044,14.262750044
+2005,Humanitarian Aid,"South America, Total",1085.932798,1.085932798
+2005,Humanitarian Aid,"South of Sahara, Total",40036.375305,40.036375305
+2005,Humanitarian Aid,"Southern Africa, Total",130.59916,0.13059916000000002
+2005,Humanitarian Aid,"Western Africa, Total",3260.226519,3.2602265189999997
+2005,Imputed Multilateral ODA,"Africa, Total",121521.970411,121.521970411
+2005,Imputed Multilateral ODA,"All Recipients, Total",208212.82747,208.21282746999998
+2005,Imputed Multilateral ODA,"Asia, Total",75178.927535,75.178927535
+2005,Imputed Multilateral ODA,"Caribbean & Central America, Total",10310.19732,10.310197319999999
+2005,Imputed Multilateral ODA,"Developing Countries, Total",262611.472228,262.611472228
+2005,Imputed Multilateral ODA,"Eastern Africa, Total",53670.65631,53.67065631
+2005,Imputed Multilateral ODA,"Europe, Total",17527.206598,17.527206598
+2005,Imputed Multilateral ODA,"Fragile states, Total",127014.541408,127.014541408
+2005,Imputed Multilateral ODA,"LDCs, Total",104984.833958,104.984833958
+2005,Imputed Multilateral ODA,"LMICs, Total",73638.220581,73.638220581
+2005,Imputed Multilateral ODA,"Middle East, Total",12138.136389,12.138136389
+2005,Imputed Multilateral ODA,"North of Sahara, Total",10886.624614,10.886624614
+2005,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2005,Imputed Multilateral ODA,"Oceania, Total",3456.579266,3.4565792660000003
+2005,Imputed Multilateral ODA,"South & Central Asia, Total",43076.548103,43.076548103
+2005,Imputed Multilateral ODA,"South America, Total",8180.648756,8.180648756
+2005,Imputed Multilateral ODA,"South of Sahara, Total",108402.601656,108.402601656
+2005,Imputed Multilateral ODA,"Southern Africa, Total",4774.312502,4.774312502
+2005,Imputed Multilateral ODA,"Western Africa, Total",31445.644064,31.445644064
+2005,Technical Cooperation,"Africa, Total",61210.759178,61.210759178
+2005,Technical Cooperation,"All Recipients, Total",172301.07763,172.30107763
+2005,Technical Cooperation,"Asia, Total",72244.737282,72.244737282
+2005,Technical Cooperation,"Caribbean & Central America, Total",9586.777836,9.586777836
+2005,Technical Cooperation,"Developing Countries, Total",221715.31233000002,221.71531233000002
+2005,Technical Cooperation,"Eastern Africa, Total",19303.343597,19.303343596999998
+2005,Technical Cooperation,"Europe, Total",13745.506792,13.745506792
+2005,Technical Cooperation,"Fragile states, Total",70640.828997,70.640828997
+2005,Technical Cooperation,"LDCs, Total",47795.742595,47.795742595
+2005,Technical Cooperation,"LMICs, Total",52568.210284,52.568210284
+2005,Technical Cooperation,"Middle East, Total",17761.802232000002,17.761802232
+2005,Technical Cooperation,"North of Sahara, Total",12868.773132,12.868773132
+2005,Technical Cooperation,"Oceania, Total",4719.875322,4.719875322
+2005,Technical Cooperation,"South & Central Asia, Total",27564.166554,27.564166554
+2005,Technical Cooperation,"South America, Total",17213.430934,17.213430934
+2005,Technical Cooperation,"South of Sahara, Total",46344.189534,46.344189533999995
+2005,Technical Cooperation,"Southern Africa, Total",3590.626235,3.590626235
+2005,Technical Cooperation,"Western Africa, Total",13655.438226,13.655438226
+2006,Development Food Aid,"Africa, Total",4896.278102,4.896278102
+2006,Development Food Aid,"All Recipients, Total",9932.395668,9.932395668
+2006,Development Food Aid,"Asia, Total",3989.882183,3.989882183
+2006,Development Food Aid,"Caribbean & Central America, Total",1647.285884,1.647285884
+2006,Development Food Aid,"Developing Countries, Total",11932.124415,11.932124415
+2006,Development Food Aid,"Eastern Africa, Total",2646.148578,2.646148578
+2006,Development Food Aid,"Europe, Total",37.21832,0.03721832
+2006,Development Food Aid,"Fragile states, Total",7305.239263,7.305239263000001
+2006,Development Food Aid,"LDCs, Total",5396.080027,5.396080027
+2006,Development Food Aid,"LMICs, Total",3854.149533,3.8541495329999997
+2006,Development Food Aid,"Middle East, Total",857.200504,0.857200504
+2006,Development Food Aid,"North of Sahara, Total",32.212796,0.032212795999999995
+2006,Development Food Aid,"Oceania, Total",2.146046,0.002146046
+2006,Development Food Aid,"South & Central Asia, Total",2571.202407,2.5712024070000004
+2006,Development Food Aid,"South America, Total",816.942115,0.8169421149999999
+2006,Development Food Aid,"South of Sahara, Total",4862.357846,4.862357846
+2006,Development Food Aid,"Southern Africa, Total",6.515794,0.006515793999999999
+2006,Development Food Aid,"Western Africa, Total",1424.881166,1.4248811659999998
+2006,Humanitarian Aid,"Africa, Total",38131.235208,38.131235208
+2006,Humanitarian Aid,"All Recipients, Total",60957.386103,60.957386103
+2006,Humanitarian Aid,"Asia, Total",26440.548915,26.440548915
+2006,Humanitarian Aid,"Caribbean & Central America, Total",1786.221779,1.786221779
+2006,Humanitarian Aid,"Developing Countries, Total",77505.05513,77.50505512999999
+2006,Humanitarian Aid,"Eastern Africa, Total",23993.152083,23.993152083000002
+2006,Humanitarian Aid,"Europe, Total",750.687657,0.750687657
+2006,Humanitarian Aid,"Fragile states, Total",46269.668006,46.269668006
+2006,Humanitarian Aid,"LDCs, Total",32758.19748,32.75819748
+2006,Humanitarian Aid,"LMICs, Total",16816.11589,16.816115890000003
+2006,Humanitarian Aid,"Middle East, Total",10643.740343,10.643740343
+2006,Humanitarian Aid,"North of Sahara, Total",377.847048,0.37784704799999996
+2006,Humanitarian Aid,"Oceania, Total",147.203015,0.147203015
+2006,Humanitarian Aid,"South & Central Asia, Total",10406.621851,10.406621851
+2006,Humanitarian Aid,"South America, Total",1149.29179,1.14929179
+2006,Humanitarian Aid,"South of Sahara, Total",37237.573905,37.237573905
+2006,Humanitarian Aid,"Southern Africa, Total",67.061904,0.06706190399999999
+2006,Humanitarian Aid,"Western Africa, Total",3004.707159,3.004707159
+2006,Imputed Multilateral ODA,"Africa, Total",150258.650903,150.258650903
+2006,Imputed Multilateral ODA,"All Recipients, Total",223101.7814,223.1017814
+2006,Imputed Multilateral ODA,"Asia, Total",62843.603316,62.843603316
+2006,Imputed Multilateral ODA,"Caribbean & Central America, Total",13612.139839,13.612139839
+2006,Imputed Multilateral ODA,"Developing Countries, Total",282364.709716,282.364709716
+2006,Imputed Multilateral ODA,"Eastern Africa, Total",75744.325022,75.744325022
+2006,Imputed Multilateral ODA,"Europe, Total",19164.56246,19.164562460000003
+2006,Imputed Multilateral ODA,"Fragile states, Total",143126.598693,143.126598693
+2006,Imputed Multilateral ODA,"LDCs, Total",124485.650496,124.485650496
+2006,Imputed Multilateral ODA,"LMICs, Total",74216.002649,74.216002649
+2006,Imputed Multilateral ODA,"Middle East, Total",15814.454689,15.814454689
+2006,Imputed Multilateral ODA,"North of Sahara, Total",11461.94271,11.461942709999999
+2006,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2006,Imputed Multilateral ODA,"Oceania, Total",1720.829563,1.7208295630000001
+2006,Imputed Multilateral ODA,"South & Central Asia, Total",28808.724613000002,28.808724613000003
+2006,Imputed Multilateral ODA,"South America, Total",9899.867329,9.899867329000001
+2006,Imputed Multilateral ODA,"South of Sahara, Total",136905.301137,136.905301137
+2006,Imputed Multilateral ODA,"Southern Africa, Total",3890.437727,3.890437727
+2006,Imputed Multilateral ODA,"Western Africa, Total",43106.969032,43.106969032
+2006,Technical Cooperation,"Africa, Total",71955.637335,71.955637335
+2006,Technical Cooperation,"All Recipients, Total",181620.395876,181.620395876
+2006,Technical Cooperation,"Asia, Total",70557.774129,70.557774129
+2006,Technical Cooperation,"Caribbean & Central America, Total",10483.728166,10.483728166
+2006,Technical Cooperation,"Developing Countries, Total",233475.176066,233.47517606600002
+2006,Technical Cooperation,"Eastern Africa, Total",24188.066297,24.188066297000002
+2006,Technical Cooperation,"Europe, Total",14930.304773,14.930304773
+2006,Technical Cooperation,"Fragile states, Total",73217.644687,73.217644687
+2006,Technical Cooperation,"LDCs, Total",51734.397783,51.734397783
+2006,Technical Cooperation,"LMICs, Total",58671.874399,58.671874399000004
+2006,Technical Cooperation,"Middle East, Total",15094.438794,15.094438794
+2006,Technical Cooperation,"North of Sahara, Total",13446.880713,13.446880713
+2006,Technical Cooperation,"Oceania, Total",4722.452325,4.722452325
+2006,Technical Cooperation,"South & Central Asia, Total",25390.073184,25.390073184000002
+2006,Technical Cooperation,"South America, Total",20100.300631,20.100300631
+2006,Technical Cooperation,"South of Sahara, Total",57359.879006999996,57.359879006999996
+2006,Technical Cooperation,"Southern Africa, Total",4128.564516,4.128564516
+2006,Technical Cooperation,"Western Africa, Total",18419.714605,18.419714605
+2007,Development Food Aid,"Africa, Total",6992.102071,6.992102071000001
+2007,Development Food Aid,"All Recipients, Total",10596.960145000001,10.596960145
+2007,Development Food Aid,"Asia, Total",2772.44854,2.77244854
+2007,Development Food Aid,"Caribbean & Central America, Total",1157.3588320000001,1.1573588320000001
+2007,Development Food Aid,"Developing Countries, Total",12296.785004,12.296785004
+2007,Development Food Aid,"Eastern Africa, Total",4181.154583,4.181154583
+2007,Development Food Aid,"Europe, Total",83.465589,0.08346558899999999
+2007,Development Food Aid,"Fragile states, Total",8819.958302000001,8.819958302000002
+2007,Development Food Aid,"LDCs, Total",7678.59773,7.678597730000001
+2007,Development Food Aid,"LMICs, Total",2798.830217,2.7988302170000003
+2007,Development Food Aid,"Middle East, Total",305.315067,0.305315067
+2007,Development Food Aid,"North of Sahara, Total",16.918437,0.016918437
+2007,Development Food Aid,"Oceania, Total",1.467711,0.001467711
+2007,Development Food Aid,"South & Central Asia, Total",1940.070453,1.9400704530000001
+2007,Development Food Aid,"South America, Total",441.964719,0.441964719
+2007,Development Food Aid,"South of Sahara, Total",6959.710083,6.959710083
+2007,Development Food Aid,"Southern Africa, Total",93.857803,0.093857803
+2007,Development Food Aid,"Western Africa, Total",1869.9179060000001,1.8699179060000002
+2007,Humanitarian Aid,"Africa, Total",36259.464084,36.259464084
+2007,Humanitarian Aid,"All Recipients, Total",59707.962288,59.707962288000004
+2007,Humanitarian Aid,"Asia, Total",24585.349138999998,24.585349138999998
+2007,Humanitarian Aid,"Caribbean & Central America, Total",1590.5565119999999,1.5905565119999998
+2007,Humanitarian Aid,"Developing Countries, Total",75804.385883,75.804385883
+2007,Humanitarian Aid,"Eastern Africa, Total",23243.16662,23.24316662
+2007,Humanitarian Aid,"Europe, Total",1049.725596,1.049725596
+2007,Humanitarian Aid,"Fragile states, Total",46600.436662,46.600436662
+2007,Humanitarian Aid,"LDCs, Total",32972.834607000004,32.972834607
+2007,Humanitarian Aid,"LMICs, Total",15435.959335,15.435959335
+2007,Humanitarian Aid,"Middle East, Total",10523.656877,10.523656876999999
+2007,Humanitarian Aid,"North of Sahara, Total",458.523364,0.458523364
+2007,Humanitarian Aid,"Oceania, Total",122.652598,0.122652598
+2007,Humanitarian Aid,"South & Central Asia, Total",10078.989746,10.078989746
+2007,Humanitarian Aid,"South America, Total",1742.199551,1.742199551
+2007,Humanitarian Aid,"South of Sahara, Total",35157.449521,35.157449521000004
+2007,Humanitarian Aid,"Southern Africa, Total",270.400754,0.270400754
+2007,Humanitarian Aid,"Western Africa, Total",2586.435088,2.586435088
+2007,Imputed Multilateral ODA,"Africa, Total",143557.952681,143.557952681
+2007,Imputed Multilateral ODA,"All Recipients, Total",238243.507467,238.243507467
+2007,Imputed Multilateral ODA,"Asia, Total",84254.85625900001,84.25485625900001
+2007,Imputed Multilateral ODA,"Caribbean & Central America, Total",13059.987567,13.059987567
+2007,Imputed Multilateral ODA,"Developing Countries, Total",299549.54848,299.54954848
+2007,Imputed Multilateral ODA,"Eastern Africa, Total",65852.845547,65.852845547
+2007,Imputed Multilateral ODA,"Europe, Total",21076.635377,21.076635377
+2007,Imputed Multilateral ODA,"Fragile states, Total",149229.64679,149.22964679
+2007,Imputed Multilateral ODA,"LDCs, Total",124899.08242600001,124.899082426
+2007,Imputed Multilateral ODA,"LMICs, Total",80643.149924,80.643149924
+2007,Imputed Multilateral ODA,"Middle East, Total",15401.436001,15.401436001
+2007,Imputed Multilateral ODA,"North of Sahara, Total",11750.150265,11.750150265
+2007,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2007,Imputed Multilateral ODA,"Oceania, Total",1838.16482,1.83816482
+2007,Imputed Multilateral ODA,"South & Central Asia, Total",44904.331562,44.904331561999996
+2007,Imputed Multilateral ODA,"South America, Total",7623.53315,7.62353315
+2007,Imputed Multilateral ODA,"South of Sahara, Total",128754.549052,128.75454905200002
+2007,Imputed Multilateral ODA,"Southern Africa, Total",5377.179273,5.377179272999999
+2007,Imputed Multilateral ODA,"Western Africa, Total",39813.71898,39.81371898
+2007,Technical Cooperation,"Africa, Total",50279.274542,50.279274541999996
+2007,Technical Cooperation,"All Recipients, Total",126512.900762,126.512900762
+2007,Technical Cooperation,"Asia, Total",50413.761769000004,50.413761769000004
+2007,Technical Cooperation,"Caribbean & Central America, Total",6232.030889,6.232030889
+2007,Technical Cooperation,"Developing Countries, Total",159884.055986,159.884055986
+2007,Technical Cooperation,"Eastern Africa, Total",15369.123943999999,15.369123943999998
+2007,Technical Cooperation,"Europe, Total",10917.710024,10.917710024
+2007,Technical Cooperation,"Fragile states, Total",45463.841786,45.463841785999996
+2007,Technical Cooperation,"LDCs, Total",34090.47762,34.090477619999994
+2007,Technical Cooperation,"LMICs, Total",42117.856194,42.117856194
+2007,Technical Cooperation,"Middle East, Total",6949.40046,6.94940046
+2007,Technical Cooperation,"North of Sahara, Total",10605.757391000001,10.605757391000001
+2007,Technical Cooperation,"Oceania, Total",4835.054153,4.835054153
+2007,Technical Cooperation,"South & Central Asia, Total",16465.058981000002,16.465058981000002
+2007,Technical Cooperation,"South America, Total",10420.261599,10.420261599
+2007,Technical Cooperation,"South of Sahara, Total",37608.38563,37.608385629999994
+2007,Technical Cooperation,"Southern Africa, Total",2398.145634,2.398145634
+2007,Technical Cooperation,"Western Africa, Total",11943.466963,11.943466963
+2008,Development Food Aid,"Africa, Total",10649.409905,10.649409905
+2008,Development Food Aid,"All Recipients, Total",14530.222327,14.530222326999999
+2008,Development Food Aid,"Asia, Total",4274.824609,4.274824609
+2008,Development Food Aid,"Caribbean & Central America, Total",1264.364595,1.264364595
+2008,Development Food Aid,"Developing Countries, Total",17310.524276,17.310524276
+2008,Development Food Aid,"Eastern Africa, Total",6849.233088,6.849233088
+2008,Development Food Aid,"Europe, Total",27.835455,0.027835455
+2008,Development Food Aid,"Fragile states, Total",13653.264357,13.653264357
+2008,Development Food Aid,"LDCs, Total",12170.5766,12.1705766
+2008,Development Food Aid,"LMICs, Total",3222.689096,3.222689096
+2008,Development Food Aid,"Middle East, Total",818.978559,0.818978559
+2008,Development Food Aid,"North of Sahara, Total",105.430258,0.105430258
+2008,Development Food Aid,"South & Central Asia, Total",2836.437455,2.8364374550000004
+2008,Development Food Aid,"South America, Total",357.939534,0.357939534
+2008,Development Food Aid,"South of Sahara, Total",10531.145887,10.531145887000001
+2008,Development Food Aid,"Southern Africa, Total",93.29103500000001,0.09329103500000001
+2008,Development Food Aid,"Western Africa, Total",2495.005659,2.495005659
+2008,Humanitarian Aid,"Africa, Total",49117.821514,49.117821514000006
+2008,Humanitarian Aid,"All Recipients, Total",77567.96767299999,77.567967673
+2008,Humanitarian Aid,"Asia, Total",33072.341426,33.072341426
+2008,Humanitarian Aid,"Caribbean & Central America, Total",2974.140836,2.974140836
+2008,Humanitarian Aid,"Developing Countries, Total",98515.568994,98.515568994
+2008,Humanitarian Aid,"Eastern Africa, Total",33702.691507,33.702691507000004
+2008,Humanitarian Aid,"Europe, Total",854.81877,0.85481877
+2008,Humanitarian Aid,"Fragile states, Total",66058.52958,66.05852958
+2008,Humanitarian Aid,"LDCs, Total",51454.686232,51.454686232
+2008,Humanitarian Aid,"LMICs, Total",15755.061895,15.755061895
+2008,Humanitarian Aid,"Middle East, Total",11015.882054,11.015882054
+2008,Humanitarian Aid,"North of Sahara, Total",552.930853,0.552930853
+2008,Humanitarian Aid,"Oceania, Total",143.872628,0.143872628
+2008,Humanitarian Aid,"South & Central Asia, Total",17210.114942,17.210114942
+2008,Humanitarian Aid,"South America, Total",1592.286733,1.592286733
+2008,Humanitarian Aid,"South of Sahara, Total",47994.155618,47.99415561799999
+2008,Humanitarian Aid,"Southern Africa, Total",150.709771,0.150709771
+2008,Humanitarian Aid,"Western Africa, Total",2900.857103,2.900857103
+2008,Imputed Multilateral ODA,"Africa, Total",160724.54588299998,160.724545883
+2008,Imputed Multilateral ODA,"All Recipients, Total",266700.240638,266.700240638
+2008,Imputed Multilateral ODA,"Asia, Total",94551.724727,94.55172472699999
+2008,Imputed Multilateral ODA,"Caribbean & Central America, Total",13023.684441,13.023684440999999
+2008,Imputed Multilateral ODA,"Developing Countries, Total",335493.54867600003,335.49354867600005
+2008,Imputed Multilateral ODA,"Eastern Africa, Total",69367.931998,69.367931998
+2008,Imputed Multilateral ODA,"Europe, Total",24539.393961,24.539393961000002
+2008,Imputed Multilateral ODA,"Fragile states, Total",166296.61642099998,166.29661642099998
+2008,Imputed Multilateral ODA,"LDCs, Total",139641.982167,139.641982167
+2008,Imputed Multilateral ODA,"LMICs, Total",90948.721346,90.948721346
+2008,Imputed Multilateral ODA,"Middle East, Total",17854.003714,17.854003713999997
+2008,Imputed Multilateral ODA,"North of Sahara, Total",10241.303924,10.241303924
+2008,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2008,Imputed Multilateral ODA,"Oceania, Total",3846.685309,3.846685309
+2008,Imputed Multilateral ODA,"South & Central Asia, Total",52373.36137,52.37336137
+2008,Imputed Multilateral ODA,"South America, Total",8052.31435,8.05231435
+2008,Imputed Multilateral ODA,"South of Sahara, Total",146667.427462,146.667427462
+2008,Imputed Multilateral ODA,"Southern Africa, Total",5078.966572,5.078966572000001
+2008,Imputed Multilateral ODA,"Western Africa, Total",48302.154223,48.302154222999995
+2008,Technical Cooperation,"Africa, Total",53179.585187,53.179585186999994
+2008,Technical Cooperation,"All Recipients, Total",143887.025306,143.887025306
+2008,Technical Cooperation,"Asia, Total",54691.736536,54.69173653599999
+2008,Technical Cooperation,"Caribbean & Central America, Total",8450.20739,8.45020739
+2008,Technical Cooperation,"Developing Countries, Total",182316.78466900002,182.31678466900001
+2008,Technical Cooperation,"Eastern Africa, Total",16515.370618,16.515370618000002
+2008,Technical Cooperation,"Europe, Total",15381.7349,15.3817349
+2008,Technical Cooperation,"Fragile states, Total",49881.898215,49.881898215
+2008,Technical Cooperation,"LDCs, Total",37474.742609,37.474742609
+2008,Technical Cooperation,"LMICs, Total",42420.980973,42.420980973
+2008,Technical Cooperation,"Middle East, Total",8148.063646,8.148063645999999
+2008,Technical Cooperation,"North of Sahara, Total",9815.85314,9.81585314
+2008,Technical Cooperation,"Oceania, Total",4855.446561,4.855446561
+2008,Technical Cooperation,"South & Central Asia, Total",20211.270226,20.211270226
+2008,Technical Cooperation,"South America, Total",12201.875935,12.201875935
+2008,Technical Cooperation,"South of Sahara, Total",40467.008629,40.467008629000006
+2008,Technical Cooperation,"Southern Africa, Total",2488.002281,2.488002281
+2008,Technical Cooperation,"Western Africa, Total",12551.593645,12.551593645
+2009,Development Food Aid,"Africa, Total",11159.315895,11.159315894999999
+2009,Development Food Aid,"All Recipients, Total",15437.860651,15.437860651000001
+2009,Development Food Aid,"Asia, Total",5204.767646,5.2047676460000005
+2009,Development Food Aid,"Caribbean & Central America, Total",1218.088918,1.2180889179999999
+2009,Development Food Aid,"Developing Countries, Total",19273.111338,19.273111338
+2009,Development Food Aid,"Eastern Africa, Total",5528.05579,5.528055790000001
+2009,Development Food Aid,"Europe, Total",13.177593,0.013177593
+2009,Development Food Aid,"Fragile states, Total",13478.366187,13.478366186999999
+2009,Development Food Aid,"LDCs, Total",11520.846904,11.520846904
+2009,Development Food Aid,"LMICs, Total",2968.60586,2.9686058600000003
+2009,Development Food Aid,"Middle East, Total",1746.337198,1.746337198
+2009,Development Food Aid,"North of Sahara, Total",115.605581,0.115605581
+2009,Development Food Aid,"South & Central Asia, Total",2805.598079,2.8055980789999997
+2009,Development Food Aid,"South America, Total",219.498541,0.219498541
+2009,Development Food Aid,"South of Sahara, Total",10303.173513,10.303173512999999
+2009,Development Food Aid,"Southern Africa, Total",48.995655,0.048995655
+2009,Development Food Aid,"Western Africa, Total",2514.444805,2.514444805
+2009,Humanitarian Aid,"Africa, Total",46198.104144000004,46.198104144000006
+2009,Humanitarian Aid,"All Recipients, Total",76846.77394,76.84677394
+2009,Humanitarian Aid,"Asia, Total",35065.348217,35.065348217
+2009,Humanitarian Aid,"Caribbean & Central America, Total",2346.153018,2.346153018
+2009,Humanitarian Aid,"Developing Countries, Total",97375.896948,97.37589694799999
+2009,Humanitarian Aid,"Eastern Africa, Total",31661.277763,31.661277762999998
+2009,Humanitarian Aid,"Europe, Total",1107.805271,1.107805271
+2009,Humanitarian Aid,"Fragile states, Total",67315.579217,67.315579217
+2009,Humanitarian Aid,"LDCs, Total",44521.36229,44.52136229
+2009,Humanitarian Aid,"LMICs, Total",24858.838529,24.858838529
+2009,Humanitarian Aid,"Middle East, Total",13393.035591,13.393035591
+2009,Humanitarian Aid,"North of Sahara, Total",468.572632,0.468572632
+2009,Humanitarian Aid,"Oceania, Total",171.578501,0.171578501
+2009,Humanitarian Aid,"South & Central Asia, Total",16825.421625,16.825421625
+2009,Humanitarian Aid,"South America, Total",1325.488626,1.325488626
+2009,Humanitarian Aid,"South of Sahara, Total",45359.004352,45.35900435200001
+2009,Humanitarian Aid,"Southern Africa, Total",138.101976,0.13810197600000002
+2009,Humanitarian Aid,"Western Africa, Total",1853.036541,1.853036541
+2009,Imputed Multilateral ODA,"Africa, Total",161463.560804,161.463560804
+2009,Imputed Multilateral ODA,"All Recipients, Total",278030.79564,278.03079564
+2009,Imputed Multilateral ODA,"Asia, Total",92929.025512,92.929025512
+2009,Imputed Multilateral ODA,"Caribbean & Central America, Total",15265.415124,15.265415123999999
+2009,Imputed Multilateral ODA,"Developing Countries, Total",349892.73271,349.89273271
+2009,Imputed Multilateral ODA,"Eastern Africa, Total",66726.265685,66.726265685
+2009,Imputed Multilateral ODA,"Europe, Total",30701.228919,30.701228919000002
+2009,Imputed Multilateral ODA,"Fragile states, Total",164068.438318,164.068438318
+2009,Imputed Multilateral ODA,"LDCs, Total",129242.98725399999,129.24298725399998
+2009,Imputed Multilateral ODA,"LMICs, Total",96241.409396,96.24140939600001
+2009,Imputed Multilateral ODA,"Middle East, Total",14668.098222,14.668098222000001
+2009,Imputed Multilateral ODA,"North of Sahara, Total",10190.38203,10.19038203
+2009,Imputed Multilateral ODA,"Oceania, Total",2250.0613869999997,2.2500613869999997
+2009,Imputed Multilateral ODA,"South & Central Asia, Total",52260.287751,52.26028775100001
+2009,Imputed Multilateral ODA,"South America, Total",9059.984123,9.059984123
+2009,Imputed Multilateral ODA,"South of Sahara, Total",146135.155151,146.13515515100002
+2009,Imputed Multilateral ODA,"Southern Africa, Total",5047.097966,5.047097966
+2009,Imputed Multilateral ODA,"Western Africa, Total",42296.7067,42.2967067
+2009,Technical Cooperation,"Africa, Total",54806.800868,54.806800867999996
+2009,Technical Cooperation,"All Recipients, Total",144306.743136,144.306743136
+2009,Technical Cooperation,"Asia, Total",55735.829369,55.735829369
+2009,Technical Cooperation,"Caribbean & Central America, Total",8816.87387,8.81687387
+2009,Technical Cooperation,"Developing Countries, Total",182633.987285,182.63398728500002
+2009,Technical Cooperation,"Eastern Africa, Total",17000.783817,17.000783817
+2009,Technical Cooperation,"Europe, Total",13877.090465000001,13.877090465000002
+2009,Technical Cooperation,"Fragile states, Total",53253.98343,53.25398343
+2009,Technical Cooperation,"LDCs, Total",40436.572518,40.436572518
+2009,Technical Cooperation,"LMICs, Total",42573.581648,42.573581648
+2009,Technical Cooperation,"Middle East, Total",7710.377028,7.710377028
+2009,Technical Cooperation,"North of Sahara, Total",10161.104859,10.161104859
+2009,Technical Cooperation,"Oceania, Total",5067.331895,5.067331895000001
+2009,Technical Cooperation,"South & Central Asia, Total",21689.762237,21.689762237
+2009,Technical Cooperation,"South America, Total",12830.584237000001,12.830584237
+2009,Technical Cooperation,"South of Sahara, Total",41797.156778000004,41.797156778
+2009,Technical Cooperation,"Southern Africa, Total",2553.44005,2.5534400500000003
+2009,Technical Cooperation,"Western Africa, Total",12336.079247,12.336079246999999
+2010,Development Food Aid,"Africa, Total",8379.174175,8.379174175
+2010,Development Food Aid,"All Recipients, Total",11220.46073,11.220460730000001
+2010,Development Food Aid,"Asia, Total",3206.506031,3.206506031
+2010,Development Food Aid,"Caribbean & Central America, Total",831.885262,0.831885262
+2010,Development Food Aid,"Developing Countries, Total",14170.793226,14.170793225999999
+2010,Development Food Aid,"Eastern Africa, Total",5286.8984040000005,5.286898404
+2010,Development Food Aid,"Europe, Total",19.44865,0.01944865
+2010,Development Food Aid,"Fragile states, Total",10679.5035,10.679503500000001
+2010,Development Food Aid,"LDCs, Total",9682.669776,9.682669776000001
+2010,Development Food Aid,"LMICs, Total",1833.997227,1.833997227
+2010,Development Food Aid,"Middle East, Total",438.167317,0.438167317
+2010,Development Food Aid,"North of Sahara, Total",98.543167,0.098543167
+2010,Development Food Aid,"Oceania, Total",0.180531,0.000180531
+2010,Development Food Aid,"South & Central Asia, Total",2390.529697,2.390529697
+2010,Development Food Aid,"South America, Total",96.523106,0.096523106
+2010,Development Food Aid,"South of Sahara, Total",8009.70632,8.00970632
+2010,Development Food Aid,"Southern Africa, Total",42.152386,0.042152386
+2010,Development Food Aid,"Western Africa, Total",1903.6446799999999,1.90364468
+2010,Humanitarian Aid,"Africa, Total",36769.553469,36.769553469
+2010,Humanitarian Aid,"All Recipients, Total",79081.531068,79.08153106799999
+2010,Humanitarian Aid,"Asia, Total",32379.700304,32.379700304
+2010,Humanitarian Aid,"Caribbean & Central America, Total",14680.700208,14.680700208000001
+2010,Humanitarian Aid,"Developing Countries, Total",100499.254625,100.499254625
+2010,Humanitarian Aid,"Eastern Africa, Total",21415.838808,21.415838808
+2010,Humanitarian Aid,"Europe, Total",1116.2415290000001,1.116241529
+2010,Humanitarian Aid,"Fragile states, Total",70240.281354,70.240281354
+2010,Humanitarian Aid,"LDCs, Total",48637.603828,48.637603827999996
+2010,Humanitarian Aid,"LMICs, Total",24409.029865,24.409029865
+2010,Humanitarian Aid,"Middle East, Total",7145.980496,7.145980496
+2010,Humanitarian Aid,"North of Sahara, Total",376.926396,0.376926396
+2010,Humanitarian Aid,"Oceania, Total",658.113139,0.658113139
+2010,Humanitarian Aid,"South & Central Asia, Total",21549.893079999998,21.549893079999997
+2010,Humanitarian Aid,"South America, Total",1392.546176,1.392546176
+2010,Humanitarian Aid,"South of Sahara, Total",35492.184698,35.492184697999996
+2010,Humanitarian Aid,"Southern Africa, Total",151.467305,0.151467305
+2010,Humanitarian Aid,"Western Africa, Total",3160.619826,3.160619826
+2010,Imputed Multilateral ODA,"Africa, Total",169698.735337,169.698735337
+2010,Imputed Multilateral ODA,"All Recipients, Total",280902.989371,280.902989371
+2010,Imputed Multilateral ODA,"Asia, Total",91415.159236,91.41515923600001
+2010,Imputed Multilateral ODA,"Caribbean & Central America, Total",18622.687297,18.622687297
+2010,Imputed Multilateral ODA,"Developing Countries, Total",354767.82036,354.76782036000003
+2010,Imputed Multilateral ODA,"Eastern Africa, Total",64346.045924,64.346045924
+2010,Imputed Multilateral ODA,"Europe, Total",28526.423383,28.526423383
+2010,Imputed Multilateral ODA,"Fragile states, Total",182396.885979,182.39688597900002
+2010,Imputed Multilateral ODA,"LDCs, Total",148255.849951,148.25584995100002
+2010,Imputed Multilateral ODA,"LMICs, Total",92429.528859,92.429528859
+2010,Imputed Multilateral ODA,"Middle East, Total",16546.648699,16.546648699000002
+2010,Imputed Multilateral ODA,"North of Sahara, Total",8523.030696,8.523030696
+2010,Imputed Multilateral ODA,"Oceania, Total",2570.294741,2.570294741
+2010,Imputed Multilateral ODA,"South & Central Asia, Total",50333.339251,50.333339251
+2010,Imputed Multilateral ODA,"South America, Total",8438.520705,8.438520705
+2010,Imputed Multilateral ODA,"South of Sahara, Total",156653.151472,156.653151472
+2010,Imputed Multilateral ODA,"Southern Africa, Total",5808.116072,5.808116072
+2010,Imputed Multilateral ODA,"Western Africa, Total",48627.467663999996,48.627467663999994
+2010,Technical Cooperation,"Africa, Total",56468.169646,56.468169646
+2010,Technical Cooperation,"All Recipients, Total",150865.22545199998,150.86522545199998
+2010,Technical Cooperation,"Asia, Total",60432.92886,60.43292886
+2010,Technical Cooperation,"Caribbean & Central America, Total",8209.566640000001,8.20956664
+2010,Technical Cooperation,"Developing Countries, Total",191099.201488,191.099201488
+2010,Technical Cooperation,"Eastern Africa, Total",19114.73007,19.11473007
+2010,Technical Cooperation,"Europe, Total",14359.199432,14.359199431999999
+2010,Technical Cooperation,"Fragile states, Total",58640.991955,58.640991955
+2010,Technical Cooperation,"LDCs, Total",43142.340535,43.142340535
+2010,Technical Cooperation,"LMICs, Total",44061.506803,44.06150680299999
+2010,Technical Cooperation,"Middle East, Total",9900.865331,9.900865331
+2010,Technical Cooperation,"North of Sahara, Total",9805.192559,9.805192559
+2010,Technical Cooperation,"Oceania, Total",6176.543196,6.176543196
+2010,Technical Cooperation,"South & Central Asia, Total",23231.670523,23.231670523000002
+2010,Technical Cooperation,"South America, Total",11272.803494,11.272803494
+2010,Technical Cooperation,"South of Sahara, Total",43721.066589,43.721066589
+2010,Technical Cooperation,"Southern Africa, Total",2575.495977,2.575495977
+2010,Technical Cooperation,"Western Africa, Total",12148.717103,12.148717103000001
+2011,Development Food Aid,"Africa, Total",7773.454665,7.773454665
+2011,Development Food Aid,"All Recipients, Total",11327.763506,11.327763506
+2011,Development Food Aid,"Asia, Total",3627.147334,3.6271473339999996
+2011,Development Food Aid,"Caribbean & Central America, Total",964.255542,0.964255542
+2011,Development Food Aid,"Developing Countries, Total",14339.882666,14.339882666
+2011,Development Food Aid,"Eastern Africa, Total",4953.403057,4.953403057
+2011,Development Food Aid,"Europe, Total",16.879704,0.016879704
+2011,Development Food Aid,"Fragile states, Total",10470.396164,10.470396164
+2011,Development Food Aid,"LDCs, Total",9496.848633,9.496848632999999
+2011,Development Food Aid,"LMICs, Total",1833.884653,1.8338846530000001
+2011,Development Food Aid,"Middle East, Total",749.6026459999999,0.7496026459999999
+2011,Development Food Aid,"North of Sahara, Total",53.694904,0.053694904
+2011,Development Food Aid,"Oceania, Total",40.656016,0.040656016
+2011,Development Food Aid,"South & Central Asia, Total",2442.402422,2.4424024220000002
+2011,Development Food Aid,"South America, Total",104.612401,0.10461240100000001
+2011,Development Food Aid,"South of Sahara, Total",7523.39707,7.52339707
+2011,Development Food Aid,"Southern Africa, Total",34.500372,0.034500372
+2011,Development Food Aid,"Western Africa, Total",1785.668865,1.785668865
+2011,Humanitarian Aid,"Africa, Total",49188.523138,49.188523137999994
+2011,Humanitarian Aid,"All Recipients, Total",85171.399475,85.171399475
+2011,Humanitarian Aid,"Asia, Total",40701.846727,40.701846726999996
+2011,Humanitarian Aid,"Caribbean & Central America, Total",5271.690691,5.271690691
+2011,Humanitarian Aid,"Developing Countries, Total",109864.199832,109.864199832
+2011,Humanitarian Aid,"Eastern Africa, Total",27278.816373,27.278816373
+2011,Humanitarian Aid,"Europe, Total",2133.129547,2.133129547
+2011,Humanitarian Aid,"Fragile states, Total",80611.434235,80.61143423499999
+2011,Humanitarian Aid,"LDCs, Total",45896.408275,45.896408275
+2011,Humanitarian Aid,"LMICs, Total",32445.053653,32.445053653
+2011,Humanitarian Aid,"Middle East, Total",10199.633695999999,10.199633696
+2011,Humanitarian Aid,"North of Sahara, Total",5738.436562,5.7384365619999995
+2011,Humanitarian Aid,"Oceania, Total",354.245906,0.354245906
+2011,Humanitarian Aid,"South & Central Asia, Total",25371.069437,25.371069437
+2011,Humanitarian Aid,"South America, Total",1508.759681,1.508759681
+2011,Humanitarian Aid,"South of Sahara, Total",42226.327082,42.226327082000005
+2011,Humanitarian Aid,"Southern Africa, Total",269.78704700000003,0.269787047
+2011,Humanitarian Aid,"Western Africa, Total",5150.9398169999995,5.150939816999999
+2011,Imputed Multilateral ODA,"Africa, Total",160385.486381,160.385486381
+2011,Imputed Multilateral ODA,"All Recipients, Total",292159.132498,292.159132498
+2011,Imputed Multilateral ODA,"Asia, Total",102584.57597199999,102.584575972
+2011,Imputed Multilateral ODA,"Caribbean & Central America, Total",12856.865287,12.856865287
+2011,Imputed Multilateral ODA,"Developing Countries, Total",369375.543548,369.375543548
+2011,Imputed Multilateral ODA,"Eastern Africa, Total",59179.780963,59.179780963
+2011,Imputed Multilateral ODA,"Europe, Total",50584.612494,50.584612494
+2011,Imputed Multilateral ODA,"Fragile states, Total",159280.963552,159.280963552
+2011,Imputed Multilateral ODA,"LDCs, Total",126887.663231,126.887663231
+2011,Imputed Multilateral ODA,"LMICs, Total",109597.517849,109.597517849
+2011,Imputed Multilateral ODA,"Middle East, Total",11505.890599999999,11.505890599999999
+2011,Imputed Multilateral ODA,"North of Sahara, Total",11592.610624,11.592610624
+2011,Imputed Multilateral ODA,"Oceania, Total",2627.989393,2.627989393
+2011,Imputed Multilateral ODA,"South & Central Asia, Total",60754.513212,60.754513212
+2011,Imputed Multilateral ODA,"South America, Total",8655.959468000001,8.655959468
+2011,Imputed Multilateral ODA,"South of Sahara, Total",142293.427973,142.293427973
+2011,Imputed Multilateral ODA,"Southern Africa, Total",5979.015768,5.979015768
+2011,Imputed Multilateral ODA,"Western Africa, Total",53798.367249,53.798367249
+2011,Technical Cooperation,"Africa, Total",46716.234994,46.716234994
+2011,Technical Cooperation,"All Recipients, Total",136524.329524,136.524329524
+2011,Technical Cooperation,"Asia, Total",54948.461126,54.948461126000005
+2011,Technical Cooperation,"Caribbean & Central America, Total",7421.822274,7.421822274
+2011,Technical Cooperation,"Developing Countries, Total",173884.967007,173.884967007
+2011,Technical Cooperation,"Eastern Africa, Total",15163.395682,15.163395682
+2011,Technical Cooperation,"Europe, Total",12357.393053,12.357393053
+2011,Technical Cooperation,"Fragile states, Total",54056.895393,54.056895393
+2011,Technical Cooperation,"LDCs, Total",40371.551435,40.371551435
+2011,Technical Cooperation,"LMICs, Total",38847.811033,38.847811033
+2011,Technical Cooperation,"Middle East, Total",7544.494276,7.544494276
+2011,Technical Cooperation,"North of Sahara, Total",6130.649825,6.130649825000001
+2011,Technical Cooperation,"Oceania, Total",5965.977666,5.965977666
+2011,Technical Cooperation,"South & Central Asia, Total",22008.637018,22.008637018
+2011,Technical Cooperation,"South America, Total",9621.091311,9.621091311
+2011,Technical Cooperation,"South of Sahara, Total",37415.176554,37.415176554
+2011,Technical Cooperation,"Southern Africa, Total",2739.908305,2.7399083049999997
+2011,Technical Cooperation,"Western Africa, Total",10526.832092,10.526832092000001
+2012,Development Food Aid,"Africa, Total",8547.570132,8.547570132
+2012,Development Food Aid,"All Recipients, Total",10656.640493,10.656640493000001
+2012,Development Food Aid,"Asia, Total",2253.344278,2.253344278
+2012,Development Food Aid,"Caribbean & Central America, Total",875.000454,0.875000454
+2012,Development Food Aid,"Developing Countries, Total",13896.759558,13.896759558
+2012,Development Food Aid,"Eastern Africa, Total",4855.145985,4.855145985
+2012,Development Food Aid,"Europe, Total",20.024292,0.020024292
+2012,Development Food Aid,"Fragile states, Total",10184.653958,10.184653958
+2012,Development Food Aid,"LDCs, Total",9406.936901000001,9.406936901000002
+2012,Development Food Aid,"LMICs, Total",1218.041099,1.2180410990000001
+2012,Development Food Aid,"Middle East, Total",464.309098,0.46430909800000003
+2012,Development Food Aid,"North of Sahara, Total",85.664484,0.085664484
+2012,Development Food Aid,"South & Central Asia, Total",1402.636576,1.4026365760000001
+2012,Development Food Aid,"South America, Total",51.950424,0.051950423999999995
+2012,Development Food Aid,"South of Sahara, Total",8383.172367,8.383172366999998
+2012,Development Food Aid,"Southern Africa, Total",32.659335999999996,0.032659336
+2012,Development Food Aid,"Western Africa, Total",2468.933242,2.468933242
+2012,Humanitarian Aid,"Africa, Total",47111.741562,47.111741562000006
+2012,Humanitarian Aid,"All Recipients, Total",75625.157515,75.625157515
+2012,Humanitarian Aid,"Asia, Total",36016.837095,36.016837095
+2012,Humanitarian Aid,"Caribbean & Central America, Total",3077.63458,3.07763458
+2012,Humanitarian Aid,"Developing Countries, Total",99701.302165,99.701302165
+2012,Humanitarian Aid,"Eastern Africa, Total",25567.692047,25.567692047
+2012,Humanitarian Aid,"Europe, Total",1506.942432,1.506942432
+2012,Humanitarian Aid,"Fragile states, Total",67525.931801,67.525931801
+2012,Humanitarian Aid,"LDCs, Total",45829.022727999996,45.829022728
+2012,Humanitarian Aid,"LMICs, Total",16775.850681,16.775850681
+2012,Humanitarian Aid,"Middle East, Total",18870.999224,18.870999224
+2012,Humanitarian Aid,"North of Sahara, Total",913.155806,0.913155806
+2012,Humanitarian Aid,"Oceania, Total",363.949125,0.363949125
+2012,Humanitarian Aid,"South & Central Asia, Total",13660.294636,13.660294636
+2012,Humanitarian Aid,"South America, Total",951.327213,0.951327213
+2012,Humanitarian Aid,"South of Sahara, Total",45567.247266,45.567247265999995
+2012,Humanitarian Aid,"Southern Africa, Total",259.631943,0.259631943
+2012,Humanitarian Aid,"Western Africa, Total",7815.081968,7.815081968
+2012,Imputed Multilateral ODA,"Africa, Total",162345.140274,162.34514027400002
+2012,Imputed Multilateral ODA,"All Recipients, Total",267101.877377,267.101877377
+2012,Imputed Multilateral ODA,"Asia, Total",81765.511153,81.765511153
+2012,Imputed Multilateral ODA,"Caribbean & Central America, Total",10315.033043,10.315033043
+2012,Imputed Multilateral ODA,"Developing Countries, Total",339496.64346,339.49664346
+2012,Imputed Multilateral ODA,"Eastern Africa, Total",57715.099462,57.715099462
+2012,Imputed Multilateral ODA,"Europe, Total",44469.561327,44.469561327
+2012,Imputed Multilateral ODA,"Fragile states, Total",157916.711305,157.916711305
+2012,Imputed Multilateral ODA,"LDCs, Total",117565.275294,117.565275294
+2012,Imputed Multilateral ODA,"LMICs, Total",103608.145081,103.60814508099999
+2012,Imputed Multilateral ODA,"Middle East, Total",11628.595988000001,11.628595988
+2012,Imputed Multilateral ODA,"North of Sahara, Total",15769.885259,15.769885259
+2012,Imputed Multilateral ODA,"Oceania, Total",2583.779798,2.583779798
+2012,Imputed Multilateral ODA,"South & Central Asia, Total",45407.37805,45.40737805
+2012,Imputed Multilateral ODA,"South America, Total",8368.567562,8.368567562
+2012,Imputed Multilateral ODA,"South of Sahara, Total",141490.928473,141.490928473
+2012,Imputed Multilateral ODA,"Southern Africa, Total",5138.648531,5.138648530999999
+2012,Imputed Multilateral ODA,"Western Africa, Total",57078.502924,57.078502924
+2012,Technical Cooperation,"Africa, Total",54013.223888,54.013223888
+2012,Technical Cooperation,"All Recipients, Total",144408.49998,144.40849998
+2012,Technical Cooperation,"Asia, Total",56040.170304,56.040170304
+2012,Technical Cooperation,"Caribbean & Central America, Total",7713.8648379999995,7.713864837999999
+2012,Technical Cooperation,"Developing Countries, Total",183244.05921900002,183.244059219
+2012,Technical Cooperation,"Eastern Africa, Total",15393.612143,15.393612143
+2012,Technical Cooperation,"Europe, Total",11968.600598,11.968600598
+2012,Technical Cooperation,"Fragile states, Total",55525.471936,55.525471936
+2012,Technical Cooperation,"LDCs, Total",40706.081770000004,40.706081770000004
+2012,Technical Cooperation,"LMICs, Total",46214.226864,46.214226864
+2012,Technical Cooperation,"Middle East, Total",7241.703232,7.241703232
+2012,Technical Cooperation,"North of Sahara, Total",10069.909049,10.069909049
+2012,Technical Cooperation,"Oceania, Total",6131.931954,6.131931954
+2012,Technical Cooperation,"South & Central Asia, Total",22732.263679,22.732263679
+2012,Technical Cooperation,"South America, Total",11142.374273,11.142374273
+2012,Technical Cooperation,"South of Sahara, Total",40362.66851,40.362668510000006
+2012,Technical Cooperation,"Southern Africa, Total",2829.369909,2.829369909
+2012,Technical Cooperation,"Western Africa, Total",12024.985049,12.024985049000001
+2013,Development Food Aid,"Africa, Total",6185.087504,6.185087504
+2013,Development Food Aid,"All Recipients, Total",8402.444941,8.402444941
+2013,Development Food Aid,"Asia, Total",1813.542737,1.813542737
+2013,Development Food Aid,"Caribbean & Central America, Total",601.284169,0.601284169
+2013,Development Food Aid,"Developing Countries, Total",11043.15983,11.04315983
+2013,Development Food Aid,"Eastern Africa, Total",3736.549291,3.7365492909999998
+2013,Development Food Aid,"Europe, Total",45.611557,0.045611557
+2013,Development Food Aid,"Fragile states, Total",7433.725549,7.433725549
+2013,Development Food Aid,"LDCs, Total",6628.14634,6.62814634
+2013,Development Food Aid,"LMICs, Total",1100.901466,1.100901466
+2013,Development Food Aid,"Middle East, Total",733.515846,0.733515846
+2013,Development Food Aid,"North of Sahara, Total",39.393239,0.039393239000000004
+2013,Development Food Aid,"Oceania, Total",0.10630400000000001,0.000106304
+2013,Development Food Aid,"South & Central Asia, Total",874.126582,0.8741265819999999
+2013,Development Food Aid,"South America, Total",37.691692,0.037691692000000006
+2013,Development Food Aid,"South of Sahara, Total",6053.312976,6.053312976
+2013,Development Food Aid,"Southern Africa, Total",35.672411000000004,0.035672411
+2013,Development Food Aid,"Western Africa, Total",1717.731341,1.717731341
+2013,Humanitarian Aid,"Africa, Total",47516.17447,47.516174469999996
+2013,Humanitarian Aid,"All Recipients, Total",93048.643883,93.048643883
+2013,Humanitarian Aid,"Asia, Total",57523.694327000005,57.523694327
+2013,Humanitarian Aid,"Caribbean & Central America, Total",2910.310984,2.910310984
+2013,Humanitarian Aid,"Developing Countries, Total",123761.281868,123.76128186800001
+2013,Humanitarian Aid,"Eastern Africa, Total",29290.952054,29.290952054
+2013,Humanitarian Aid,"Europe, Total",2471.436585,2.4714365849999997
+2013,Humanitarian Aid,"Fragile states, Total",85581.532828,85.581532828
+2013,Humanitarian Aid,"LDCs, Total",49913.810354,49.913810354
+2013,Humanitarian Aid,"LMICs, Total",19027.043276,19.027043276
+2013,Humanitarian Aid,"Middle East, Total",39593.425984,39.593425984
+2013,Humanitarian Aid,"North of Sahara, Total",1162.496487,1.1624964869999999
+2013,Humanitarian Aid,"Oceania, Total",412.777826,0.412777826
+2013,Humanitarian Aid,"South & Central Asia, Total",12392.702222,12.392702222
+2013,Humanitarian Aid,"South America, Total",1072.602145,1.072602145
+2013,Humanitarian Aid,"South of Sahara, Total",45950.294617,45.950294617
+2013,Humanitarian Aid,"Southern Africa, Total",265.923567,0.26592356699999997
+2013,Humanitarian Aid,"Western Africa, Total",6329.994075,6.329994074999999
+2013,Imputed Multilateral ODA,"Africa, Total",165704.901056,165.704901056
+2013,Imputed Multilateral ODA,"All Recipients, Total",288263.505845,288.263505845
+2013,Imputed Multilateral ODA,"Asia, Total",99414.970002,99.414970002
+2013,Imputed Multilateral ODA,"Caribbean & Central America, Total",11819.454474,11.819454474
+2013,Imputed Multilateral ODA,"Developing Countries, Total",366022.175914,366.022175914
+2013,Imputed Multilateral ODA,"Eastern Africa, Total",73603.945888,73.603945888
+2013,Imputed Multilateral ODA,"Europe, Total",47235.784894,47.235784894
+2013,Imputed Multilateral ODA,"Fragile states, Total",177778.729879,177.778729879
+2013,Imputed Multilateral ODA,"LDCs, Total",139142.109013,139.142109013
+2013,Imputed Multilateral ODA,"LMICs, Total",102502.92074,102.50292074000001
+2013,Imputed Multilateral ODA,"Middle East, Total",16624.481241,16.624481241
+2013,Imputed Multilateral ODA,"North of Sahara, Total",11891.347459999999,11.891347459999999
+2013,Imputed Multilateral ODA,"Oceania, Total",2874.021449,2.874021449
+2013,Imputed Multilateral ODA,"South & Central Asia, Total",57035.275238,57.035275238000004
+2013,Imputed Multilateral ODA,"South America, Total",7106.114355,7.106114355
+2013,Imputed Multilateral ODA,"South of Sahara, Total",148268.679193,148.268679193
+2013,Imputed Multilateral ODA,"Southern Africa, Total",5221.234271,5.221234271
+2013,Imputed Multilateral ODA,"Western Africa, Total",47240.319115,47.240319115
+2013,Technical Cooperation,"Africa, Total",55291.541816,55.291541816
+2013,Technical Cooperation,"All Recipients, Total",140204.03,140.20403
+2013,Technical Cooperation,"Asia, Total",54611.527343,54.611527343
+2013,Technical Cooperation,"Caribbean & Central America, Total",6540.94314,6.54094314
+2013,Technical Cooperation,"Developing Countries, Total",177429.752647,177.429752647
+2013,Technical Cooperation,"Eastern Africa, Total",16384.071227,16.384071227
+2013,Technical Cooperation,"Europe, Total",11178.536747,11.178536747
+2013,Technical Cooperation,"Fragile states, Total",55914.771286,55.914771286000004
+2013,Technical Cooperation,"LDCs, Total",41743.424056,41.743424056
+2013,Technical Cooperation,"LMICs, Total",43214.363548,43.214363548
+2013,Technical Cooperation,"Middle East, Total",8013.445248,8.013445248
+2013,Technical Cooperation,"North of Sahara, Total",9453.859338,9.453859338000001
+2013,Technical Cooperation,"Oceania, Total",4725.92742,4.72592742
+2013,Technical Cooperation,"South & Central Asia, Total",22691.414963,22.691414963
+2013,Technical Cooperation,"South America, Total",10427.957177,10.427957177
+2013,Technical Cooperation,"South of Sahara, Total",42401.456707,42.401456706999994
+2013,Technical Cooperation,"Southern Africa, Total",2601.11792,2.60111792
+2013,Technical Cooperation,"Western Africa, Total",13012.685301,13.012685301
+2014,Development Food Aid,"Africa, Total",6589.5331400000005,6.58953314
+2014,Development Food Aid,"All Recipients, Total",8018.638712,8.018638712
+2014,Development Food Aid,"Asia, Total",1688.756229,1.688756229
+2014,Development Food Aid,"Caribbean & Central America, Total",331.749265,0.33174926499999996
+2014,Development Food Aid,"Developing Countries, Total",10432.589337,10.432589337
+2014,Development Food Aid,"Eastern Africa, Total",3631.520979,3.631520979
+2014,Development Food Aid,"Europe, Total",67.244941,0.067244941
+2014,Development Food Aid,"Fragile states, Total",7511.098253,7.511098253
+2014,Development Food Aid,"LDCs, Total",6611.931326,6.611931326
+2014,Development Food Aid,"LMICs, Total",1336.943356,1.336943356
+2014,Development Food Aid,"Middle East, Total",368.438732,0.368438732
+2014,Development Food Aid,"North of Sahara, Total",37.667273,0.037667273
+2014,Development Food Aid,"Oceania, Total",17.122528,0.017122527999999998
+2014,Development Food Aid,"South & Central Asia, Total",838.728562,0.838728562
+2014,Development Food Aid,"South America, Total",66.704189,0.066704189
+2014,Development Food Aid,"South of Sahara, Total",6513.54548,6.513545479999999
+2014,Development Food Aid,"Southern Africa, Total",20.644102,0.020644102
+2014,Development Food Aid,"Western Africa, Total",1800.04432,1.80004432
+2014,Humanitarian Aid,"Africa, Total",59171.475525,59.171475525
+2014,Humanitarian Aid,"All Recipients, Total",117119.605658,117.119605658
+2014,Humanitarian Aid,"Asia, Total",68761.949089,68.761949089
+2014,Humanitarian Aid,"Caribbean & Central America, Total",2057.711004,2.0577110039999997
+2014,Humanitarian Aid,"Developing Countries, Total",156130.728958,156.130728958
+2014,Humanitarian Aid,"Eastern Africa, Total",27985.645524,27.985645524
+2014,Humanitarian Aid,"Europe, Total",4420.755463,4.420755463000001
+2014,Humanitarian Aid,"Fragile states, Total",94281.264536,94.28126453600001
+2014,Humanitarian Aid,"LDCs, Total",51434.751894,51.434751894
+2014,Humanitarian Aid,"LMICs, Total",20409.87746,20.40987746
+2014,Humanitarian Aid,"Middle East, Total",49775.939689,49.775939689
+2014,Humanitarian Aid,"North of Sahara, Total",1834.423794,1.834423794
+2014,Humanitarian Aid,"Oceania, Total",315.779718,0.315779718
+2014,Humanitarian Aid,"South & Central Asia, Total",12293.560687,12.293560687
+2014,Humanitarian Aid,"South America, Total",876.767435,0.876767435
+2014,Humanitarian Aid,"South of Sahara, Total",56177.026296,56.177026295999994
+2014,Humanitarian Aid,"Southern Africa, Total",118.552979,0.11855297899999999
+2014,Humanitarian Aid,"Western Africa, Total",9082.115754,9.082115754
+2014,Imputed Multilateral ODA,"Africa, Total",174539.352972,174.539352972
+2014,Imputed Multilateral ODA,"All Recipients, Total",301362.835752,301.36283575199997
+2014,Imputed Multilateral ODA,"Asia, Total",104642.588236,104.642588236
+2014,Imputed Multilateral ODA,"Caribbean & Central America, Total",11612.855017,11.612855017
+2014,Imputed Multilateral ODA,"Developing Countries, Total",383415.79658799997,383.415796588
+2014,Imputed Multilateral ODA,"Eastern Africa, Total",69284.08017,69.28408017
+2014,Imputed Multilateral ODA,"Europe, Total",49123.634763,49.123634763
+2014,Imputed Multilateral ODA,"Fragile states, Total",179042.061713,179.042061713
+2014,Imputed Multilateral ODA,"LDCs, Total",133632.6338,133.6326338
+2014,Imputed Multilateral ODA,"LMICs, Total",119525.423226,119.525423226
+2014,Imputed Multilateral ODA,"Middle East, Total",16431.389732,16.431389732
+2014,Imputed Multilateral ODA,"North of Sahara, Total",16942.477859,16.942477859
+2014,Imputed Multilateral ODA,"Northern America, Total",0.0,0.0
+2014,Imputed Multilateral ODA,"Oceania, Total",2528.669179,2.528669179
+2014,Imputed Multilateral ODA,"South & Central Asia, Total",62613.297357,62.613297357
+2014,Imputed Multilateral ODA,"South America, Total",6479.637146,6.479637146
+2014,Imputed Multilateral ODA,"South of Sahara, Total",150431.89896299999,150.43189896299998
+2014,Imputed Multilateral ODA,"Southern Africa, Total",5594.134897,5.594134897
+2014,Imputed Multilateral ODA,"Western Africa, Total",50483.910089,50.483910089
+2014,Technical Cooperation,"Africa, Total",56885.679846,56.885679846
+2014,Technical Cooperation,"All Recipients, Total",143889.587885,143.889587885
+2014,Technical Cooperation,"Asia, Total",52790.676804,52.790676804
+2014,Technical Cooperation,"Caribbean & Central America, Total",6488.210521,6.488210521
+2014,Technical Cooperation,"Developing Countries, Total",181962.422889,181.962422889
+2014,Technical Cooperation,"Eastern Africa, Total",16084.043828,16.084043828
+2014,Technical Cooperation,"Europe, Total",12894.693271,12.894693271
+2014,Technical Cooperation,"Fragile states, Total",54548.765609,54.548765609
+2014,Technical Cooperation,"LDCs, Total",40796.976829,40.796976829
+2014,Technical Cooperation,"LMICs, Total",44938.142685,44.938142684999995
+2014,Technical Cooperation,"Middle East, Total",7646.251747,7.646251747
+2014,Technical Cooperation,"North of Sahara, Total",9561.765812,9.561765811999999
+2014,Technical Cooperation,"Oceania, Total",4556.637047,4.556637047000001
+2014,Technical Cooperation,"South & Central Asia, Total",21714.783669,21.714783669
+2014,Technical Cooperation,"South America, Total",10734.152243,10.734152243
+2014,Technical Cooperation,"South of Sahara, Total",43181.099357,43.181099357
+2014,Technical Cooperation,"Southern Africa, Total",2268.839471,2.2688394709999997
+2014,Technical Cooperation,"Western Africa, Total",13352.680217000001,13.352680217000001
+2015,Development Food Aid,"Africa, Total",9303.598305,9.303598305
+2015,Development Food Aid,"All Recipients, Total",10372.54588,10.37254588
+2015,Development Food Aid,"Asia, Total",2582.279226,2.5822792260000003
+2015,Development Food Aid,"Caribbean & Central America, Total",872.181128,0.8721811279999999
+2015,Development Food Aid,"Developing Countries, Total",13542.058354,13.542058354
+2015,Development Food Aid,"Eastern Africa, Total",6048.971139,6.048971139
+2015,Development Food Aid,"Europe, Total",65.125478,0.065125478
+2015,Development Food Aid,"Fragile states, Total",11196.294953999999,11.196294953999999
+2015,Development Food Aid,"LDCs, Total",9508.693753,9.508693753
+2015,Development Food Aid,"LMICs, Total",1866.336988,1.866336988
+2015,Development Food Aid,"Middle East, Total",1288.800087,1.288800087
+2015,Development Food Aid,"North of Sahara, Total",97.28640399999999,0.09728640399999999
+2015,Development Food Aid,"Oceania, Total",0.6919519999999999,0.0006919519999999999
+2015,Development Food Aid,"South & Central Asia, Total",963.93559,0.9639355900000001
+2015,Development Food Aid,"South America, Total",62.595931,0.062595931
+2015,Development Food Aid,"South of Sahara, Total",9119.831373,9.119831373
+2015,Development Food Aid,"Southern Africa, Total",21.47016,0.02147016
+2015,Development Food Aid,"Western Africa, Total",1982.646632,1.982646632
+2015,Humanitarian Aid,"Africa, Total",55601.77297,55.60177297
+2015,Humanitarian Aid,"All Recipients, Total",125121.989357,125.121989357
+2015,Humanitarian Aid,"Asia, Total",77323.484807,77.323484807
+2015,Humanitarian Aid,"Caribbean & Central America, Total",1953.8572139999999,1.953857214
+2015,Humanitarian Aid,"Developing Countries, Total",166993.842353,166.993842353
+2015,Humanitarian Aid,"Eastern Africa, Total",24736.132427,24.736132427
+2015,Humanitarian Aid,"Europe, Total",6185.032807,6.185032807
+2015,Humanitarian Aid,"Fragile states, Total",106791.538508,106.791538508
+2015,Humanitarian Aid,"LDCs, Total",60537.655019,60.537655019
+2015,Humanitarian Aid,"LMICs, Total",20864.31741,20.864317409999998
+2015,Humanitarian Aid,"Middle East, Total",59719.296852,59.719296852
+2015,Humanitarian Aid,"North of Sahara, Total",2015.205242,2.015205242
+2015,Humanitarian Aid,"Oceania, Total",941.305543,0.9413055429999999
+2015,Humanitarian Aid,"South & Central Asia, Total",12583.162349,12.583162349
+2015,Humanitarian Aid,"South America, Total",3376.3497580000003,3.3763497580000004
+2015,Humanitarian Aid,"South of Sahara, Total",52905.614017,52.905614017
+2015,Humanitarian Aid,"Southern Africa, Total",179.598374,0.179598374
+2015,Humanitarian Aid,"Western Africa, Total",13008.48255,13.00848255
+2015,Imputed Multilateral ODA,"Africa, Total",154922.24014399998,154.92224014399997
+2015,Imputed Multilateral ODA,"All Recipients, Total",269871.030321,269.87103032100003
+2015,Imputed Multilateral ODA,"Asia, Total",92076.528045,92.076528045
+2015,Imputed Multilateral ODA,"Caribbean & Central America, Total",9029.730451,9.029730450999999
+2015,Imputed Multilateral ODA,"Developing Countries, Total",343370.123087,343.37012308699997
+2015,Imputed Multilateral ODA,"Eastern Africa, Total",58833.051256,58.833051256
+2015,Imputed Multilateral ODA,"Europe, Total",42919.69378,42.91969378
+2015,Imputed Multilateral ODA,"Fragile states, Total",158270.96028600002,158.27096028600002
+2015,Imputed Multilateral ODA,"LDCs, Total",118151.48638,118.15148638000001
+2015,Imputed Multilateral ODA,"LMICs, Total",102874.902071,102.87490207100001
+2015,Imputed Multilateral ODA,"Middle East, Total",15745.852335,15.745852335
+2015,Imputed Multilateral ODA,"North of Sahara, Total",13150.822941,13.150822941
+2015,Imputed Multilateral ODA,"Oceania, Total",2826.4562539999997,2.8264562539999996
+2015,Imputed Multilateral ODA,"South & Central Asia, Total",57195.943048,57.195943048000004
+2015,Imputed Multilateral ODA,"South America, Total",9466.51451,9.466514510000001
+2015,Imputed Multilateral ODA,"South of Sahara, Total",135908.40059099998,135.90840059099997
+2015,Imputed Multilateral ODA,"Southern Africa, Total",6535.656701,6.535656701
+2015,Imputed Multilateral ODA,"Western Africa, Total",46510.530768,46.510530767999995
+2015,Technical Cooperation,"Africa, Total",52549.493508,52.549493508
+2015,Technical Cooperation,"All Recipients, Total",132978.55220499999,132.97855220499997
+2015,Technical Cooperation,"Asia, Total",48428.640899,48.428640899
+2015,Technical Cooperation,"Caribbean & Central America, Total",5824.51678,5.82451678
+2015,Technical Cooperation,"Developing Countries, Total",169342.971699,169.34297169899997
+2015,Technical Cooperation,"Eastern Africa, Total",17082.574434,17.082574433999998
+2015,Technical Cooperation,"Europe, Total",12685.772577,12.685772577
+2015,Technical Cooperation,"Fragile states, Total",51240.757645,51.240757644999995
+2015,Technical Cooperation,"LDCs, Total",38436.879043,38.436879043
+2015,Technical Cooperation,"LMICs, Total",41933.936925,41.933936925000005
+2015,Technical Cooperation,"Middle East, Total",8063.939375,8.063939375
+2015,Technical Cooperation,"North of Sahara, Total",8525.189569,8.525189569
+2015,Technical Cooperation,"Oceania, Total",3655.523607,3.655523607
+2015,Technical Cooperation,"South & Central Asia, Total",19397.123981,19.397123981
+2015,Technical Cooperation,"South America, Total",8977.479001,8.977479000999999
+2015,Technical Cooperation,"South of Sahara, Total",40787.118475,40.787118475
+2015,Technical Cooperation,"Southern Africa, Total",1875.683459,1.875683459
+2015,Technical Cooperation,"Western Africa, Total",13165.013959,13.165013959
+2016,Development Food Aid,"Africa, Total",8206.938698,8.206938698
+2016,Development Food Aid,"All Recipients, Total",11385.345059,11.385345058999999
+2016,Development Food Aid,"Asia, Total",4359.219002,4.359219002
+2016,Development Food Aid,"Caribbean & Central America, Total",727.093853,0.727093853
+2016,Development Food Aid,"Developing Countries, Total",14607.309960999999,14.607309960999999
+2016,Development Food Aid,"Eastern Africa, Total",5280.348983,5.280348983
+2016,Development Food Aid,"Europe, Total",17.846319,0.017846319000000003
+2016,Development Food Aid,"Fragile states, Total",8907.499545,8.907499545
+2016,Development Food Aid,"LDCs, Total",7990.916859,7.990916859
+2016,Development Food Aid,"LMICs, Total",1596.262405,1.596262405
+2016,Development Food Aid,"Middle East, Total",3123.259864,3.123259864
+2016,Development Food Aid,"North of Sahara, Total",51.83828,0.05183828
+2016,Development Food Aid,"Oceania, Total",12.685009,0.012685009
+2016,Development Food Aid,"South & Central Asia, Total",901.6346560000001,0.901634656
+2016,Development Food Aid,"South America, Total",44.442684,0.044442684
+2016,Development Food Aid,"South of Sahara, Total",8123.06208,8.12306208
+2016,Development Food Aid,"Southern Africa, Total",57.717991000000005,0.057717991
+2016,Development Food Aid,"Western Africa, Total",1786.573384,1.786573384
+2016,Humanitarian Aid,"Africa, Total",57045.03604,57.04503604
+2016,Humanitarian Aid,"All Recipients, Total",153438.384453,153.438384453
+2016,Humanitarian Aid,"Asia, Total",106844.342794,106.844342794
+2016,Humanitarian Aid,"Caribbean & Central America, Total",2615.895101,2.615895101
+2016,Humanitarian Aid,"Developing Countries, Total",204319.146051,204.319146051
+2016,Humanitarian Aid,"Eastern Africa, Total",34773.813472,34.773813472
+2016,Humanitarian Aid,"Europe, Total",12576.256788,12.576256788
+2016,Humanitarian Aid,"Fragile states, Total",143310.46184200002,143.31046184200002
+2016,Humanitarian Aid,"LDCs, Total",63660.595839,63.660595839
+2016,Humanitarian Aid,"LMICs, Total",21794.47086,21.79447086
+2016,Humanitarian Aid,"Middle East, Total",91538.492807,91.538492807
+2016,Humanitarian Aid,"North of Sahara, Total",1446.46218,1.44646218
+2016,Humanitarian Aid,"Oceania, Total",800.526621,0.8005266209999999
+2016,Humanitarian Aid,"South & Central Asia, Total",12849.309923,12.849309923
+2016,Humanitarian Aid,"South America, Total",2429.542343,2.429542343
+2016,Humanitarian Aid,"South of Sahara, Total",54937.97802,54.93797802
+2016,Humanitarian Aid,"Southern Africa, Total",234.449145,0.234449145
+2016,Humanitarian Aid,"Western Africa, Total",9351.476094,9.351476093999999
+2016,Imputed Multilateral ODA,"Africa, Total",181970.096922,181.970096922
+2016,Imputed Multilateral ODA,"All Recipients, Total",312081.806837,312.081806837
+2016,Imputed Multilateral ODA,"Asia, Total",102494.231543,102.494231543
+2016,Imputed Multilateral ODA,"Caribbean & Central America, Total",11939.51948,11.939519480000001
+2016,Imputed Multilateral ODA,"Developing Countries, Total",396784.842277,396.784842277
+2016,Imputed Multilateral ODA,"Eastern Africa, Total",71312.077749,71.312077749
+2016,Imputed Multilateral ODA,"Europe, Total",52069.701541,52.069701541
+2016,Imputed Multilateral ODA,"Fragile states, Total",179539.163952,179.539163952
+2016,Imputed Multilateral ODA,"LDCs, Total",141405.005241,141.405005241
+2016,Imputed Multilateral ODA,"LMICs, Total",114904.101666,114.904101666
+2016,Imputed Multilateral ODA,"Middle East, Total",17925.805487999998,17.925805487999998
+2016,Imputed Multilateral ODA,"North of Sahara, Total",18609.735632,18.609735632
+2016,Imputed Multilateral ODA,"Oceania, Total",4228.124891,4.228124891
+2016,Imputed Multilateral ODA,"South & Central Asia, Total",64835.963645,64.835963645
+2016,Imputed Multilateral ODA,"South America, Total",9942.521104,9.942521103999999
+2016,Imputed Multilateral ODA,"South of Sahara, Total",151827.017982,151.827017982
+2016,Imputed Multilateral ODA,"Southern Africa, Total",4882.108438,4.882108438
+2016,Imputed Multilateral ODA,"Western Africa, Total",51113.306578,51.11330657800001
+2016,Technical Cooperation,"Africa, Total",52994.416207999995,52.994416208
+2016,Technical Cooperation,"All Recipients, Total",141398.830617,141.398830617
+2016,Technical Cooperation,"Asia, Total",50877.317159,50.877317159
+2016,Technical Cooperation,"Caribbean & Central America, Total",6056.569633,6.0565696330000005
+2016,Technical Cooperation,"Developing Countries, Total",179521.873373,179.521873373
+2016,Technical Cooperation,"Eastern Africa, Total",16187.766658999999,16.187766658999998
+2016,Technical Cooperation,"Europe, Total",12618.648842,12.618648842
+2016,Technical Cooperation,"Fragile states, Total",52848.621936999996,52.848621937
+2016,Technical Cooperation,"LDCs, Total",38173.921344,38.173921344
+2016,Technical Cooperation,"LMICs, Total",44405.391633,44.405391633
+2016,Technical Cooperation,"Middle East, Total",9335.95324,9.33595324
+2016,Technical Cooperation,"North of Sahara, Total",9205.610349,9.205610349
+2016,Technical Cooperation,"Oceania, Total",3816.0813949999997,3.816081395
+2016,Technical Cooperation,"South & Central Asia, Total",20666.781201,20.666781201000003
+2016,Technical Cooperation,"South America, Total",9251.631979,9.251631978999999
+2016,Technical Cooperation,"South of Sahara, Total",40474.213126,40.474213126
+2016,Technical Cooperation,"Southern Africa, Total",1891.581682,1.891581682
+2016,Technical Cooperation,"Western Africa, Total",13245.307112,13.245307112
+2017,Development Food Aid,"Africa, Total",8809.845372,8.809845372
+2017,Development Food Aid,"All Recipients, Total",10856.043016,10.856043016
+2017,Development Food Aid,"Asia, Total",3203.814689,3.2038146889999997
+2017,Development Food Aid,"Caribbean & Central America, Total",878.483174,0.878483174
+2017,Development Food Aid,"Developing Countries, Total",14098.117199999999,14.098117199999999
+2017,Development Food Aid,"Eastern Africa, Total",5081.582361,5.081582361
+2017,Development Food Aid,"Europe, Total",251.348927,0.251348927
+2017,Development Food Aid,"Fragile states, Total",10177.322815,10.177322815
+2017,Development Food Aid,"LDCs, Total",9278.313989,9.278313989
+2017,Development Food Aid,"LMICs, Total",1610.668692,1.610668692
+2017,Development Food Aid,"Middle East, Total",1567.055494,1.5670554939999999
+2017,Development Food Aid,"North of Sahara, Total",31.014585,0.031014585
+2017,Development Food Aid,"Oceania, Total",14.123844,0.014123844
+2017,Development Food Aid,"South & Central Asia, Total",1385.080104,1.3850801039999998
+2017,Development Food Aid,"South America, Total",109.37392,0.10937392
+2017,Development Food Aid,"South of Sahara, Total",8746.143091,8.746143091
+2017,Development Food Aid,"Southern Africa, Total",19.952646,0.019952646
+2017,Development Food Aid,"Western Africa, Total",2240.095259,2.2400952590000003
+2017,Humanitarian Aid,"Africa, Total",69625.518083,69.625518083
+2017,Humanitarian Aid,"All Recipients, Total",172562.60759,172.56260759
+2017,Humanitarian Aid,"Asia, Total",117193.371978,117.193371978
+2017,Humanitarian Aid,"Caribbean & Central America, Total",2932.217735,2.932217735
+2017,Humanitarian Aid,"Developing Countries, Total",229857.193126,229.857193126
+2017,Humanitarian Aid,"Eastern Africa, Total",40517.1959,40.5171959
+2017,Humanitarian Aid,"Europe, Total",10544.547192,10.544547192
+2017,Humanitarian Aid,"Fragile states, Total",163166.548409,163.166548409
+2017,Humanitarian Aid,"LDCs, Total",74976.577292,74.976577292
+2017,Humanitarian Aid,"LMICs, Total",21205.113634999998,21.205113634999996
+2017,Humanitarian Aid,"Middle East, Total",99249.577521,99.249577521
+2017,Humanitarian Aid,"North of Sahara, Total",1798.08402,1.7980840200000001
+2017,Humanitarian Aid,"Oceania, Total",892.7388100000001,0.8927388100000001
+2017,Humanitarian Aid,"South & Central Asia, Total",14472.103605,14.472103605000001
+2017,Humanitarian Aid,"South America, Total",1559.258089,1.5592580889999998
+2017,Humanitarian Aid,"South of Sahara, Total",66596.776573,66.596776573
+2017,Humanitarian Aid,"Southern Africa, Total",355.59993,0.35559992999999995
+2017,Humanitarian Aid,"Western Africa, Total",10905.229841,10.905229841
+2017,Imputed Multilateral ODA,"Africa, Total",188506.382157,188.506382157
+2017,Imputed Multilateral ODA,"All Recipients, Total",318030.001063,318.030001063
+2017,Imputed Multilateral ODA,"Asia, Total",101184.950828,101.184950828
+2017,Imputed Multilateral ODA,"Caribbean & Central America, Total",10636.808348,10.636808348
+2017,Imputed Multilateral ODA,"Developing Countries, Total",403720.23195,403.72023194999997
+2017,Imputed Multilateral ODA,"Eastern Africa, Total",76720.441318,76.720441318
+2017,Imputed Multilateral ODA,"Europe, Total",48337.03735,48.337037349999996
+2017,Imputed Multilateral ODA,"Fragile states, Total",189484.786612,189.484786612
+2017,Imputed Multilateral ODA,"LDCs, Total",150406.988578,150.40698857799998
+2017,Imputed Multilateral ODA,"LMICs, Total",108409.09377200001,108.409093772
+2017,Imputed Multilateral ODA,"Middle East, Total",21641.547262,21.641547262
+2017,Imputed Multilateral ODA,"North of Sahara, Total",18497.311945,18.497311945
+2017,Imputed Multilateral ODA,"Oceania, Total",5266.899838,5.2668998380000005
+2017,Imputed Multilateral ODA,"South & Central Asia, Total",60399.209581,60.399209581
+2017,Imputed Multilateral ODA,"South America, Total",11692.34223,11.69234223
+2017,Imputed Multilateral ODA,"South of Sahara, Total",159072.945439,159.072945439
+2017,Imputed Multilateral ODA,"Southern Africa, Total",4539.244689,4.539244689
+2017,Imputed Multilateral ODA,"Western Africa, Total",51824.89716,51.82489716
+2017,Technical Cooperation,"Africa, Total",56945.982967,56.945982967000006
+2017,Technical Cooperation,"All Recipients, Total",151174.409431,151.17440943100002
+2017,Technical Cooperation,"Asia, Total",52922.451053,52.922451052999996
+2017,Technical Cooperation,"Caribbean & Central America, Total",6286.235736,6.286235736
+2017,Technical Cooperation,"Developing Countries, Total",191068.158271,191.068158271
+2017,Technical Cooperation,"Eastern Africa, Total",15270.291391,15.270291391
+2017,Technical Cooperation,"Europe, Total",14007.075629,14.007075629000001
+2017,Technical Cooperation,"Fragile states, Total",52751.146912000004,52.751146912
+2017,Technical Cooperation,"LDCs, Total",35231.702217,35.231702217
+2017,Technical Cooperation,"LMICs, Total",45273.7578,45.2737578
+2017,Technical Cooperation,"Middle East, Total",11816.105678,11.816105678
+2017,Technical Cooperation,"North of Sahara, Total",11550.799968,11.550799968
+2017,Technical Cooperation,"Oceania, Total",3902.938163,3.902938163
+2017,Technical Cooperation,"South & Central Asia, Total",20443.543133,20.443543133
+2017,Technical Cooperation,"South America, Total",9329.370626,9.329370626
+2017,Technical Cooperation,"South of Sahara, Total",40255.870089000004,40.255870089000005
+2017,Technical Cooperation,"Southern Africa, Total",1977.632622,1.977632622
+2017,Technical Cooperation,"Western Africa, Total",12996.887651,12.996887651
+2018,Development Food Aid,"Africa, Total",11604.164982,11.604164982
+2018,Development Food Aid,"All Recipients, Total",13557.606627000001,13.557606627
+2018,Development Food Aid,"Asia, Total",3798.2680069999997,3.798268007
+2018,Development Food Aid,"Caribbean & Central America, Total",819.507964,0.819507964
+2018,Development Food Aid,"Developing Countries, Total",17637.363743,17.637363743
+2018,Development Food Aid,"Eastern Africa, Total",7354.210263,7.354210263
+2018,Development Food Aid,"Europe, Total",146.331326,0.14633132599999998
+2018,Development Food Aid,"Fragile states, Total",14403.99301,14.40399301
+2018,Development Food Aid,"LDCs, Total",13343.445193,13.343445192999999
+2018,Development Food Aid,"LMICs, Total",1609.60266,1.60960266
+2018,Development Food Aid,"Middle East, Total",2187.853138,2.187853138
+2018,Development Food Aid,"North of Sahara, Total",40.26698,0.040266979999999994
+2018,Development Food Aid,"Oceania, Total",22.863369,0.022863368999999998
+2018,Development Food Aid,"South & Central Asia, Total",1409.216085,1.409216085
+2018,Development Food Aid,"South America, Total",71.934871,0.071934871
+2018,Development Food Aid,"South of Sahara, Total",11476.412617,11.476412617
+2018,Development Food Aid,"Southern Africa, Total",34.1438,0.0341438
+2018,Development Food Aid,"Western Africa, Total",2346.034407,2.3460344070000003
+2018,Humanitarian Aid,"Africa, Total",59563.859942,59.563859942
+2018,Humanitarian Aid,"All Recipients, Total",178313.511531,178.313511531
+2018,Humanitarian Aid,"Asia, Total",128687.213434,128.687213434
+2018,Humanitarian Aid,"Caribbean & Central America, Total",2185.371776,2.1853717759999998
+2018,Humanitarian Aid,"Developing Countries, Total",238897.417925,238.89741792499998
+2018,Humanitarian Aid,"Eastern Africa, Total",29793.614337,29.793614336999998
+2018,Humanitarian Aid,"Europe, Total",7535.533549,7.535533549
+2018,Humanitarian Aid,"Fragile states, Total",166599.988293,166.599988293
+2018,Humanitarian Aid,"LDCs, Total",78786.936977,78.78693697700001
+2018,Humanitarian Aid,"LMICs, Total",23343.962397,23.343962397
+2018,Humanitarian Aid,"Middle East, Total",108647.069906,108.647069906
+2018,Humanitarian Aid,"North of Sahara, Total",1744.099187,1.744099187
+2018,Humanitarian Aid,"Oceania, Total",881.314948,0.881314948
+2018,Humanitarian Aid,"South & Central Asia, Total",16106.863229999999,16.10686323
+2018,Humanitarian Aid,"South America, Total",1888.45079,1.88845079
+2018,Humanitarian Aid,"South of Sahara, Total",56944.24775,56.94424775
+2018,Humanitarian Aid,"Southern Africa, Total",154.60056,0.15460056
+2018,Humanitarian Aid,"Western Africa, Total",13388.506301000001,13.388506301000001
+2018,Imputed Multilateral ODA,"Africa, Total",197819.198664,197.819198664
+2018,Imputed Multilateral ODA,"All Recipients, Total",339131.732449,339.131732449
+2018,Imputed Multilateral ODA,"Asia, Total",120614.316707,120.614316707
+2018,Imputed Multilateral ODA,"Caribbean & Central America, Total",11545.50941,11.545509410000001
+2018,Imputed Multilateral ODA,"Developing Countries, Total",428316.52894,428.31652894
+2018,Imputed Multilateral ODA,"Eastern Africa, Total",80823.115849,80.82311584899999
+2018,Imputed Multilateral ODA,"Europe, Total",41103.588146,41.103588146
+2018,Imputed Multilateral ODA,"Fragile states, Total",216307.3672,216.30736720000002
+2018,Imputed Multilateral ODA,"LDCs, Total",172854.538227,172.854538227
+2018,Imputed Multilateral ODA,"LMICs, Total",106403.125714,106.403125714
+2018,Imputed Multilateral ODA,"Middle East, Total",24527.075863,24.527075862999997
+2018,Imputed Multilateral ODA,"North of Sahara, Total",12750.217564,12.750217564
+2018,Imputed Multilateral ODA,"Oceania, Total",5705.362631,5.705362631
+2018,Imputed Multilateral ODA,"South & Central Asia, Total",68433.231586,68.43323158599999
+2018,Imputed Multilateral ODA,"South America, Total",10325.077326999999,10.325077326999999
+2018,Imputed Multilateral ODA,"South of Sahara, Total",171422.581172,171.422581172
+2018,Imputed Multilateral ODA,"Southern Africa, Total",4347.295046,4.347295046
+2018,Imputed Multilateral ODA,"Western Africa, Total",53898.732754,53.898732753999994
+2018,Technical Cooperation,"Africa, Total",54321.186463,54.321186463
+2018,Technical Cooperation,"All Recipients, Total",146562.245451,146.562245451
+2018,Technical Cooperation,"Asia, Total",50275.937592,50.275937592000005
+2018,Technical Cooperation,"Caribbean & Central America, Total",5397.32907,5.39732907
+2018,Technical Cooperation,"Developing Countries, Total",185079.958852,185.079958852
+2018,Technical Cooperation,"Eastern Africa, Total",12990.821233,12.990821233
+2018,Technical Cooperation,"Europe, Total",14996.910928,14.996910928
+2018,Technical Cooperation,"Fragile states, Total",48387.957848,48.387957848
+2018,Technical Cooperation,"LDCs, Total",33702.876486,33.702876486
+2018,Technical Cooperation,"LMICs, Total",44740.010762,44.740010762
+2018,Technical Cooperation,"Middle East, Total",11634.007475,11.634007475
+2018,Technical Cooperation,"North of Sahara, Total",10774.198655,10.774198655
+2018,Technical Cooperation,"Oceania, Total",4487.350154,4.487350154
+2018,Technical Cooperation,"South & Central Asia, Total",18552.728814,18.552728813999998
+2018,Technical Cooperation,"South America, Total",8308.482277000001,8.308482277000001
+2018,Technical Cooperation,"South of Sahara, Total",38148.576618,38.148576618
+2018,Technical Cooperation,"Southern Africa, Total",1933.699932,1.933699932
+2018,Technical Cooperation,"Western Africa, Total",13605.164251,13.605164251
+2019,Development Food Aid,"Africa, Total",8532.997999,8.532997999
+2019,Development Food Aid,"All Recipients, Total",10401.915013,10.401915013
+2019,Development Food Aid,"Asia, Total",3199.540048,3.199540048
+2019,Development Food Aid,"Caribbean & Central America, Total",351.681323,0.35168132300000005
+2019,Development Food Aid,"Developing Countries, Total",13622.902136,13.622902136
+2019,Development Food Aid,"Eastern Africa, Total",5374.216315,5.374216315
+2019,Development Food Aid,"Europe, Total",137.268529,0.137268529
+2019,Development Food Aid,"Fragile states, Total",10558.22681,10.55822681
+2019,Development Food Aid,"LDCs, Total",9037.361356,9.037361356
+2019,Development Food Aid,"LMICs, Total",1700.246113,1.700246113
+2019,Development Food Aid,"Middle East, Total",1555.162384,1.555162384
+2019,Development Food Aid,"North of Sahara, Total",33.043603,0.033043603
+2019,Development Food Aid,"Oceania, Total",4.752405,0.004752405
+2019,Development Food Aid,"South & Central Asia, Total",1141.178531,1.141178531
+2019,Development Food Aid,"South America, Total",60.915622,0.060915621999999996
+2019,Development Food Aid,"South of Sahara, Total",8422.348906,8.422348906
+2019,Development Food Aid,"Southern Africa, Total",29.418877000000002,0.029418877000000003
+2019,Development Food Aid,"Western Africa, Total",1827.423881,1.8274238809999999
+2019,Humanitarian Aid,"Africa, Total",68130.986348,68.13098634800001
+2019,Humanitarian Aid,"All Recipients, Total",185895.026671,185.895026671
+2019,Humanitarian Aid,"Asia, Total",125902.213271,125.902213271
+2019,Humanitarian Aid,"Caribbean & Central America, Total",1973.409428,1.9734094279999999
+2019,Humanitarian Aid,"Developing Countries, Total",249263.030129,249.263030129
+2019,Humanitarian Aid,"Eastern Africa, Total",39069.265173,39.069265173
+2019,Humanitarian Aid,"Europe, Total",10331.904081,10.331904081000001
+2019,Humanitarian Aid,"Fragile states, Total",171369.209295,171.36920929500002
+2019,Humanitarian Aid,"LDCs, Total",84748.053266,84.748053266
+2019,Humanitarian Aid,"LMICs, Total",23121.706833,23.121706833
+2019,Humanitarian Aid,"Middle East, Total",105071.44496400001,105.07144496400001
+2019,Humanitarian Aid,"North of Sahara, Total",1682.908292,1.682908292
+2019,Humanitarian Aid,"Oceania, Total",658.784124,0.658784124
+2019,Humanitarian Aid,"South & Central Asia, Total",18316.730302,18.316730302
+2019,Humanitarian Aid,"South America, Total",3885.0616720000003,3.8850616720000004
+2019,Humanitarian Aid,"South of Sahara, Total",65707.557363,65.707557363
+2019,Humanitarian Aid,"Southern Africa, Total",208.518674,0.20851867400000001
+2019,Humanitarian Aid,"Western Africa, Total",10896.427673,10.896427673
+2019,Imputed Multilateral ODA,"Africa, Total",192405.99791099998,192.405997911
+2019,Imputed Multilateral ODA,"All Recipients, Total",312501.278994,312.501278994
+2019,Imputed Multilateral ODA,"Asia, Total",103435.82722199999,103.43582722199999
+2019,Imputed Multilateral ODA,"Caribbean & Central America, Total",10789.17029,10.78917029
+2019,Imputed Multilateral ODA,"Developing Countries, Total",395741.24417900003,395.74124417900003
+2019,Imputed Multilateral ODA,"Eastern Africa, Total",72003.276864,72.003276864
+2019,Imputed Multilateral ODA,"Europe, Total",42818.652869,42.818652869
+2019,Imputed Multilateral ODA,"Fragile states, Total",188779.511209,188.779511209
+2019,Imputed Multilateral ODA,"LDCs, Total",146100.89012,146.10089012
+2019,Imputed Multilateral ODA,"LMICs, Total",108891.89306,108.89189306
+2019,Imputed Multilateral ODA,"Middle East, Total",24756.557003,24.756557003
+2019,Imputed Multilateral ODA,"North of Sahara, Total",19793.783699,19.793783699
+2019,Imputed Multilateral ODA,"Oceania, Total",3437.494274,3.437494274
+2019,Imputed Multilateral ODA,"South & Central Asia, Total",58636.366592,58.636366592
+2019,Imputed Multilateral ODA,"South America, Total",11852.658594,11.852658594000001
+2019,Imputed Multilateral ODA,"South of Sahara, Total",163134.440939,163.134440939
+2019,Imputed Multilateral ODA,"Southern Africa, Total",4334.580989,4.334580989
+2019,Imputed Multilateral ODA,"Western Africa, Total",52373.294517,52.373294517000005
+2019,Technical Cooperation,"Africa, Total",57029.651716,57.029651716000004
+2019,Technical Cooperation,"All Recipients, Total",153060.714286,153.060714286
+2019,Technical Cooperation,"Asia, Total",53125.063265,53.125063264999994
+2019,Technical Cooperation,"Caribbean & Central America, Total",4937.738967,4.9377389670000005
+2019,Technical Cooperation,"Developing Countries, Total",193203.81363299998,193.20381363299998
+2019,Technical Cooperation,"Eastern Africa, Total",14797.359842,14.797359842
+2019,Technical Cooperation,"Europe, Total",14990.654056,14.990654055999999
+2019,Technical Cooperation,"Fragile states, Total",50749.720735,50.749720735000004
+2019,Technical Cooperation,"LDCs, Total",34283.475884,34.283475884
+2019,Technical Cooperation,"LMICs, Total",46348.65803,46.348658029999996
+2019,Technical Cooperation,"Middle East, Total",13265.816399000001,13.265816399000002
+2019,Technical Cooperation,"North of Sahara, Total",10752.684777,10.752684777
+2019,Technical Cooperation,"Oceania, Total",4146.372755,4.146372755000001
+2019,Technical Cooperation,"South & Central Asia, Total",20329.899565,20.329899564999998
+2019,Technical Cooperation,"South America, Total",8396.90601,8.39690601
+2019,Technical Cooperation,"South of Sahara, Total",39875.24204,39.875242039999996
+2019,Technical Cooperation,"Southern Africa, Total",2030.9187080000002,2.030918708
+2019,Technical Cooperation,"Western Africa, Total",13718.192407,13.718192407
+2020,Development Food Aid,"Africa, Total",8171.713388,8.171713388
+2020,Development Food Aid,"All Recipients, Total",10775.135732,10.775135732
+2020,Development Food Aid,"Asia, Total",3318.665377,3.318665377
+2020,Development Food Aid,"Caribbean & Central America, Total",381.937055,0.38193705499999997
+2020,Development Food Aid,"Developing Countries, Total",13924.538222,13.924538221999999
+2020,Development Food Aid,"Eastern Africa, Total",4020.231999,4.020231999
+2020,Development Food Aid,"Europe, Total",135.475324,0.135475324
+2020,Development Food Aid,"Fragile states, Total",9548.015768,9.548015767999999
+2020,Development Food Aid,"LDCs, Total",8058.175109,8.058175109
+2020,Development Food Aid,"LMICs, Total",1895.6742239999999,1.895674224
+2020,Development Food Aid,"Middle East, Total",2098.991614,2.098991614
+2020,Development Food Aid,"North of Sahara, Total",153.351742,0.153351742
+2020,Development Food Aid,"Oceania, Total",2.596281,0.0025962809999999998
+2020,Development Food Aid,"South & Central Asia, Total",830.703281,0.8307032809999999
+2020,Development Food Aid,"South America, Total",134.866834,0.13486683400000002
+2020,Development Food Aid,"South of Sahara, Total",7788.994557,7.788994557
+2020,Development Food Aid,"Southern Africa, Total",41.448499,0.041448499
+2020,Development Food Aid,"Western Africa, Total",2460.788749,2.4607887489999998
+2020,Humanitarian Aid,"Africa, Total",73282.381798,73.282381798
+2020,Humanitarian Aid,"All Recipients, Total",189394.945551,189.394945551
+2020,Humanitarian Aid,"Asia, Total",117151.636401,117.15163640099999
+2020,Humanitarian Aid,"Caribbean & Central America, Total",3828.71249,3.82871249
+2020,Humanitarian Aid,"Developing Countries, Total",253973.692415,253.973692415
+2020,Humanitarian Aid,"Eastern Africa, Total",40273.682163,40.273682163
+2020,Humanitarian Aid,"Europe, Total",10009.700564,10.009700564000001
+2020,Humanitarian Aid,"Fragile states, Total",171606.694906,171.606694906
+2020,Humanitarian Aid,"LDCs, Total",81841.627911,81.841627911
+2020,Humanitarian Aid,"LMICs, Total",25388.670107,25.388670107000003
+2020,Humanitarian Aid,"Middle East, Total",97931.753774,97.931753774
+2020,Humanitarian Aid,"North of Sahara, Total",1737.615906,1.737615906
+2020,Humanitarian Aid,"Oceania, Total",981.96339,0.98196339
+2020,Humanitarian Aid,"South & Central Asia, Total",16119.196139,16.119196139
+2020,Humanitarian Aid,"South America, Total",5466.727045,5.466727045
+2020,Humanitarian Aid,"South of Sahara, Total",70604.881486,70.604881486
+2020,Humanitarian Aid,"Southern Africa, Total",407.97134,0.40797134
+2020,Humanitarian Aid,"Western Africa, Total",12888.412833,12.888412833
+2020,Imputed Multilateral ODA,"Africa, Total",214298.324023,214.298324023
+2020,Imputed Multilateral ODA,"All Recipients, Total",340728.296075,340.728296075
+2020,Imputed Multilateral ODA,"Asia, Total",105320.19071,105.32019070999999
+2020,Imputed Multilateral ODA,"Caribbean & Central America, Total",16378.653454,16.378653454
+2020,Imputed Multilateral ODA,"Developing Countries, Total",430635.2561,430.6352561
+2020,Imputed Multilateral ODA,"Eastern Africa, Total",83884.054837,83.88405483700001
+2020,Imputed Multilateral ODA,"Europe, Total",45954.590099,45.954590099
+2020,Imputed Multilateral ODA,"Fragile states, Total",201461.395509,201.461395509
+2020,Imputed Multilateral ODA,"LDCs, Total",155837.87578899998,155.83787578899998
+2020,Imputed Multilateral ODA,"LMICs, Total",128370.782438,128.370782438
+2020,Imputed Multilateral ODA,"Middle East, Total",21290.512378,21.290512378
+2020,Imputed Multilateral ODA,"North of Sahara, Total",22812.932589,22.812932589
+2020,Imputed Multilateral ODA,"Oceania, Total",5032.088569,5.032088569
+2020,Imputed Multilateral ODA,"South & Central Asia, Total",60856.836189,60.856836189
+2020,Imputed Multilateral ODA,"South America, Total",13267.603988,13.267603988000001
+2020,Imputed Multilateral ODA,"South of Sahara, Total",176345.526285,176.345526285
+2020,Imputed Multilateral ODA,"Southern Africa, Total",5027.089166,5.027089166
+2020,Imputed Multilateral ODA,"Western Africa, Total",58057.859097,58.057859097
+2020,Technical Cooperation,"Africa, Total",58981.640049,58.981640049
+2020,Technical Cooperation,"All Recipients, Total",162373.974071,162.373974071
+2020,Technical Cooperation,"Asia, Total",53716.487881,53.716487881
+2020,Technical Cooperation,"Caribbean & Central America, Total",4706.480231,4.706480231
+2020,Technical Cooperation,"Developing Countries, Total",202751.47560200002,202.75147560200003
+2020,Technical Cooperation,"Eastern Africa, Total",14910.034617,14.910034616999999
+2020,Technical Cooperation,"Europe, Total",16169.042303,16.169042303
+2020,Technical Cooperation,"Fragile states, Total",51444.470838,51.444470838
+2020,Technical Cooperation,"LDCs, Total",34068.238678,34.068238678
+2020,Technical Cooperation,"LMICs, Total",46033.911098000004,46.033911098000004
+2020,Technical Cooperation,"Middle East, Total",15223.161438000001,15.223161438000002
+2020,Technical Cooperation,"North of Sahara, Total",10981.154167,10.981154167000001
+2020,Technical Cooperation,"Oceania, Total",3804.508901,3.804508901
+2020,Technical Cooperation,"South & Central Asia, Total",20442.372431,20.442372431
+2020,Technical Cooperation,"South America, Total",8151.292305,8.151292305
+2020,Technical Cooperation,"South of Sahara, Total",42250.150568,42.250150567999995
+2020,Technical Cooperation,"Southern Africa, Total",2223.806755,2.223806755
+2020,Technical Cooperation,"Western Africa, Total",14935.168999,14.935168999
+2021,Development Food Aid,"Africa, Total",9717.873891,9.717873891
+2021,Development Food Aid,"All Recipients, Total",12782.693695,12.782693695
+2021,Development Food Aid,"Asia, Total",4716.037073,4.716037073000001
+2021,Development Food Aid,"Caribbean & Central America, Total",565.146917,0.5651469170000001
+2021,Development Food Aid,"Developing Countries, Total",16463.117734,16.463117734
+2021,Development Food Aid,"Eastern Africa, Total",5396.1793450000005,5.396179345
+2021,Development Food Aid,"Europe, Total",78.825359,0.07882535900000001
+2021,Development Food Aid,"Fragile states, Total",13264.372465,13.264372465000001
+2021,Development Food Aid,"LDCs, Total",11513.987372,11.513987371999999
+2021,Development Food Aid,"LMICs, Total",1789.605881,1.789605881
+2021,Development Food Aid,"Middle East, Total",2839.1950779999997,2.839195078
+2021,Development Food Aid,"North of Sahara, Total",86.441891,0.08644189099999999
+2021,Development Food Aid,"Oceania, Total",7.500215,0.007500215
+2021,Development Food Aid,"South & Central Asia, Total",1698.4683499999999,1.69846835
+2021,Development Food Aid,"South America, Total",188.824194,0.188824194
+2021,Development Food Aid,"South of Sahara, Total",9616.458234,9.616458234
+2021,Development Food Aid,"Southern Africa, Total",55.611202,0.055611202
+2021,Development Food Aid,"Western Africa, Total",2713.502985,2.713502985
+2021,Humanitarian Aid,"Africa, Total",87611.870857,87.611870857
+2021,Humanitarian Aid,"All Recipients, Total",216761.043789,216.76104378899998
+2021,Humanitarian Aid,"Asia, Total",138136.517764,138.136517764
+2021,Humanitarian Aid,"Caribbean & Central America, Total",4448.95384,4.44895384
+2021,Humanitarian Aid,"Developing Countries, Total",289192.81755,289.19281755
+2021,Humanitarian Aid,"Eastern Africa, Total",44945.461393,44.945461392999995
+2021,Humanitarian Aid,"Europe, Total",9961.086604,9.961086604
+2021,Humanitarian Aid,"Fragile states, Total",187193.645353,187.193645353
+2021,Humanitarian Aid,"LDCs, Total",105193.758703,105.193758703
+2021,Humanitarian Aid,"LMICs, Total",28876.448943,28.876448943
+2021,Humanitarian Aid,"Middle East, Total",95947.243554,95.947243554
+2021,Humanitarian Aid,"North of Sahara, Total",2342.976254,2.3429762540000003
+2021,Humanitarian Aid,"Oceania, Total",816.882395,0.8168823949999999
+2021,Humanitarian Aid,"South & Central Asia, Total",32267.024988999998,32.267024989
+2021,Humanitarian Aid,"South America, Total",6665.912569,6.6659125690000005
+2021,Humanitarian Aid,"South of Sahara, Total",83003.514415,83.003514415
+2021,Humanitarian Aid,"Southern Africa, Total",301.734259,0.301734259
+2021,Humanitarian Aid,"Western Africa, Total",13815.896721,13.815896721
+2021,Imputed Multilateral ODA,"Africa, Total",246370.116688,246.370116688
+2021,Imputed Multilateral ODA,"All Recipients, Total",387644.098333,387.644098333
+2021,Imputed Multilateral ODA,"Asia, Total",113924.184498,113.924184498
+2021,Imputed Multilateral ODA,"Caribbean & Central America, Total",13200.723787,13.200723787000001
+2021,Imputed Multilateral ODA,"Developing Countries, Total",489457.782426,489.457782426
+2021,Imputed Multilateral ODA,"Eastern Africa, Total",99278.060755,99.278060755
+2021,Imputed Multilateral ODA,"Europe, Total",52134.631595,52.134631595
+2021,Imputed Multilateral ODA,"Fragile states, Total",236597.202078,236.597202078
+2021,Imputed Multilateral ODA,"LDCs, Total",176479.966701,176.479966701
+2021,Imputed Multilateral ODA,"LMICs, Total",140412.81122,140.41281122
+2021,Imputed Multilateral ODA,"Middle East, Total",25944.479827,25.944479827
+2021,Imputed Multilateral ODA,"North of Sahara, Total",32710.317217,32.710317217
+2021,Imputed Multilateral ODA,"Oceania, Total",4854.557634,4.854557634
+2021,Imputed Multilateral ODA,"South & Central Asia, Total",66272.822836,66.272822836
+2021,Imputed Multilateral ODA,"South America, Total",14207.784007,14.207784007
+2021,Imputed Multilateral ODA,"South of Sahara, Total",199225.635802,199.225635802
+2021,Imputed Multilateral ODA,"Southern Africa, Total",5891.946178,5.891946178
+2021,Imputed Multilateral ODA,"Western Africa, Total",60935.369283,60.935369283
+2021,Technical Cooperation,"Africa, Total",61580.811404,61.580811404
+2021,Technical Cooperation,"All Recipients, Total",174152.424048,174.152424048
+2021,Technical Cooperation,"Asia, Total",53091.35097,53.09135097
+2021,Technical Cooperation,"Caribbean & Central America, Total",4649.816868,4.649816868
+2021,Technical Cooperation,"Developing Countries, Total",216950.283703,216.950283703
+2021,Technical Cooperation,"Eastern Africa, Total",14698.819876,14.698819876
+2021,Technical Cooperation,"Europe, Total",17844.62045,17.844620449999997
+2021,Technical Cooperation,"Fragile states, Total",51056.032011999996,51.056032011999996
+2021,Technical Cooperation,"LDCs, Total",34186.741,34.186741000000005
+2021,Technical Cooperation,"LMICs, Total",47590.378338,47.590378338
+2021,Technical Cooperation,"Middle East, Total",15407.005151,15.407005151
+2021,Technical Cooperation,"North of Sahara, Total",11342.005309,11.342005309
+2021,Technical Cooperation,"Oceania, Total",3850.094327,3.850094327
+2021,Technical Cooperation,"South & Central Asia, Total",20300.917716,20.300917716
+2021,Technical Cooperation,"South America, Total",9400.647752,9.400647752000001
+2021,Technical Cooperation,"South of Sahara, Total",43857.057059,43.857057059
+2021,Technical Cooperation,"Southern Africa, Total",2111.882498,2.111882498
+2021,Technical Cooperation,"Western Africa, Total",15430.649328,15.430649328
+2022,Development Food Aid,"Africa, Total",9447.698304,9.447698304
+2022,Development Food Aid,"All Recipients, Total",12176.858838,12.176858838
+2022,Development Food Aid,"Asia, Total",4417.755566,4.417755565999999
+2022,Development Food Aid,"Caribbean & Central America, Total",301.312754,0.30131275399999996
+2022,Development Food Aid,"Developing Countries, Total",15658.2227,15.6582227
+2022,Development Food Aid,"Eastern Africa, Total",4896.83089,4.89683089
+2022,Development Food Aid,"Europe, Total",576.152368,0.576152368
+2022,Development Food Aid,"Fragile states, Total",13106.663746,13.106663746
+2022,Development Food Aid,"LDCs, Total",11215.198012,11.215198012
+2022,Development Food Aid,"LMICs, Total",2165.438606,2.1654386060000004
+2022,Development Food Aid,"Middle East, Total",3014.295912,3.014295912
+2022,Development Food Aid,"North of Sahara, Total",70.010812,0.070010812
+2022,Development Food Aid,"Oceania, Total",3.95093,0.00395093
+2022,Development Food Aid,"South & Central Asia, Total",1324.807698,1.324807698
+2022,Development Food Aid,"South America, Total",44.46615,0.044466149999999996
+2022,Development Food Aid,"South of Sahara, Total",9376.178296,9.376178296
+2022,Development Food Aid,"Southern Africa, Total",57.843062,0.057843062
+2022,Development Food Aid,"Western Africa, Total",2691.530702,2.691530702
+2022,Humanitarian Aid,"Africa, Total",86481.094452,86.48109445200001
+2022,Humanitarian Aid,"All Recipients, Total",229681.07976,229.68107976
+2022,Humanitarian Aid,"Asia, Total",116839.68992799999,116.839689928
+2022,Humanitarian Aid,"Caribbean & Central America, Total",3739.588654,3.7395886540000003
+2022,Humanitarian Aid,"Developing Countries, Total",303025.98981400003,303.025989814
+2022,Humanitarian Aid,"Eastern Africa, Total",46315.161462,46.315161462
+2022,Humanitarian Aid,"Europe, Total",38715.339328,38.715339328
+2022,Humanitarian Aid,"Fragile states, Total",164988.453184,164.988453184
+2022,Humanitarian Aid,"LDCs, Total",100429.661834,100.429661834
+2022,Humanitarian Aid,"LMICs, Total",48864.278914,48.864278914
+2022,Humanitarian Aid,"Middle East, Total",77376.570422,77.376570422
+2022,Humanitarian Aid,"North of Sahara, Total",1870.546498,1.870546498
+2022,Humanitarian Aid,"Oceania, Total",935.735464,0.935735464
+2022,Humanitarian Aid,"South & Central Asia, Total",34106.215914,34.106215914
+2022,Humanitarian Aid,"South America, Total",5188.167352,5.188167352000001
+2022,Humanitarian Aid,"South of Sahara, Total",82955.682534,82.955682534
+2022,Humanitarian Aid,"Southern Africa, Total",257.637762,0.257637762
+2022,Humanitarian Aid,"Western Africa, Total",13874.400352,13.874400352
+2022,Imputed Multilateral ODA,"Africa, Total",185473.144862,185.473144862
+2022,Imputed Multilateral ODA,"All Recipients, Total",362756.431652,362.756431652
+2022,Imputed Multilateral ODA,"Asia, Total",82786.636884,82.786636884
+2022,Imputed Multilateral ODA,"Caribbean & Central America, Total",8771.38629,8.77138629
+2022,Imputed Multilateral ODA,"Developing Countries, Total",456152.11543999997,456.15211544
+2022,Imputed Multilateral ODA,"Eastern Africa, Total",72751.70954,72.75170954
+2022,Imputed Multilateral ODA,"Europe, Total",100872.08815200001,100.87208815200002
+2022,Imputed Multilateral ODA,"Fragile states, Total",176426.07981,176.42607981
+2022,Imputed Multilateral ODA,"LDCs, Total",133808.748524,133.808748524
+2022,Imputed Multilateral ODA,"LMICs, Total",169249.055936,169.249055936
+2022,Imputed Multilateral ODA,"Middle East, Total",17688.661046,17.688661046
+2022,Imputed Multilateral ODA,"North of Sahara, Total",15578.14148,15.578141480000001
+2022,Imputed Multilateral ODA,"Oceania, Total",4565.03596,4.56503596
+2022,Imputed Multilateral ODA,"South & Central Asia, Total",47736.347042,47.736347042
+2022,Imputed Multilateral ODA,"South America, Total",18066.894454,18.066894454
+2022,Imputed Multilateral ODA,"South of Sahara, Total",158224.513862,158.22451386199998
+2022,Imputed Multilateral ODA,"Southern Africa, Total",5171.0061160000005,5.171006116
+2022,Imputed Multilateral ODA,"Western Africa, Total",53193.478702,53.193478702
+2022,Technical Cooperation,"Africa, Total",66001.339488,66.001339488
+2022,Technical Cooperation,"All Recipients, Total",184619.982828,184.61998282800002
+2022,Technical Cooperation,"Asia, Total",55459.627412,55.459627412
+2022,Technical Cooperation,"Caribbean & Central America, Total",5086.6469640000005,5.086646964000001
+2022,Technical Cooperation,"Developing Countries, Total",228358.233736,228.358233736
+2022,Technical Cooperation,"Eastern Africa, Total",17867.406168,17.867406168000002
+2022,Technical Cooperation,"Europe, Total",19236.808708,19.236808708
+2022,Technical Cooperation,"Fragile states, Total",56125.819276,56.125819276
+2022,Technical Cooperation,"LDCs, Total",38128.542778,38.128542778
+2022,Technical Cooperation,"LMICs, Total",50002.550868,50.002550868
+2022,Technical Cooperation,"Middle East, Total",18296.59177,18.29659177
+2022,Technical Cooperation,"North of Sahara, Total",11644.55238,11.644552379999999
+2022,Technical Cooperation,"Oceania, Total",3828.9007180000003,3.8289007180000003
+2022,Technical Cooperation,"South & Central Asia, Total",20234.47335,20.234473350000002
+2022,Technical Cooperation,"South America, Total",7826.841256,7.826841256
+2022,Technical Cooperation,"South of Sahara, Total",45837.367806,45.837367806
+2022,Technical Cooperation,"Southern Africa, Total",2169.616144,2.169616144
+2022,Technical Cooperation,"Western Africa, Total",15962.448094000001,15.962448094

@@ -25,7 +25,12 @@ st.set_page_config(
 @st.cache_data
 def load_data():
     # df_2021 = pd.read_csv('./data/oda_2021.csv')
-    oda = pd.read_parquet('./data/oda_disbursment.parquet')
+    # oda = pd.read_parquet('./data/oda_disbursment.parquet')
+    # chart1_df_word = pd.read_csv('data/chart1_df_world.csv')
+    # chart2_df_pov_regions = pd.read_csv('data/chart2_df_pov_regions.csv')
+    # chart3_world_financial_aid_flows = pd.read_csv('data/chart3_world_financial_aid_flows.csv')
+    chart4_oda_agg = pd.read_csv('data/chart4_oda_agg.csv')
+    chart7_oda_df_regions = pd.read_csv('data/chart7_oda_df_regions.csv')
     # df_2021 = data[data.Year == 2021].dropna(subset=['Value'])
     print('ODA data loaded')
     countries = pd.read_parquet('./data/WDICountry.parquet').rename(columns={"Country Code":"DE_code"})
@@ -33,9 +38,9 @@ def load_data():
     correspondance = pd.read_csv('./data/Correspondences_DAC2a.csv')
     print('correspondance data loaded')
     poverty = pd.read_parquet('data/oda_poverty_world.parquet')
-    return oda, countries, correspondance, poverty
+    return countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions
 
-oda, countries, correspondance, poverty = load_data()
+countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions = load_data()
 
 #################################################
 ## --------------- Intro charts -------------- ##
@@ -52,6 +57,7 @@ poverty['Number of Poor (in million)'] = (poverty['Poverty headcount ratio at $2
 # Filter world data for global view
 df_world = poverty[poverty['Country Name'] == 'World']
 
+# df_world.to_csv('data/chart1_df_world.csv', index=False)
 # --- Chart 1: Global Population and Poverty ---
 poor = alt.Chart(df_world[(df_world.Year >= 1990) & (df_world.Year <= 2022)]).mark_area(opacity=0.7).encode(
     x='Year:O',
@@ -113,6 +119,8 @@ temp = df_pov_regions.sort_values(by=['Region', 'Year'])
 temp = temp.groupby('Region').ffill()
 df_pov_regions = temp.merge(df_pov_regions[['Region']], left_index=True, right_index=True)
 
+# df_pov_regions.to_csv('data/chart2_df_pov_regions.csv', index=False)
+
 chart2 = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_regions.Year <= 2022)]).mark_area(opacity=0.7).encode(
     x='Year:O',
     y=alt.Y('Number of Poor (in million):Q', axis=alt.Axis(title='Millions of extreme poor')),
@@ -145,6 +153,9 @@ world_financial_aid_flows = world_financial_aid_flows[['Country Name','Year',"Ne
 'Foreign direct investment, net inflows (BoP, current US$)','Personal remittances, received (current US$)']]
 world_financial_aid_flows = pd.melt(world_financial_aid_flows, id_vars=['Country Name','Year'], var_name='Indicator', value_name='Value')
 world_financial_aid_flows.loc[:,'Value_M'] = world_financial_aid_flows.loc[:,'Value'] / 1000_000_000
+
+# world_financial_aid_flows.to_csv('data/chart3_world_financial_aid_flows.csv', index=False)
+
 world_financial_aid = alt.Chart(world_financial_aid_flows).mark_line().encode(
     x='Year:O',
     y=alt.Y('Value_M:Q',title='Flow in Billion US$'),
@@ -182,18 +193,20 @@ recipient_dropdown = alt.selection_point(
 )
 
 # recipients_dropdown
-oda_world = oda[
-    (oda['Recipient'].isin(recipients)) & 
-    (oda['Year'] >= 1990) & 
-    (oda['Year'] <= 2022) & 
-    (oda['Aid type'].isin(aid_types))
-]
+# oda_world = oda[
+#     (oda['Recipient'].isin(recipients)) & 
+#     (oda['Year'] >= 1990) & 
+#     (oda['Year'] <= 2022) & 
+#     (oda['Aid type'].isin(aid_types))
+# ]
 
-# Aggregate and convert to billion $
-oda_agg = oda_world.groupby(['Year', 'Aid type','Recipient'], as_index=False)['Value'].sum()
-oda_agg['Value_k'] = oda_agg['Value'] / 1000.0
+# # Aggregate and convert to billion $
+# oda_agg = oda_world.groupby(['Year', 'Aid type','Recipient'], as_index=False)['Value'].sum()
+# oda_agg['Value_k'] = oda_agg['Value'] / 1000.0
 
-world_aid_type = alt.Chart(oda_agg).mark_line().encode(
+# oda_agg.to_csv('data/chart4_oda_agg.csv', index=False)
+
+world_aid_type = alt.Chart(chart4_oda_agg).mark_line().encode(
     x='Year:O',
     y=alt.Y('Value_k:Q',title='Flow in million US$'),
     color=alt.Color('Aid type:N'),
@@ -366,20 +379,25 @@ regions = ['Europe & Central Asia', 'Middle East & North Africa', 'Sub-Saharan A
  'Latin America & Caribbean', 'South Asia','North America', 'East Asia & Pacific']
 
 # Sample code for processing the data (you already have this part in your script)
-df_regions = oda[
-    (oda['Recipient_Region'].isin(regions)) &
-    (oda['Donor_Region'].isin(regions)) &
-    (oda['Aid type'] == 'Memo: ODA Total, Gross disbursements')
-]
+# df_regions = oda[
+#     (oda['Recipient_Region'].isin(regions)) &
+#     (oda['Donor_Region'].isin(regions)) &
+#     (oda['Aid type'] == 'Memo: ODA Total, Gross disbursements')
+# ]
 
-df_regions['Value_k'] = df_regions['Value'] / 1000  # Dividing by 1000 for easier plotting
-df_regions_1990 = df_regions[df_regions['Year'] == 1990]
-df_regions_2021 = df_regions[df_regions['Year'] == 2021]
+# df_regions.to_csv('data/chart7_oda_df_regions.csv', index=False)
+
+chart7_oda_df_regions['Value_k'] = chart7_oda_df_regions['Value'] / 1000  # Dividing by 1000 for easier plotting
+
+
+df_regions_1990 = chart7_oda_df_regions[chart7_oda_df_regions['Year'] == 1990]
+df_regions_2021 = chart7_oda_df_regions[chart7_oda_df_regions['Year'] == 2021]
 
 grouped_1990 = df_regions_1990.groupby(['Donor_Region', 'Recipient_Region'], as_index=False)['Value_k'].sum()
 flow_matrix_1990 = grouped_1990.pivot(index='Donor_Region', columns='Recipient_Region', values='Value_k').fillna(0)
 grouped_2021 = df_regions_2021.groupby(['Donor_Region', 'Recipient_Region'], as_index=False)['Value_k'].sum()
 flow_matrix_2021 = grouped_2021.pivot(index='Donor_Region', columns='Recipient_Region', values='Value_k').fillna(0)
+
 # Define colors
 colors = {
     'Europe & Central Asia': '#5778a4',
