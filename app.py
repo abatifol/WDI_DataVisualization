@@ -28,7 +28,7 @@ def load_data():
     oda = pd.read_parquet('./data/oda_disbursment.parquet')
     # df_2021 = data[data.Year == 2021].dropna(subset=['Value'])
     print('ODA data loaded')
-    countries = pd.read_csv('./data/WDICountry.csv').rename(columns={"Country Code":"DE_code"})
+    countries = pd.read_parquet('./data/WDICountry.parquet').rename(columns={"Country Code":"DE_code"})
     print("countries data loaded")
     correspondance = pd.read_csv('./data/Correspondences_DAC2a.csv')
     print('correspondance data loaded')
