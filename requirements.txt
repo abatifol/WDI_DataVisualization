@@ -1,12 +1,7 @@
-streamlit
 altair
 pandas
-seaborn
 numpy
 matplotlib
 plotly
 pycirclize
-streamlit-shadcn-
-mplcursors
-holoviews
-bokeh
+streamlit-shadcn-ui
