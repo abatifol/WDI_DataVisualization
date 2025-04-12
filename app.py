@@ -37,9 +37,10 @@ def load_data():
     correspondance = pd.read_csv('./data/Correspondences_DAC2a.csv')
     print('correspondance data loaded')
     poverty = pd.read_parquet('data/oda_poverty_world.parquet')
-    return countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared
+    df = pd.read_csv("./data/GDP_Poverty_Gini_Unemployment_Enriched.csv")
+    return countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared, df
 
-countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared = load_data()
+countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared, df = load_data()
 
 #################################################
 ## --------------- Intro charts -------------- ##
@@ -509,8 +510,8 @@ pie_donor = alt.Chart(recipient_prepared).mark_arc().encode(
     # Filter the data to include only rows that match the selected recipient.
     recipient_selector
 ).properties(
-    width=400,
-    height=400
+    width=500,
+    height=500
 )
 
 # Recipient Pie Chart: displays recipients aid flows for the selected donor.
@@ -527,8 +528,8 @@ pie_recipient = alt.Chart(donor_prepared).mark_arc().encode(
     # Filter the data to include only rows that match the selected donor.
     donor_selector
 ).properties(
-    width=400,
-    height=400
+    width=500,
+    height=500
 )
 
 donor_title = alt.Chart(donor_prepared).transform_filter(
@@ -624,6 +625,228 @@ st.markdown("**Note:** The number of extreme poor is calculated using the povert
 
 #############################################
 # --- Part 2: GDP and Poverty Reduction --- #
+
+
+# =========================================================
+# 🌍 Axis 1 – Final Streamlit Narrative (Improved v2)
+# =========================================================
+
+
+# Chargement du fichier enrichi
+
+df = df[df["Year"].between(1995, 2022)]
+
+st.subheader("📊 Section 2 – Economic Growth, Poverty & Inequality")
+
+st.markdown("""
+### Introduction
+
+This section explores one of the two key forces behind these shifts: **economic growth**. Using GDP per capita, sectoral composition, and inequality, we unpack how economic development patterns shaped global poverty trajectories.
+""")
+st.markdown("""
+### 🌍 Axis 1 — Economic Growth and Poverty Reduction
+Over the past few decades, while global **GDP per capita** has been rising steadily, the world has witnessed an unprecedented **reduction in extreme poverty**.
+However, this overall trend hides profound **regional disparities**.
+In this section, we focus on the **role of economic growth** — both in terms of magnitude and structure — in shaping the evolution of poverty.
+Through interactive visualizations, we investigate how GDP dynamics, sectoral transformations, and inequality levels interact with poverty outcomes.
+
+Why did **some countries lift millions out of poverty**, while others saw little progress? Let’s explore.
+""")
+st.markdown("Explore how **GDP growth**, **economic structure**, and **inequality** impact **poverty reduction** across countries and over time.")
+
+# =========================================================
+# 1. GDP per Capita & Poverty Timeline – Multi-country
+# =========================================================
+st.header("1️⃣ GDP per Capita & Poverty Rate Over Time")
+st.markdown("""
+#### Economic Takeoff and Poverty Decline — Or Not?
+This dual-line chart enables you to explore the **parallel trajectories of GDP per capita and poverty rate** across selected countries.
+**China** showcases sustained economic expansion with massive poverty alleviation.
+**India** shows strong improvements, while **Nigeria’s GDP per capita** grew modestly with poverty reduction lagging.
+This highlights that **growth is essential**, but not always **inclusive**.
+""")
+
+countries = st.multiselect("Select one or more countries", sorted(df["Country Name"].unique()), default=["China", "India", "Nigeria"])
+df_countries = df[df["Country Name"].isin(countries)]
+
+col1, col2 = st.columns(2)
+
+with col1:
+    fig_gdp = px.line(
+        df_countries,
+        x="Year", y="GDP per capita",
+        color="Country Name",
+        markers=True,
+        log_y=True
+    )
+    st.plotly_chart(fig_gdp, use_container_width=True)
+
+with col2:
+    fig_pov = px.line(
+        df_countries,
+        x="Year", y="Poverty rate",
+        color="Country Name",
+        markers=True
+    )
+    fig_pov.update_traces(mode="lines+markers", connectgaps=True)  # 🔧 Lignes + connexion entre points
+    st.plotly_chart(fig_pov, use_container_width=True)
+
+# =========================================================
+# 2. GDP Sectoral Composition – Multi-country (stacked area)
+# =========================================================
+st.header("2️⃣ GDP Composition by Sector")
+st.markdown("""
+#### 🏭 Structural Transformation: A Key to Inclusion?
+**Economic development** often entails a shift from **agriculture to industry and services**, which brings **productivity gains** and **poverty reduction**.
+Use this chart to track how countries’ **economic engines are evolving — or stuck**.
+""")
+
+df_stack = df[df["Country Name"].isin(countries)][["Country Name", "Year", "Agriculture (% of GDP)", "Industry (% of GDP)", "Services (% of GDP)"]].dropna()
+df_stack = df_stack.melt(id_vars=["Country Name", "Year"], var_name="Sector", value_name="Share of GDP")
+
+fig_stack = px.area(
+    df_stack,
+    x="Year", y="Share of GDP", color="Sector",
+    facet_col="Country Name", facet_col_wrap=2,
+    title="Sectoral GDP Composition Over Time"
+)
+st.plotly_chart(fig_stack, use_container_width=True)
+
+# =========================================================
+# 3. Interactive Scatter – Sector vs Poverty Rate (Dynamic)
+# =========================================================
+# =========================================================
+# 3. Interactive Scatter – Sector vs Poverty Rate (Dynamic)
+# =========================================================
+st.header("3️⃣ Sectoral Share vs Poverty Rate")
+st.markdown("*🔵 Bubble size = Total population of each country in the selected year.*")
+st.markdown("""
+#### Sectoral Share and Poverty: A Hidden Relationship
+This scatterplot explores the **relationship between the GDP share of a sector** (Agriculture, Industry, Services) and the **poverty rate**.
+**High service sector shares** often correlate with **lower poverty**, while **agriculture-heavy economies** tend to be more vulnerable.
+""")
+year_select = st.slider("Choose Year", 1995, 2022, 2015)
+sector_select = st.selectbox("Select sector share", [
+    "Agriculture (% of GDP)",
+    "Industry (% of GDP)",
+    "Services (% of GDP)"
+])
+df_filtered = df[df["Year"] == year_select].dropna(subset=["Poverty rate", sector_select, "Population", "GDP per capita"])
+
+fig_sector = px.scatter(
+    df_filtered,
+    x=sector_select, y="Poverty rate",
+    size="Population", color="GDP per capita",
+    color_continuous_scale="Plasma",
+    range_color=[0, 40000], 
+    size_max=65, 
+    hover_name="Country Name",
+    labels={"Poverty rate": "Poverty Rate (%)"},
+    title=f"{sector_select} vs Poverty Rate ({year_select})"
+)
+st.plotly_chart(fig_sector, use_container_width=True)
+# =========================================================
+# 4. Animated Scatter – GDP per capita vs Poverty
+# =========================================================
+st.header("4️⃣ Animated Scatter – Growth & Poverty Over Time")
+st.markdown("*🔵 Bubble size = Population of the country for each year (animation). Helps highlight the largest demographic impacts.*")
+st.markdown("""
+#### 🎥 A Moving Landscape — GDP, Poverty, and Inequality
+This animated chart captures the **real-time evolution** of GDP per capita, poverty rate, and the Gini index across countries.
+**China** and **India** show dramatic upward mobility. Other regions remain stagnant.
+**Growth and equity** don’t always go hand in hand.
+""")
+
+df_anim = df.dropna(subset=["GDP per capita", "Poverty rate", "Population", "Gini Index"])
+df_anim = df_anim[df_anim["GDP per capita"] > 0]
+df_anim["Year"] = df_anim["Year"].astype(str)  # convert to string for animation
+df_anim = df_anim.sort_values(by="Year")  # ensure correct order
+
+fig_anim = px.scatter(
+    df_anim,
+    x="GDP per capita", y="Poverty rate",
+    animation_frame="Year",
+    size="Population", color="Gini Index",
+    hover_name="Country Name", hover_data=["GDP per capita"],
+    log_x=False,
+    range_y=[0, 80],
+    range_x=[100, 50000],  # Moins large
+    size_max=80,           # Bulles plus grosses
+    title="GDP per Capita vs Poverty Rate Over Time (colored by Gini Index)"
+)
+
+fig_anim.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 600 
+fig_anim.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 0
+st.plotly_chart(fig_anim, use_container_width=True)
+
+# =========================================================
+# 5. Global Map – Gini or Poverty Rate
+# =========================================================
+st.header("5️⃣ Global Map – Inequality or Poverty")
+st.markdown("""
+#### 🗺️ Global Inequality & Poverty Snapshot
+This choropleth map displays either **poverty rates** or **inequality levels (Gini Index)** for a selected year.
+Notice how regions like **Latin America** or **Sub-Saharan Africa** remain hotspots of inequality.
+""")
+
+map_year = st.slider("Select year for the map", 1995, 2022, 2015)
+map_metric = st.radio("Indicator to display:", ["Poverty rate", "Gini Index", "GDP per capita"])
+df_map = df[df["Year"] == map_year].dropna(subset=[map_metric, "GDP per capita"])
+
+fig_map = px.choropleth(
+    df_map,
+    locations="Country Name", locationmode="country names",
+    color=map_metric, hover_name="Country Name", hover_data=["GDP per capita"],
+    color_continuous_scale="YlGnBu",
+    title=f"{map_metric} in {map_year}"
+)
+st.plotly_chart(fig_map, use_container_width=True)
+
+# =========================================================
+# 6. GDP Growth vs Poverty Change (2000–2020)
+# =========================================================
+st.header("6️⃣ Long-Term Effect – Growth vs Poverty Reduction")
+st.markdown("*🔵 Bubble size = GDP per capita growth between 2000 and 2020. Larger bubbles indicate stronger economic performance.*")
+st.markdown("""
+#### Growth vs. Inclusion: Who Benefited?
+This chart compares **GDP growth** and **poverty rate changes** between 2000 and 2020.
+It reveals how **strong, inclusive growth** can drastically reduce poverty — and where it failed to do so.
+""")
+
+df_compare = df[df["Year"].isin([2000, 2020])]
+df_wide = df_compare.pivot(index=["Country Name"], columns="Year", values=["GDP per capita", "Poverty rate"])
+df_wide.columns = [f"{var}_{year}" for var, year in df_wide.columns]
+df_wide = df_wide.dropna()
+
+df_wide["GDP Growth (%)"] = ((df_wide["GDP per capita_2020"] - df_wide["GDP per capita_2000"]) / df_wide["GDP per capita_2000"]) * 100
+df_wide["Poverty Change (pts)"] = df_wide["Poverty rate_2020"] - df_wide["Poverty rate_2000"]
+
+fig_scatter = px.scatter(
+    data_frame=df_wide,
+    x="GDP Growth (%)", y="Poverty Change (pts)",
+    size="GDP Growth (%)",
+    hover_name=df_wide.index,
+    color="Poverty Change (pts)",
+    color_continuous_scale="RdBu",
+    title="2000–2020 – GDP Growth vs Poverty Change",
+    height=600,
+    size_max=60
+)
+st.plotly_chart(fig_scatter, use_container_width=True)
+
+st.markdown("""
+### Conclusion
+This exploration reveals that **economic growth**, while powerful, is not a silver bullet.
+
+Some key takeaways:
+- Growth must be **inclusive** and accompanied by **sectoral transformation** to effectively reduce poverty.
+- **Inequality** can undermine the benefits of growth if the gains are not broadly shared.
+- The success of countries like **China** and **India** lies in their ability to leverage growth into real human development.
+
+As we move forward, understanding these dynamics is essential to **design policies that ensure no one is left behind**.
+""")
+
+
 #############################################
 
 
