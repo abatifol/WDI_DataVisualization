@@ -3,15 +3,13 @@ import matplotlib.pyplot as plt
 from pycirclize import Circos
 import plotly.express as px
 import plotly.graph_objects as go
-import tempfile
 import pandas as pd
 import altair as alt
-import os
 import streamlit_shadcn_ui as ui
 
 alt.data_transformers.enable("vegafusion")
 
-# Set Streamlit page config
+
 st.set_page_config(
     layout="wide",
     page_title="Global Poverty and Financial Flows Dashboard",
@@ -24,8 +22,6 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    # df_2021 = pd.read_csv('./data/oda_2021.csv')
-    # oda = pd.read_parquet('./data/oda_disbursment.parquet')
     donor_prepared = pd.read_parquet('data/chart8_donor_prepared.parquet')
     recipient_prepared = pd.read_parquet('data/chart8_recipient_prepared.parquet')
     chart4_oda_agg = pd.read_csv('data/chart4_oda_agg.csv')
