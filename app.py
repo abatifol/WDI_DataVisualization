@@ -146,19 +146,18 @@ chart_regions_pov = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df
     height=500
 )
 # Create vertical rule chart at x = 0.7
-target_line_covid = alt.Chart(pd.DataFrame({'x': [2020]})).mark_rule(color='black', strokeWidth=2).encode(
+target_line_covid = alt.Chart(pd.DataFrame({'x': [2020]})).mark_rule(color='black', strokeWidth=1).encode(
     x=alt.X('x:Q')
 )
 
 # Create text label chart positioned near the vertical line
-target_text_covid = alt.Chart(pd.DataFrame({'x': [2010],'y':[0], 'label': ['COVID19']})).mark_text(
+target_text_covid = alt.Chart(pd.DataFrame({'label': ['COVID19']})).mark_text(
     fontSize=14,
     align='right',
-    dx=-10,  # horizontal offset
+    dx=400,  # horizontal offset
     dy=140,  # vertical offset; adjust as needed
     color='black'
 ).encode(
-    x=alt.X('x:Q'),
     text='label:N'
 )
 chart2 = (chart_regions_pov + target_line_covid + target_text_covid)
