@@ -674,12 +674,25 @@ countries = st.multiselect("Select one or more countries", sorted(df["Country Na
 df_countries = df[df["Country Name"].isin(countries)]
 
 col1, col2 = st.columns(2)
+
 with col1:
-    fig_gdp = px.line(df_countries, x="Year", y="GDP per capita", color="Country Name", markers=True, log_y=True)
+    fig_gdp = px.line(
+        df_countries,
+        x="Year", y="GDP per capita",
+        color="Country Name",
+        markers=True,
+        log_y=True
+    )
     st.plotly_chart(fig_gdp, use_container_width=True)
 
 with col2:
-    fig_pov = px.line(df_countries, x="Year", y="Poverty rate", color="Country Name", markers=True)
+    fig_pov = px.line(
+        df_countries,
+        x="Year", y="Poverty rate",
+        color="Country Name",
+        markers=True
+    )
+    fig_pov.update_traces(mode="lines+markers", connectgaps=True)  # 🔧 Lignes + connexion entre points
     st.plotly_chart(fig_pov, use_container_width=True)
 
 # =========================================================
