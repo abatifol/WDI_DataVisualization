@@ -111,6 +111,20 @@ regions = [
     'South Asia', 'Europe & Central Asia', 'Middle East & North Africa',
     'East Asia & Pacific', 'Sub-Saharan Africa', 'Latin America & Caribbean'
 ]
+colors = {
+    'Europe & Central Asia': '#0000ff',
+    'Middle East & North Africa': '#f94144',
+    'Sub-Saharan Africa': '#ffd60a',
+    'Latin America & Caribbean': '#00ff00',
+    'South Asia': '#ff7f00',
+    'East Asia & Pacific': '#7400b8',
+    'North America': '#76c7f0',
+}
+
+regions_color = alt.Scale(
+    domain = regions,
+    range = ['#ff7f00','#0000ff','#f94144 ','#7400b8','#ffd60a','#00ff00']
+)
 
 df_pov_regions = poverty[poverty['Country Name'].isin(regions)].drop(columns='Region')
 df_pov_regions = df_pov_regions.rename(columns={'Country Name': 'Region'})
@@ -121,12 +135,12 @@ df_pov_regions = temp.merge(df_pov_regions[['Region']], left_index=True, right_i
 
 # df_pov_regions.to_csv('data/chart2_df_pov_regions.csv', index=False)
 
-chart2 = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_regions.Year <= 2022)]).mark_area(opacity=0.7).encode(
+chart_regions_pov = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_regions.Year <= 2022)]).mark_area(opacity=0.7).encode(
     x='Year:O',
     y=alt.Y('Number of Poor (in million):Q', axis=alt.Axis(title='Millions of extreme poor')),
     color=alt.Color(
         'Region:N',
-        scale=alt.Scale(scheme='turbo'),
+        scale=regions_color, #alt.Scale(scheme='turbo'),
         legend=alt.Legend(
         title="Region",
         orient='top-right'))
@@ -140,8 +154,23 @@ chart2 = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_region
     width=500,
     height=500
 )
+# Create vertical rule chart at x = 0.7
+target_line_covid = alt.Chart(pd.DataFrame({'x': [2020]})).mark_rule(color='black', strokeWidth=2).encode(
+    x=alt.X('x:Q')
+)
 
-
+# Create text label chart positioned near the vertical line
+target_text_covid = alt.Chart(pd.DataFrame({'x': [2010],'y':[0], 'label': ['COVID19']})).mark_text(
+    fontSize=14,
+    align='right',
+    dx=-10,  # horizontal offset
+    dy=150,  # vertical offset; adjust as needed
+    color='black'
+).encode(
+    x=alt.X('x:Q'),
+    text='label:N'
+)
+chart2 = (chart_regions_pov + target_line_covid + target_text_covid)
 
 #########################################################
 # --- Part 3: Financial Flows and Poverty Reduction --- #
@@ -183,7 +212,7 @@ recipients = ['All Recipients, Total','Western Africa, Total','South of Sahara, 
  'Southern Africa, Total', 'South & Central Asia, Total','South America, Total','Oceania, Total',
 'North of Sahara, Total', 'Northern America, Total','Middle East, Total','Fragile states, Total',
 'Europe, Total','Eastern Africa, Total','Developing Countries, Total','Caribbean & Central America, Total',
-'Asia, Total','All Recipients, Total','Africa, Total','LDCs, Total',
+'Asia, Total','Africa, Total','LDCs, Total',
  'LMICs, Total']
 
 recipient_dropdown = alt.selection_point(
@@ -398,15 +427,15 @@ flow_matrix_1990 = grouped_1990.pivot(index='Donor_Region', columns='Recipient_R
 grouped_2021 = df_regions_2021.groupby(['Donor_Region', 'Recipient_Region'], as_index=False)['Value_k'].sum()
 flow_matrix_2021 = grouped_2021.pivot(index='Donor_Region', columns='Recipient_Region', values='Value_k').fillna(0)
 
-# Define colors
+
 colors = {
-    'Europe & Central Asia': '#5778a4',
-    'Middle East & North Africa': '#ff7f00',
+    'Europe & Central Asia': '#0000ff',
+    'Middle East & North Africa': '#f94144',
     'Sub-Saharan Africa': '#ffd60a',
-    'Latin America & Caribbean': '#e78ac3',
-    'South Asia': '#f94144',
+    'Latin America & Caribbean': '#00ff00',
+    'South Asia': '#ff7f00',
     'East Asia & Pacific': '#7400b8',
-    'North America': '#06d6a0',
+    'North America': '#76c7f0',
 }
 
 # Create the Circos plot
@@ -495,7 +524,7 @@ while Sub-Saharan Africa still faces significant challenges.
 """)
 col1, col2 = st.columns(2)
 with col1:
-    st.altair_chart(chart1)
+    st.altair_chart(chart1, use_container_width=True)
     st.markdown("**Source:** World Bank,World Development indicator Database (WDI)")
 with col2:
     st.altair_chart(chart2)
@@ -525,7 +554,7 @@ st.header("Part 2: Global Partnership and cooperations to end poverty")
 st.subheader("Section 1: Global Financial Flows — The Big Picture")
 st.markdown(
 """
-To understand how countries combat poverty, it is interesting to look at the financiallifelines flowing across borders like:           
+To understand how countries combat poverty, it is interesting to look at the financial lifelines flowing across borders like:           
 - **Net Official Development Assistance (ODA):** Grants or concessional loans from government to support development.
 - **Foreign Direct Investment (FDI):** Cross-border investments, indicating private sector engagement.
 - **Personal Remittances:** Funds sent by individuals (often migrant workers) to their home countries.
@@ -534,7 +563,7 @@ To understand how countries combat poverty, it is interesting to look at the fin
 st.altair_chart(world_financial_aid)
 st.markdown(
 '''
-### Key Observations:
+#### Key Observations:
 - **Foreign Direct Investment (FDI)** has become the **dominant source of external finance** over the years. Unlike aid, FDI often targets infrastructure, industries, and services that stimulate long-term economic growth and employment creation.
 - **Remittances** have experienced a **remarkable surge**, outpacing the growth of traditional aid flows.  This growth reflects both the increase in migration and the resilience of remittance flows during crises.
 - **Official Development Assistance (ODA)** remains vital, especially for countries with limited access to private finance, but its relative share has decreased compared to private flows.
@@ -551,9 +580,7 @@ A notable trend emerges when observing the evolution of aid types: **Imputed Mul
 This growth reflects the **increasing importance of multilateral institutions** in the global development landscape. Countries have progressively channeled more resources through organizations like the **United Nations**, **World Bank**, and **regional development banks**, recognizing the need for coordinated, impartial, and large-scale responses to complex global challenges.
 
 #### Regional Disparities & Notable Events:
-- **Caribbean & Central America (2010):**  
-  A dramatic spike in **Humanitarian Aid** corresponds with the devastating earthquake in **Haiti** in January 2010.  
-  The international community responded with unprecedented humanitarian assistance to support emergency relief and reconstruction efforts.    
+- **Caribbean & Central America (2010):**  A dramatic spike in **Humanitarian Aid** corresponds with the devastating earthquake in **Haiti** in January 2010. The international community responded with unprecedented humanitarian assistance to support emergency relief and reconstruction efforts.    
 - **Middle East:** Periodic increases in **Humanitarian Aid** can be linked to conflicts and refugee crises in the region, such as the Syrian conflict starting in 2011.
 - **Europe**: Surge in aid flows in 2022 to support Ukraine in the conflict.
 
@@ -561,21 +588,92 @@ This growth reflects the **increasing importance of multilateral institutions** 
 '''
 )
 
-st.markdown("In this section, we dive deeper into the distribution of Official Development Assistance (ODA).")
+st.markdown("In this section, we dive deeper into the distribution of Official Development Assistance (ODA). We display both relative and absolute ODA flows to highlight the disparities in aid distribution.")
+
 tab1, tab2 = st.tabs(["Absolute ODA", "Relative ODA"])
 tab1.altair_chart(top_donor_recipient_chart, use_container_width=True)
 tab2.altair_chart(top_donor_recipient_chart_bis, use_container_width=True)
 
-st.markdown("Even though official aid has grown over the years, it still falls significantly short of the 0.7% of GNI benchmark expected from developed nations to support less wealthy countries, as outlined in SDG target 17.2. Only 4 countries achieved this goal in 2022 ")
+st.markdown(""" 
+            Even though official aid has grown over the years, it still falls significantly short of the 0.7% of GNI benchmark expected from developed nations to support less wealthy countries, 
+            as outlined in SDG target 17.2. Only 4 countries achieved this goal in 2022. Overall the 5 larger donators in terms of absolute ODA are the same for decades: USA, Germany, France, UK and Japan.
+            However, the relative ODA (as % of GNI) shows a different picture. The top 5 countries in terms of relative ODA are: Sweden, Norway, Luxembourg, Denmark and the UK.
+            """)
 
 st.subheader("Section 2: Bilateral ODA Flows Between Regions")
-
+st.markdown("""
+            The chord diagrams below visualize the bilateral ODA flows between regions in 1990 and 2021. The width of the chords represents the volume of aid flows,
+             with wider chords indicating larger amounts of aid. It illustrates the evolution of aid distribution over time and highlights the regions that are the largest donors and recipients of ODA.
+            The diagrams also show how the global landscape of aid flows has changed over the years, reflecting shifts in geopolitical priorities and development needs.
+            """)
 col1, col2 = st.columns(2)
 with col1:
     st.pyplot(fig_1990)
 with col2:
     st.pyplot(fig_2021)
 
+st.markdown(
+    """
+#### Observations on Aid Distribution
+When reading the diagrams, keep in mind that the overall increase in aid flows means chord sizes are not directly comparable across years.
+East Asia & Pacific has emerged as a growing donor region, though almost half of its aid still stays within its own borders, highlighting persistent regional disparities.
+Europe remains by far the largest donor, and its aid flows have become more diversified in 2021 compared to 1990, when they were heavily directed toward Sub-Saharan Africa
+— a legacy partly rooted in colonial ties. Notably, Europe has doubled its aid to the Middle East, reflecting growing needs driven by conflicts and humanitarian crises.
+ Meanwhile, North America has significantly expanded its role, more than tripling its aid to Sub-Saharan Africa, indicating a stronger engagement with the region’s development and emergency needs.
+"""
+)
+
+# year_selection2 = alt.selection_point(
+#     name='Select year',
+#     fields=['Year'],
+#     bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
+#     value=[{'Year': 2022}]
+# )
+
+# brush = alt.selection_interval()
+
+# poverty['poverty headcount ratio']= poverty['Poverty headcount ratio at $2.15 a day']
+# x_domain = [1, 1000]  # Adjust these values as needed
+# y_domain = [0, 100]   # Adjust these values as needed
+
+# scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().encode(
+#     x=alt.X('Net ODA received per capita (current US$):Q',
+#             scale=alt.Scale(domain=x_domain, type='log'),
+#             axis=alt.Axis(title='Net ODA per Capita (US$)')),
+#     y=alt.Y('poverty headcount ratio:Q',
+#             scale=alt.Scale(domain=y_domain),
+#             axis=alt.Axis(title='Poverty Headcount Ratio (%)')),
+#     color=alt.Color('Income Group:N',
+#                     scale=color_scale,
+#                     legend=alt.Legend(title="Income Group")),
+#     tooltip=['Country Name:N', 'Year:O',
+#              'Net ODA received per capita (current US$):Q',
+#              'poverty headcount ratio:Q']
+# ).add_params(
+#     year_selection2,
+#     brush
+# ).transform_filter(
+#     year_selection2  # Apply the year selection filter
+# ).properties(
+#     height=400,
+#     width=400,
+#     title="Poverty Headcount Ratio at $2.15/day vs ODA per Capita"
+# )
+
+# bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().encode(
+#     y='Country Name:N',
+#     x="Net official development assistance received (constant 2021 US$):Q",
+#     color=alt.Color('Income Group:N',
+#                     scale=color_scale,
+#                     legend=alt.Legend(title="Income Group")),
+#     tooltip=['Country Name:N', 'Year:O','Net official development assistance received (constant 2021 US$):Q']
+# ).add_params(year_selection2).transform_filter(brush, year_selection2).properties(
+#     height=500,
+#     width=300,
+# )
+
+# col1, col2 = st.columns(2)
+# st.altair_chart(scatter_poverty_oda | bar_oda_plot)
 
 year_selection2 = alt.selection_point(
     name='Select year',
@@ -590,7 +688,9 @@ poverty['poverty headcount ratio']= poverty['Poverty headcount ratio at $2.15 a 
 x_domain = [1, 1000]  # Adjust these values as needed
 y_domain = [0, 100]   # Adjust these values as needed
 
-scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().encode(
+scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().transform_filter(
+    year_selection2
+).encode(
     x=alt.X('Net ODA received per capita (current US$):Q',
             scale=alt.Scale(domain=x_domain, type='log'),
             axis=alt.Axis(title='Net ODA per Capita (US$)')),
@@ -604,28 +704,29 @@ scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point()
              'Net ODA received per capita (current US$):Q',
              'poverty headcount ratio:Q']
 ).add_params(
-    year_selection2,
-    brush
-).transform_filter(
-    year_selection2  # Apply the year selection filter
+    brush # Apply the year selection filter
 ).properties(
     height=400,
     width=400,
     title="Poverty Headcount Ratio at $2.15/day vs ODA per Capita"
 )
 
-bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().encode(
-    y='Country Name:N',
+bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().transform_filter(
+    year_selection2
+).encode(
+    y=alt.Y('Country Name:N',
+            sort='-x'),  # Sort by the x-axis values in descending order
     x="Net official development assistance received (constant 2021 US$):Q",
     color=alt.Color('Income Group:N',
                     scale=color_scale,
                     legend=alt.Legend(title="Income Group")),
-    tooltip=['Country Name:N', 'Year:O','Net official development assistance received (constant 2021 US$):Q']
-).add_params(year_selection2).transform_filter(brush, year_selection2).properties(
+    tooltip=['Country Name:N', 'Year:O', 'Net official development assistance received (constant 2021 US$):Q']
+).transform_filter(brush).properties(
     height=500,
     width=300,
 )
 
-col1, col2 = st.columns(2)
-st.altair_chart(scatter_poverty_oda | bar_oda_plot)
+last_chart = (scatter_poverty_oda | bar_oda_plot).add_params(year_selection2)
 
+col1, col2 = st.columns(2)
+st.altair_chart(last_chart)
