@@ -26,9 +26,8 @@ st.set_page_config(
 def load_data():
     # df_2021 = pd.read_csv('./data/oda_2021.csv')
     # oda = pd.read_parquet('./data/oda_disbursment.parquet')
-    # chart1_df_word = pd.read_csv('data/chart1_df_world.csv')
-    # chart2_df_pov_regions = pd.read_csv('data/chart2_df_pov_regions.csv')
-    # chart3_world_financial_aid_flows = pd.read_csv('data/chart3_world_financial_aid_flows.csv')
+    donor_prepared = pd.read_parquet('data/chart8_donor_prepared.parquet')
+    recipient_prepared = pd.read_parquet('data/chart8_recipient_prepared.parquet')
     chart4_oda_agg = pd.read_csv('data/chart4_oda_agg.csv')
     chart7_oda_df_regions = pd.read_csv('data/chart7_oda_df_regions.csv')
     # df_2021 = data[data.Year == 2021].dropna(subset=['Value'])
@@ -38,9 +37,9 @@ def load_data():
     correspondance = pd.read_csv('./data/Correspondences_DAC2a.csv')
     print('correspondance data loaded')
     poverty = pd.read_parquet('data/oda_poverty_world.parquet')
-    return countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions
+    return countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared
 
-countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions = load_data()
+countries, correspondance, poverty, chart4_oda_agg, chart7_oda_df_regions, donor_prepared, recipient_prepared = load_data()
 
 #################################################
 ## --------------- Intro charts -------------- ##
@@ -96,7 +95,7 @@ legend_points = alt.Chart(pd.DataFrame({
 
 chart1 = (popTotal + poor + legend_points + legend_text).properties(
     title=alt.TitleParams(
-        text='World Population Growth and Decline in Extreme Poverty (1990–2022)', 
+        text='World Population and extreme poverty', 
         anchor='middle', 
         fontSize=16,  
         fontWeight='bold'  
@@ -111,19 +110,11 @@ regions = [
     'South Asia', 'Europe & Central Asia', 'Middle East & North Africa',
     'East Asia & Pacific', 'Sub-Saharan Africa', 'Latin America & Caribbean'
 ]
-colors = {
-    'Europe & Central Asia': '#0000ff',
-    'Middle East & North Africa': '#f94144',
-    'Sub-Saharan Africa': '#ffd60a',
-    'Latin America & Caribbean': '#00ff00',
-    'South Asia': '#ff7f00',
-    'East Asia & Pacific': '#7400b8',
-    'North America': '#76c7f0',
-}
+
 
 regions_color = alt.Scale(
     domain = regions,
-    range = ['#ff7f00','#0000ff','#f94144 ','#7400b8','#ffd60a','#00ff00']
+    range = ['#ffd60a','#0000ff','#ff7f00','#7400b8','#f94144','#00ff00']
 )
 
 df_pov_regions = poverty[poverty['Country Name'].isin(regions)].drop(columns='Region')
@@ -164,7 +155,7 @@ target_text_covid = alt.Chart(pd.DataFrame({'x': [2010],'y':[0], 'label': ['COVI
     fontSize=14,
     align='right',
     dx=-10,  # horizontal offset
-    dy=150,  # vertical offset; adjust as needed
+    dy=140,  # vertical offset; adjust as needed
     color='black'
 ).encode(
     x=alt.X('x:Q'),
@@ -489,6 +480,103 @@ fig_1990 = circos_1990.plotfig()
 circos_2021.text(f"ODA Financial Flows Between Regions in 2021", deg=0, r=150, size=14)
 fig_2021 = circos_2021.plotfig()
 
+# --- Chart 8: Deep dive into each Recipient and Donor ODA distribution
+# Define the selectors using arrays for the default values
+donor_selector = alt.selection_point(
+    name='SelectDonor',
+    fields=['Donor'],
+    value=[{'Donor': 'France'}],
+    # clear='click'
+)
+
+recipient_selector = alt.selection_point(
+    name='SelectRecipient',
+    fields=['Recipient'],
+    value=[{'Recipient': 'Türkiye'}],
+    # clear='click'
+)
+
+# Donor Pie Chart: displays all donors contributing to the selected recipient.
+pie_donor = alt.Chart(recipient_prepared).mark_arc().encode(
+    theta=alt.Theta('sum(Value):Q', title="Contribution Amount"),
+    color=alt.Color('Donor:N', title="Contributing Donors", scale=alt.Scale(scheme='category20')),
+    tooltip=[
+        alt.Tooltip('Donor:N', title='Donor'),
+        alt.Tooltip('sum(Value):Q', title='Total Contribution', format='$,.0f')
+    ]
+).add_params(
+    donor_selector
+).transform_filter(
+    # Filter the data to include only rows that match the selected recipient.
+    recipient_selector
+).properties(
+    width=400,
+    height=400
+)
+
+# Recipient Pie Chart: displays recipients aid flows for the selected donor.
+pie_recipient = alt.Chart(donor_prepared).mark_arc().encode(
+    theta=alt.Theta('sum(Value):Q', title="ODA disbursment"),
+    color=alt.Color('Recipient:N', title="Main Recipients", scale=alt.Scale(scheme='category20')),
+    tooltip=[
+        alt.Tooltip('Recipient:N', title='Recipient'),
+        alt.Tooltip('sum(Value):Q', title='ODA disbursment', format='$,.0f')
+    ]
+).add_params(
+    recipient_selector
+).transform_filter(
+    # Filter the data to include only rows that match the selected donor.
+    donor_selector
+).properties(
+    width=400,
+    height=400
+)
+
+donor_title = alt.Chart(donor_prepared).transform_filter(
+    donor_selector
+).transform_aggregate(
+    selDonor='max(Donor)',
+    totalValue='sum(Value)',
+    groupby=[]
+).transform_calculate(
+    title='datum.selDonor + "\'s main recipients in 2021 ($" + format(datum.totalValue, ",.0f")  + " Million)"'
+).mark_text(
+    align='center',
+    fontSize=14,
+    fontWeight='bold'
+).encode(
+    text='title:N'
+).properties(width=400, height=30)
+
+
+# Recipient Title: uses recipient_selector to display the selected recipient.
+recipient_title = alt.Chart(recipient_prepared).transform_filter(
+    recipient_selector
+).transform_aggregate(
+    selRecipient='max(Recipient)',
+    totalValue='sum(Value)',
+    groupby=[]
+).transform_calculate(
+    title='datum.selRecipient + "\'s main donors in 2021 ($" + format(datum.totalValue, ".2f") + " Million)"'
+).mark_text(
+    align='center',
+    fontSize=14,
+    fontWeight='bold'
+).encode(
+    text='title:N'
+).properties(width=400, height=30)
+
+
+
+bilateral_oda = (recipient_title & pie_donor) | (donor_title & pie_recipient)
+bilateral_oda = bilateral_oda.resolve_scale(color='independent').properties(
+    title='Distribution of bilateral ODA in 2021 country level in Million USD'
+).configure_title(
+    anchor='middle',  # 👈 this centers the title
+    fontSize=18,
+    fontWeight='bold'
+)
+
 
 #################################################
 ## ------------ Streamlit Display ------------ ##
@@ -622,58 +710,27 @@ Europe remains by far the largest donor, and its aid flows have become more dive
  Meanwhile, North America has significantly expanded its role, more than tripling its aid to Sub-Saharan Africa, indicating a stronger engagement with the region’s development and emergency needs.
 """
 )
+st.markdown("""
+            #### Deeper insights of bilateral ODA flows from donors to recipients at the country level in 2021
+            **Click** on a pie segment to select a donor or recipient
+""")
+st.altair_chart(bilateral_oda, use_container_width=True)
+st.markdown("""
+### 🌍 Bilateral Official Development Assistance (ODA) Flows (2021)
 
-# year_selection2 = alt.selection_point(
-#     name='Select year',
-#     fields=['Year'],
-#     bind=alt.binding_range(min=1990, max=2022, step=1, name='Year: '),
-#     value=[{'Year': 2022}]
-# )
+This visualization provides an interactive view of bilateral ODA at the country level for the year 2021, measured in million USD.
 
-# brush = alt.selection_interval()
+The chart is divided into two main sections:
 
-# poverty['poverty headcount ratio']= poverty['Poverty headcount ratio at $2.15 a day']
-# x_domain = [1, 1000]  # Adjust these values as needed
-# y_domain = [0, 100]   # Adjust these values as needed
+- **Left Side:**  
+  - Displays the main **donors** that provide aid to the selected recipient country. You can click on the right diagram to select the recipient you want.
 
-# scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().encode(
-#     x=alt.X('Net ODA received per capita (current US$):Q',
-#             scale=alt.Scale(domain=x_domain, type='log'),
-#             axis=alt.Axis(title='Net ODA per Capita (US$)')),
-#     y=alt.Y('poverty headcount ratio:Q',
-#             scale=alt.Scale(domain=y_domain),
-#             axis=alt.Axis(title='Poverty Headcount Ratio (%)')),
-#     color=alt.Color('Income Group:N',
-#                     scale=color_scale,
-#                     legend=alt.Legend(title="Income Group")),
-#     tooltip=['Country Name:N', 'Year:O',
-#              'Net ODA received per capita (current US$):Q',
-#              'poverty headcount ratio:Q']
-# ).add_params(
-#     year_selection2,
-#     brush
-# ).transform_filter(
-#     year_selection2  # Apply the year selection filter
-# ).properties(
-#     height=400,
-#     width=400,
-#     title="Poverty Headcount Ratio at $2.15/day vs ODA per Capita"
-# )
+- **Right Side:**  
+  - Displays the primary **recipients** of aid from the selected donor country. You can click on the left diagram to select the donor you want.
 
-# bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().encode(
-#     y='Country Name:N',
-#     x="Net official development assistance received (constant 2021 US$):Q",
-#     color=alt.Color('Income Group:N',
-#                     scale=color_scale,
-#                     legend=alt.Legend(title="Income Group")),
-#     tooltip=['Country Name:N', 'Year:O','Net official development assistance received (constant 2021 US$):Q']
-# ).add_params(year_selection2).transform_filter(brush, year_selection2).properties(
-#     height=500,
-#     width=300,
-# )
+We can identify new patterns in the aid distribution, since some countries aid distribution sometimes comes from very few countries while in other case the origin of ODA are much more diverse.           
+""")
 
-# col1, col2 = st.columns(2)
-# st.altair_chart(scatter_poverty_oda | bar_oda_plot)
 
 year_selection2 = alt.selection_point(
     name='Select year',
@@ -712,7 +769,7 @@ scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point()
 )
 
 bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().transform_filter(
-    year_selection2
+    year_selection2, brush
 ).encode(
     y=alt.Y('Country Name:N',
             sort='-x'),  # Sort by the x-axis values in descending order
@@ -730,3 +787,4 @@ last_chart = (scatter_poverty_oda | bar_oda_plot).add_params(year_selection2)
 
 col1, col2 = st.columns(2)
 st.altair_chart(last_chart)
+
