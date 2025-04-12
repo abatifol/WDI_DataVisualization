@@ -729,6 +729,8 @@ fig_sector = px.scatter(
     x=sector_select, y="Poverty rate",
     size="Population", color="GDP per capita",
     color_continuous_scale="Plasma",
+    range_color=[0, 40000], 
+    size_max=65, 
     hover_name="Country Name",
     labels={"Poverty rate": "Poverty Rate (%)"},
     title=f"{sector_select} vs Poverty Rate ({year_select})"
