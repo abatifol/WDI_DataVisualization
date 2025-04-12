@@ -124,7 +124,7 @@ df_pov_regions = temp.merge(df_pov_regions[['Region']], left_index=True, right_i
 # df_pov_regions.to_csv('data/chart2_df_pov_regions.csv', index=False)
 
 chart_regions_pov = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df_pov_regions.Year <= 2022)]).mark_area(opacity=0.7).encode(
-    x='Year:O',
+    x=alt.X('Year:O', axis=alt.Axis(title='Year')),
     y=alt.Y('Number of Poor (in million):Q', axis=alt.Axis(title='Millions of extreme poor')),
     color=alt.Color(
         'Region:N',
@@ -134,7 +134,7 @@ chart_regions_pov = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df
         orient='top-right'))
 ).properties(
     title=alt.TitleParams(
-        text='Regional Trends in Extreme Poverty (1990-2022)',  
+        text='Regional Trends in Extreme Poverty',  
         anchor='middle',  
         fontSize=16,  
         fontWeight='bold'  
@@ -143,18 +143,22 @@ chart_regions_pov = alt.Chart(df_pov_regions[(df_pov_regions.Year >= 1990) & (df
     height=500
 )
 # Create vertical rule chart at x = 0.7
-target_line_covid = alt.Chart(pd.DataFrame({'x': [2020]})).mark_rule(color='black', strokeWidth=1).encode(
-    x=alt.X('x:Q')
+target_line_covid = alt.Chart(pd.DataFrame({'x': [2020],'label': ['COVID19']})).mark_rule(color='black', strokeWidth=1).encode(
+    x=alt.X('x:Q', axis=None),
+    tooltip=['label:N']
+    
 )
 
 # Create text label chart positioned near the vertical line
-target_text_covid = alt.Chart(pd.DataFrame({'label': ['COVID19']})).mark_text(
+target_text_covid = alt.Chart(pd.DataFrame({'x':[2010],'y':[200],'label': ['COVID19']})).mark_text(
     fontSize=14,
     align='right',
-    dx=400,  # horizontal offset
-    dy=140,  # vertical offset; adjust as needed
+    # dx=400,  # horizontal offset
+    # dy=140,  # vertical offset; adjust as needed
     color='black'
 ).encode(
+    x=alt.X('x:Q', axis=None),
+    y=alt.Y('y:Q',axis=None),
     text='label:N'
 )
 chart2 = (chart_regions_pov + target_line_covid + target_text_covid)
@@ -504,11 +508,11 @@ pie_donor = alt.Chart(recipient_prepared).mark_arc().encode(
     donor_selector
 ).transform_filter(
     # Filter the data to include only rows that match the selected recipient.
-    recipient_selector
-).properties(
-    width=500,
-    height=500
-)
+    recipient_selector)
+# ).properties(
+#     width=500,
+#     height=500
+# )
 
 # Recipient Pie Chart: displays recipients aid flows for the selected donor.
 pie_recipient = alt.Chart(donor_prepared).mark_arc().encode(
@@ -522,11 +526,11 @@ pie_recipient = alt.Chart(donor_prepared).mark_arc().encode(
     recipient_selector
 ).transform_filter(
     # Filter the data to include only rows that match the selected donor.
-    donor_selector
-).properties(
-    width=500,
-    height=500
-)
+    donor_selector)
+# ).properties(
+#     width=500,
+#     height=500
+# )
 
 donor_title = alt.Chart(donor_prepared).transform_filter(
     donor_selector
@@ -537,12 +541,12 @@ donor_title = alt.Chart(donor_prepared).transform_filter(
 ).transform_calculate(
     title='datum.selDonor + "\'s main recipients in 2021 ($" + format(datum.totalValue, ",.0f")  + " Million)"'
 ).mark_text(
-    align='center',
+    align='left',
     fontSize=14,
     fontWeight='bold'
 ).encode(
     text='title:N'
-).properties(width=400, height=30)
+)
 
 
 # Recipient Title: uses recipient_selector to display the selected recipient.
@@ -555,12 +559,12 @@ recipient_title = alt.Chart(recipient_prepared).transform_filter(
 ).transform_calculate(
     title='datum.selRecipient + "\'s main donors in 2021 ($" + format(datum.totalValue, ".2f") + " Million)"'
 ).mark_text(
-    align='center',
+    align='left',
     fontSize=14,
     fontWeight='bold'
 ).encode(
     text='title:N'
-).properties(width=400, height=30)
+)
 
 
 
@@ -611,7 +615,7 @@ with col1:
     st.altair_chart(chart1, use_container_width=True)
     st.markdown("**Source:** World Bank,World Development indicator Database (WDI)")
 with col2:
-    st.altair_chart(chart2)
+    st.altair_chart(chart2, use_container_width=True)
 
 st.markdown("**Note:** The number of extreme poor is calculated using the poverty headcount ratio at $2.15 a day (2017 PPP) and the total population.")
 
@@ -933,6 +937,7 @@ st.markdown("""
             **Click** on a pie segment to select a donor or recipient
 """)
 st.altair_chart(bilateral_oda, use_container_width=True)
+
 st.markdown("""
 ### 🌍 Bilateral Official Development Assistance (ODA) Flows (2021)
 
@@ -1004,5 +1009,5 @@ bar_oda_plot = alt.Chart(poverty[poverty['Region'].notna()]).mark_bar().transfor
 last_chart = (scatter_poverty_oda | bar_oda_plot).add_params(year_selection2)
 
 col1, col2 = st.columns(2)
-st.altair_chart(last_chart)
+st.altair_chart(last_chart, use_container_width=True)
 
