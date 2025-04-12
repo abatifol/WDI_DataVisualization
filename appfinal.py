@@ -755,12 +755,17 @@ fig_anim = px.scatter(
     df_anim,
     x="GDP per capita", y="Poverty rate",
     animation_frame="Year",
-    size="Population", color="Gini Index", hover_name="Country Name", hover_data=["GDP per capita"],
+    size="Population", color="Gini Index",
+    hover_name="Country Name", hover_data=["GDP per capita"],
     log_x=False,
     range_y=[0, 80],
-    range_x=[100, 100000],
+    range_x=[100, 50000],  # Moins large
+    size_max=80,           # Bulles plus grosses
     title="GDP per Capita vs Poverty Rate Over Time (colored by Gini Index)"
 )
+
+fig_anim.layout.updatemenus[0].buttons[0].args[1]["frame"]["duration"] = 600 
+fig_anim.layout.updatemenus[0].buttons[0].args[1]["transition"]["duration"] = 0
 st.plotly_chart(fig_anim, use_container_width=True)
 
 # =========================================================
