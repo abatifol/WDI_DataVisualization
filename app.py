@@ -234,7 +234,7 @@ recipient_dropdown = alt.selection_point(
 # oda_agg['Value_k'] = oda_agg['Value'] / 1000.0
 
 # oda_agg.to_csv('data/chart4_oda_agg.csv', index=False)
-
+# chart4_oda_agg = oda_agg.copy()
 world_aid_type = alt.Chart(chart4_oda_agg).mark_line().encode(
     x='Year:O',
     y=alt.Y('Value_k:Q',title='Flow in million US$'),
@@ -415,7 +415,7 @@ regions = ['Europe & Central Asia', 'Middle East & North Africa', 'Sub-Saharan A
 # ]
 
 # df_regions.to_csv('data/chart7_oda_df_regions.csv', index=False)
-
+# chart7_oda_df_regions = df_regions.copy()
 chart7_oda_df_regions['Value_k'] = chart7_oda_df_regions['Value'] / 1000  # Dividing by 1000 for easier plotting
 
 
