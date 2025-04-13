@@ -158,7 +158,7 @@ target_text_covid = alt.Chart(pd.DataFrame({'x':[2010],'y':[200],'label': ['COVI
     color='black'
 ).encode(
     x=alt.X('x:Q', axis=None),
-    y=alt.Y('y:Q',axis=None),
+    y=alt.Y('y:Q'),
     text='label:N'
 )
 chart2 = (chart_regions_pov + target_line_covid + target_text_covid)
@@ -198,7 +198,6 @@ world_financial_aid = alt.Chart(world_financial_aid_flows).mark_line().encode(
 # -- Chart 4: Different Types of Aid Over Time and Recipients --
 aid_types = ['Imputed Multilateral ODA', 'Technical Cooperation', 'Development Food Aid', 'Humanitarian Aid']
 
-# recipients =  
 recipients = ['All Recipients, Total','Western Africa, Total','South of Sahara, Total',
  'Southern Africa, Total', 'South & Central Asia, Total','South America, Total','Oceania, Total',
 'North of Sahara, Total', 'Northern America, Total','Middle East, Total','Fragile states, Total',
@@ -241,16 +240,12 @@ world_aid_type = alt.Chart(chart4_oda_agg).mark_line().encode(
     recipient_dropdown
 )
 
-# -- Chart 5: ODA Top Donors and Recipients --
-
-
-# -- Chart 6: top donors and recipients over year
+# -- Chart 5-6: ODA Top Donors and Recipients over the year --
 color_scale = alt.Scale(
     domain=['Low income', 'Lower middle income', 'Upper middle income', 'High income'],
     range=['#d62728', '#f7b6d2', '#76c7f0', '#1f77b4']
 )
 
-# Prepare the data
 year_selection = alt.selection_point(
     name='Select',
     fields=['Year'],
@@ -347,7 +342,7 @@ target_text = alt.Chart(pd.DataFrame({'x': [0.7], 'label': ['target 0.7% GNI']})
     fontSize=14,
     align='left',
     dx=5,  # horizontal offset
-    dy=-5,  # vertical offset; adjust as needed
+    dy=-5,  # vertical offset;
     color='red'
 ).encode(
     x=alt.X('x:Q'),
@@ -432,7 +427,7 @@ colors = {
 # Create the Circos plot
 circos_1990 = Circos.chord_diagram(
     flow_matrix_1990,
-    # cmap="viridis",  # Use a colormap suitable for financial flows
+    # cmap="viridis",
     cmap=colors,
     space=2,
     ticks_interval=10,
@@ -454,7 +449,7 @@ circos_1990 = Circos.chord_diagram(
 
 circos_2021 = Circos.chord_diagram(
     flow_matrix_2021,
-    # cmap="viridis",  # Use a colormap suitable for financial flows
+    # cmap="viridis",  
     cmap=colors,
     space=2,
     ticks_interval=10,
@@ -481,7 +476,6 @@ circos_2021.text(f"ODA Financial Flows Between Regions in 2021", deg=0, r=150, s
 fig_2021 = circos_2021.plotfig()
 
 # --- Chart 8: Deep dive into each Recipient and Donor ODA distribution
-# Define the selectors using arrays for the default values
 donor_selector = alt.selection_point(
     name='SelectDonor',
     fields=['Donor'],
@@ -549,7 +543,6 @@ donor_title = alt.Chart(donor_prepared).transform_filter(
 )
 
 
-# Recipient Title: uses recipient_selector to display the selected recipient.
 recipient_title = alt.Chart(recipient_prepared).transform_filter(
     recipient_selector
 ).transform_aggregate(
@@ -572,7 +565,7 @@ bilateral_oda = (recipient_title & pie_donor) | (donor_title & pie_recipient)
 bilateral_oda = bilateral_oda.resolve_scale(color='independent').properties(
     title='Distribution of bilateral ODA in 2021 country level in Million USD'
 ).configure_title(
-    anchor='middle',  # 👈 this centers the title
+    anchor='middle',
     fontSize=18,
     fontWeight='bold'
 )
@@ -620,17 +613,9 @@ with col2:
 st.markdown("**Note:** The number of extreme poor is calculated using the poverty headcount ratio at $2.15 a day (2017 PPP) and the total population.")
 
 
-# --- Chart x: ODA fLows
-
-
 #############################################
 # --- Part 2: GDP and Poverty Reduction --- #
-
-
-# =========================================================
-# 🌍 Axis 1 – Final Streamlit Narrative (Improved v2)
-# =========================================================
-
+#############################################
 
 # Chargement du fichier enrichi
 
@@ -688,7 +673,7 @@ with col2:
         color="Country Name",
         markers=True
     )
-    fig_pov.update_traces(mode="lines+markers", connectgaps=True)  # 🔧 Lignes + connexion entre points
+    fig_pov.update_traces(mode="lines+markers", connectgaps=True)  # Lignes + connexion entre points
     st.plotly_chart(fig_pov, use_container_width=True)
 
 # =========================================================
@@ -712,9 +697,6 @@ fig_stack = px.area(
 )
 st.plotly_chart(fig_stack, use_container_width=True)
 
-# =========================================================
-# 3. Interactive Scatter – Sector vs Poverty Rate (Dynamic)
-# =========================================================
 # =========================================================
 # 3. Interactive Scatter – Sector vs Poverty Rate (Dynamic)
 # =========================================================
@@ -847,12 +829,6 @@ As we move forward, understanding these dynamics is essential to **design polici
 """)
 
 
-#############################################
-
-
-
-
-
 #########################################################
 # --- Part 3: Financial Flows and Poverty Reduction --- #
 #########################################################
@@ -951,10 +927,23 @@ The chart is divided into two main sections:
 - **Right Side:**  
   - Displays the primary **recipients** of aid from the selected donor country. You can click on the left diagram to select the donor you want.
 
-We can identify new patterns in the aid distribution, since some countries aid distribution sometimes comes from very few countries while in other case the origin of ODA are much more diverse.           
+The bilateral ODA flows in 2021 reveal varied patterns in both donor aid distribution and recipient aid sources. Some donors exhibit a highly diversified
+aid portfolio, spreading their assistance across numerous countries, while others concentrate their efforts on a few key partners. This often reflects
+historical ties, such as former colonial relationships (e.g., France directing significant aid to  not fully displayed here due the smaller amount for
+each countries which is aggregated in "Other"), or regional proximity and strategic interests (e.g., Japan prioritizing aid to Southeast Asia). 
+On the recipient side, some countries receive aid from a wide range of donors, suggesting broad international engagement, whereas others rely heavily
+ on specific donors, indicating historical or geopolitical dependencies. For example Syria mostly relies on Turkey (~75% of its aid inflows).
+ These patterns highlight how development assistance is shaped by a complex mix of history, regional priorities, and strategic alliances.           
 """)
 
 
+st.markdown("""
+   Let's now take a look at the relation between poverty headcount ratio and ODA received per capita. You can select the year you want and also select
+specific points with the lasso for display on the bar chart on the right. The relation is not always clear since richer countries may require higher ODA
+per capita to achieve the same results in helping the extreme poor as in poorer countries due to the higher cost of living for instance. Likewise the poverty
+line chosen here is the one of \\$2.15 a day, an international standard, but in some countries the poverty line is much higher than that. Living on
+\\$2.15 a day may be harder in Germany than in Malawi.
+""")            
 year_selection2 = alt.selection_point(
     name='Select year',
     fields=['Year'],
@@ -965,8 +954,8 @@ year_selection2 = alt.selection_point(
 brush = alt.selection_interval()
 
 poverty['poverty headcount ratio']= poverty['Poverty headcount ratio at $2.15 a day']
-x_domain = [1, 1000]  # Adjust these values as needed
-y_domain = [0, 100]   # Adjust these values as needed
+x_domain = [1, 1000]  
+y_domain = [0, 100]  
 
 scatter_poverty_oda = alt.Chart(poverty[poverty['Region'].notna()]).mark_point().transform_filter(
     year_selection2
